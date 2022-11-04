@@ -18,7 +18,7 @@ public class TestAuthenticateLibLDAP {
 		System.out.println(authen.getLogintime());
 		
 		
-		authen = new AuthenticateLibLDAP("wwyng", "98731486aB", "192.168.0.0", "wwyng", "TEST SYSTEM");
+		authen = new AuthenticateLibLDAP("wwyng", "98731486aB", "192.168.0.0", "wwyng", "TEST SYSTEM23");
 		System.out.println(authen.isAuthenticated());
 		System.out.println(authen.getSurname());
 		System.out.println(authen.getGivenName());
@@ -26,3 +26,4 @@ public class TestAuthenticateLibLDAP {
 		
 	}
 }
+ 
