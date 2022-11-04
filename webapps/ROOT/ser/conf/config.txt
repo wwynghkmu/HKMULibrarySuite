@@ -1,0 +1,9 @@
+URLITEMTYPE~ERSD~The definition of Item Material Type of Aleph for URL Report. Possible values: CRE,EPE,ERSD,ERSJ,ET,EV,EW
+FINYEAR~2019~The financial year the ASR report belongs.
+SVStartDate~20100714~The start date for the parameter order status 'SV' and 'RSV' for ASR Report, in the form YYYYMMDD.
+SVEndDate~20200104~The end date for the parameter order status  'SV' and 'RSV' for ASR Report, in the form YYYYMMDD.
+LCStartDate~20190401~The start date for the parameter order status 'LC' and 'CLS' for ASR Report, in the form YYYYMMDD..
+LCEndDate~20200104~The end date for the parameter order status  'LC' and 'CLS' for ASR Report, in the form YYYYMMDD..
+SCHOOL~A&SS, B&A, E&L, N&HS, S&T, SAO, RO, LIB~All the school codes marked in Aleph for the ASR Excel report sheets. <br> The last one is a special catagory that if a title does not fall into the previous catagories, it falls into the last.
+FORTRIMSCHOOLCODE~4.15 Library Print Serials Renewal, 4.15 Library Standing Order Renewal, 4.15 Library E-Serials Renewal, 4.15 Library One-off Print Serials,4.15 Library One-off E-Serials,4.15 Library - New Print Serials & SO,4.15 Library - New E-Serials~For triming the Z76_NAME (Budget name) by irrelevent strings to obtain the school code in ASR report, delimited by ','. <br> <b> <i> Original: 4.15 Library Print Serials Renewal, 4.15 Library Standing Order Renewal, 4.15 Library E-Serials Renewal,<br> 4.15 Library One-off Print Serials,4.15 Library One-off E-Serials,4.15 Library - New Print Serials & SO,4.15 Library - New E-Serials </i> </b>
+ALLOWUSERS~lasho,lwfung,kwong,kyhui,cfung,skkiang,wwyng,mksum,kyiu,bychan,dkmwong,ryan,cstchan,cscfung~Who will be able to access the system

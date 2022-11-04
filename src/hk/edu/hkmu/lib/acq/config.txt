@@ -1,0 +1,2 @@
+ALLOWUSERS~skkiang,wwyng,bychan,dkmwong,ryan,cstchan,cscfung~Who will be able to access the system
+SYSTEMROOT~D:\Programming\Eclipse\OUHKLibrarySuite\webapps\ROOT\acq~ACQ module system root

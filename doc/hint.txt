@@ -1,0 +1,2 @@
+1. Run Java classes under Linux prompt context: java -cp .:../lib/* -Djava.library.path=../jni/ TestZ3950earchByISBN
+2. Setup Tomcat: insert a line [tomcat]/bin/setclasspath.sh "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:[tomcat]/webapps/ROOT/WEB-INF/jni/:/usr/local/lib/"

@@ -1,0 +1,17 @@
+#!/bin/sh
+echo "This is used by the user "tomcat" to update tomcat webapps."
+rm -rf /data/tomdev/webapps/ROOT/*
+
+cp -rf ./OUHKLibrarySuite/webapps/ROOT/*  /data/tomdev/webapps/ROOT/
+
+mkdir /data/tomdev/webapps/ROOT/WEB-INF
+mkdir /data/tomdev/webapps/ROOT/WEB-INF/classes/
+mkdir /data/tomdev/webapps/ROOT/WEB-INF/lib/
+mkdir /data/tomdev/webapps/ROOT/WEB-INF/jni
+cp -rf ./OUHKLibrarySuite/bin/*  /data/tomdev/webapps/ROOT/WEB-INF/classes/.
+cp -rf ./OUHKLibrarySuite/jar/*  /data/tomdev/webapps/ROOT/WEB-INF/lib/.
+cp -rf ./OUHKLibrarySuite/jni/*  /data/tomdev/webapps/ROOT/WEB-INF/jni/.
+cp -f ./OUHKLibrarySuite/bin/hk/edu/ouhk/lib/bookquery/config2.txt /data/tomdev/webapps/ROOT/WEB-INF/classes/hk/edu/ouhk/lib/bookquery/config.txt
+
+/data/tomdev/bin/shutdown.sh 
+/data/tomdev/bin/startup.sh

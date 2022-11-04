@@ -1,0 +1,14 @@
+Fri Dec 27 12:45:31 HKT 2019	192.168.8.54	WWYNG	ACQ LIB Tools report generated: A&SS-20191201-20191227-(Created-2019-12-27-12-45-31).xlsx
+Thu Jan 02 09:22:46 HKT 2020	192.168.8.54	WWYNG	ACQ LIB Tools report generated: A&SS-20200101-20200102-(Created-2020-01-02-09-22-46).xlsx
+Fri Jan 03 09:20:06 HKT 2020	192.168.8.54	WWYNG	ACQ LIB Tools report deleted: A&SS-20200101-20200102-(Created-2020-01-02-09-22-46).xlsx
+Fri Jan 03 09:20:08 HKT 2020	192.168.8.54	WWYNG	ACQ LIB Tools report deleted: A&SS-20191201-20191227-(Created-2019-12-27-12-45-31).xlsx
+Fri Jan 03 12:36:24 HKT 2020	192.168.8.54	WWYNG	ACQ LIB Tools report generated: A&SS-Monthly Report-Dec 2019.xlsx
+Mon Jan 06 09:03:51 HKT 2020	192.168.8.54	WWYNG	ACQ LIB Tools report generated: A&SS-Monthly Report-Dec 2019.xlsx
+Wed Feb 05 14:06:01 HKT 2020	192.168.8.54	wwyng	ACQ LIB Tools report generated: A&SS-20200201-20200205-(Created-2020-02-05-14-06-01).xlsx
+Wed Feb 05 14:06:07 HKT 2020	192.168.8.54	wwyng	ACQ LIB Tools report generated: A&SS-Monthly Report-Jan 2020.xlsx
+Fri Feb 07 15:48:54 HKT 2020	192.168.8.54	wwyng	ACQ LIB Tools report generated: A&SS-20200201-20200207-(Created-2020-02-07-15-48-54).xlsx
+Fri Feb 07 15:49:01 HKT 2020	192.168.8.54	wwyng	ACQ LIB Tools report generated: A&SS-Monthly Report-Jan 2020.xlsx
+Fri Feb 07 16:08:36 HKT 2020	192.168.8.54	wwyng	ACQ LIB Tools report generated: A&SS-Monthly Report-Jan 2020.xlsx
+Fri Feb 07 21:50:54 HKT 2020	192.168.8.54	wwyng	ACQ LIB Tools report generated: A&SS-20200201-20200207-(Created-2020-02-07-21-50-54).xlsx
+Mon Feb 17 15:15:22 HKT 2020	192.168.8.54	wwyng	ACQ LIB Tools report generated: A&SS-20200201-20200217-(Created-2020-02-17-15-15-22).xlsx
+Mon Feb 17 15:15:28 HKT 2020	192.168.8.54	wwyng	ACQ LIB Tools report generated: A&SS-Monthly Report-Jan 2020.xlsx

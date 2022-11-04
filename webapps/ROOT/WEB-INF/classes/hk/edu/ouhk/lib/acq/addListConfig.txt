@@ -1,0 +1,12 @@
+PRIMOFULLVIEWURLFORM~https://www.lib.ouhk.edu.hk/primo-explore/fulldisplay?context^L&vid^ouhk&search_scope^all&tab^default_tab&lang^en_US&docid^ouhkaleph~Primo full record URL form. (Equal sign is replaced with "^")
+EMAILSENDADDR~LibraryNewArrival@ouhk.edu.hk~Sender email address.
+NEWARRIVALEXCELHEADER~New Title List -~Excel header of the ACQ new arrival list, line 1.
+NEWARRIVALEXCELHEADER2~New Arrivals -~Excel header of the ACQ new arrival list, line 2.
+NEWARRIVALEMAILSUBJECT~Library New Arrival Report~Email subject for the ACQ new arrival list.
+NEWARRIVALEMAILGREETING~Dear LLO/Unit Coordinator,~Email greeting line for the ACQ new arrival list.
+NEWARRIVALEMAILCONTENT1~Attached please find the latest Library New Arrival Report on items recommended by your School/Unit. The items received in current year are listed on separate worksheets by each month. Please help distribute these title lists to your colleagues for their information.~Email content 1st paragraph for the ACQ new arrival list.
+NEWARRIVALEMAILCONTENT2~Should you have any queries, please feel free to contact Ms. Cindy Chan at ext. 6779.~Email content 2nd paragraph for the ACQ new arrival list.
+NEWARRIVALEMAILCONTENTFOREMPTYREPORT~There is no new item received for the captioned period. Thank you for your attention! Should you have any queries, please feel free to contact Ms. Cindy Chan at ext. 6779~Email content for no montly new titles.
+NEWARRIVALEMAILCOMPLIMENTARYCLOSE~Thanks and regards,~Email complimentary close for the ACQ new arrival list.
+NEWARRIVALEMAILCOMPLIMENTARYSIGN~Acquisitions Section, Library~Email signature for the ACQ new arrival list.
+LOGPATH~/data/tomcat/webapps/ROOT/acq/logs/~Set the system log path for internal reference. Change unless you know what you are doing.

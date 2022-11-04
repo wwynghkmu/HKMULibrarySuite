@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+ <!-- FIRST INCREMENTAL -->
+ <!-- INSTANCE:sfxlcl41 -->
+ <record>
+  <leader>-----nas-a2200000z--4500</leader>
+  <controlfield tag="008">171121uuuuuuuuuxx-uu-|------u|----|eng-d</controlfield>
+  <datafield tag="010" ind1="" ind2="">
+   <subfield code="a">sn 99048651 </subfield>
+  </datafield>
+  <datafield tag="245" ind1="" ind2="0">
+   <subfield code="a">Information research</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">INFORM RES</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">INF. RES</subfield>
+  </datafield>
+  <datafield tag="260" ind1="" ind2="">
+   <subfield code="a">ENGLAND</subfield>
+   <subfield code="b">University of Sheffield</subfield>
+  </datafield>
+  <datafield tag="022" ind1="" ind2="">
+   <subfield code="a">1368-1613</subfield>
+  </datafield>
+  <datafield tag="090" ind1="" ind2="">
+   <subfield code="a">954925247099</subfield>
+  </datafield>
+  <datafield tag="866" ind1="" ind2="">
+   <subfield code="a">Available from 2013 volume: 18 issue: 1. </subfield>
+   <subfield code="s">1000000000002565</subfield>
+   <subfield code="t">1000000000001905</subfield>
+   <subfield code="x">LearnTechLib - The Learning and Technology Library Journals:Full Text</subfield>
+   <subfield code="z">3880000000491114</subfield>
+  </datafield>
+  <datafield tag="901" ind1="" ind2="">
+   <subfield code="1">^Z671</subfield>
+  </datafield>
+ </record>
+  <record>
+  <leader>-----nas-a2200000z--4500</leader>
+  <controlfield tag="008">171121uuuuuuuuuxx-uu-|------u|----|eng-d</controlfield>
+  <datafield tag="010" ind1="" ind2="">
+   <subfield code="a">sn 99048651 </subfield>
+  </datafield>
+  <datafield tag="245" ind1="" ind2="0">
+   <subfield code="a">Information research</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">INFORM RES</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">INF. RES</subfield>
+  </datafield>
+  <datafield tag="260" ind1="" ind2="">
+   <subfield code="a">ENGLAND</subfield>
+   <subfield code="b">University of Sheffield</subfield>
+  </datafield>
+  <datafield tag="022" ind1="" ind2="">
+   <subfield code="a">8888-8888</subfield>
+  </datafield>
+  <datafield tag="090" ind1="" ind2="">
+   <subfield code="a">954925247099</subfield>
+  </datafield>
+  <datafield tag="866" ind1="" ind2="">
+   <subfield code="a">Available from 2013 volume: 18 issue: 1. </subfield>
+   <subfield code="s">1000000000002565</subfield>
+   <subfield code="t">1000000000001905</subfield>
+   <subfield code="x">LearnTechLib - The Learning and Technology Library Journals:Full Text</subfield>
+   <subfield code="z">3880000000491114</subfield>
+  </datafield>
+  <datafield tag="901" ind1="" ind2="">
+   <subfield code="1"></subfield>
+  </datafield>
+ </record>
+ <record>
+  <leader>-----nas-a2200000z--4500</leader>
+  <controlfield tag="008">171121uuuuuuuuuxx-uu-|------u|----|eng-d</controlfield>
+  <datafield tag="010" ind1="" ind2="">
+   <subfield code="a">   98664001 </subfield>
+  </datafield>
+  <datafield tag="245" ind1="" ind2="0">
+   <subfield code="a">Journal of Interactive Learning Research</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">JOURNAL OF INTERACTIVE LEARNING</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">JOURNAL OF INTERACTIVE OF LEARNING RESEARCH</subfield>
+  </datafield>
+  <datafield tag="260" ind1="" ind2="">
+   <subfield code="a">Charlottesville, VA</subfield>
+   <subfield code="b">Association for the Advancement of Computing in Ed</subfield>
+  </datafield>
+  <datafield tag="022" ind1="" ind2="">
+   <subfield code="a">1093-023X</subfield>
+  </datafield>
+  <datafield tag="090" ind1="" ind2="">
+   <subfield code="a">958480155093</subfield>
+  </datafield>
+  <datafield tag="866" ind1="" ind2="">
+   <subfield code="a">Available from 1997 volume: 8 issue: 2. </subfield>
+   <subfield code="s">1000000000002565</subfield>
+   <subfield code="t">1000000000001905</subfield>
+   <subfield code="x">LearnTechLib - The Learning and Technology Library Journals:Full Text</subfield>
+   <subfield code="z">1000000000961417</subfield>
+  </datafield>
+  <datafield tag="901" ind1="" ind2="">
+   <subfield code="1">^LB1028.43 .J68</subfield>
+  </datafield>
+ </record>
+ <record>
+  <leader>-----nas-a2200000z--4500</leader>
+  <controlfield tag="008">171121uuuuuuuuuxx-uu-|------u|----|eng-d</controlfield>
+  <datafield tag="010" ind1="" ind2="">
+   <subfield code="a">  2003238276</subfield>
+  </datafield>
+  <datafield tag="245" ind1="" ind2="0">
+   <subfield code="a">Ed-tech review</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">EDUCATIONAL TECHNOLOGY REVIEW</subfield>
+  </datafield>
+  <datafield tag="260" ind1="" ind2="">
+   <subfield code="a">[Norfolk, Va.]</subfield>
+   <subfield code="b">AACE-Association for the Advancement of Computing in Education</subfield>
+  </datafield>
+  <datafield tag="022" ind1="" ind2="">
+   <subfield code="a">1065-6901</subfield>
+  </datafield>
+  <datafield tag="090" ind1="" ind2="">
+   <subfield code="a">958480255675</subfield>
+  </datafield>
+  <datafield tag="866" ind1="" ind2="">
+   <subfield code="a">Available from 1999 volume: 1 issue: 11 until 2009 volume: 17 issue: 4. </subfield>
+   <subfield code="s">1000000000002565</subfield>
+   <subfield code="t">1000000000001905</subfield>
+   <subfield code="x">LearnTechLib - The Learning and Technology Library Journals:Full Text</subfield>
+   <subfield code="z">3780000000159989</subfield>
+  </datafield>
+ </record>
+ <record>
+  <leader>-----nas-a2200000z--4500</leader>
+  <controlfield tag="008">171121uuuuuuuuuxx-uu-|------u|----|eng-d</controlfield>
+  <datafield tag="010" ind1="" ind2="">
+   <subfield code="a">   94659148 </subfield>
+  </datafield>
+  <datafield tag="245" ind1="" ind2="0">
+   <subfield code="a">Journal of Technology and Teacher Education</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">JOURNAL OF TECHNOLOGY AND TEACHER</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">JOURNAL OF TECHNOLOGY &amp; TEACHER EDUCATION</subfield>
+  </datafield>
+  <datafield tag="260" ind1="" ind2="">
+   <subfield code="a">Charlottesville, VA</subfield>
+   <subfield code="b">Association for the Advancement of Computing in Education</subfield>
+  </datafield>
+  <datafield tag="022" ind1="" ind2="">
+   <subfield code="a">1059-7069</subfield>
+  </datafield>
+  <datafield tag="776" ind1="" ind2="">
+   <subfield code="x">1943-5924</subfield>
+  </datafield>
+  <datafield tag="090" ind1="" ind2="">
+   <subfield code="a">958480269940</subfield>
+  </datafield>
+  <datafield tag="866" ind1="" ind2="">
+   <subfield code="a">Available from 1997 volume: 5 issue: 4. </subfield>
+   <subfield code="s">1000000000002565</subfield>
+   <subfield code="t">1000000000001905</subfield>
+   <subfield code="x">LearnTechLib - The Learning and Technology Library Journals:Full Text</subfield>
+   <subfield code="z">1000000000961418</subfield>
+  </datafield>
+  <datafield tag="901" ind1="" ind2="">
+   <subfield code="1">^LB1028.3</subfield>
+  </datafield>
+ </record>
+ <record>
+  <leader>-----nas-a2200000z--4500</leader>
+  <controlfield tag="008">171121uuuuuuuuuxx-uu-|------u|----|eng-d</controlfield>
+  <datafield tag="010" ind1="" ind2="">
+   <subfield code="a">   91662340 </subfield>
+  </datafield>
+  <datafield tag="245" ind1="" ind2="0">
+   <subfield code="a">Journal of Educational Multimedia and Hypermedia</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">JOURNAL OF EDUCATIONAL MULTIMEDIA &amp; HYPERMEDIA</subfield>
+  </datafield>
+  <datafield tag="260" ind1="" ind2="">
+   <subfield code="a">Charlottesville, VA</subfield>
+   <subfield code="b">Association for the Advancement of Computing in Education</subfield>
+  </datafield>
+  <datafield tag="022" ind1="" ind2="">
+   <subfield code="a">1055-8896</subfield>
+  </datafield>
+  <datafield tag="776" ind1="" ind2="">
+   <subfield code="x">1943-5916</subfield>
+  </datafield>
+  <datafield tag="090" ind1="" ind2="">
+   <subfield code="a">958480290379</subfield>
+  </datafield>
+  <datafield tag="866" ind1="" ind2="">
+   <subfield code="a">Available from 1996 volume: 5 issue: 2. </subfield>
+   <subfield code="s">1000000000002565</subfield>
+   <subfield code="t">1000000000001905</subfield>
+   <subfield code="x">LearnTechLib - The Learning and Technology Library Journals:Full Text</subfield>
+   <subfield code="z">1000000000961416</subfield>
+  </datafield>
+  <datafield tag="901" ind1="" ind2="">
+   <subfield code="1">^LB1028.5 .J618</subfield>
+  </datafield>
+ </record>
+ <record>
+  <leader>-----nas-a2200000z--4500</leader>
+  <controlfield tag="008">171121uuuuuuuuuxx-uu-|------u|----|eng-d</controlfield>
+  <datafield tag="010" ind1="" ind2="">
+   <subfield code="a">   82645691 </subfield>
+  </datafield>
+  <datafield tag="245" ind1="" ind2="4">
+   <subfield code="a">The Journal of Computers in Mathematics and Science Teaching</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">JOURNAL OF COMPUTERS IN MATHEMATICS AND SCIENCE TEACHING</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">JOURNAL OF COMPUTERS IN MATHEMATICS &amp; SCIENCE TEACHING, THE</subfield>
+  </datafield>
+  <datafield tag="260" ind1="" ind2="">
+   <subfield code="a">[Austin, TX]</subfield>
+   <subfield code="b">[Association for Computers in Mathematics and Science Teaching]</subfield>
+  </datafield>
+  <datafield tag="022" ind1="" ind2="">
+   <subfield code="a">0731-9258</subfield>
+  </datafield>
+  <datafield tag="776" ind1="" ind2="">
+   <subfield code="x">1943-5908</subfield>
+  </datafield>
+  <datafield tag="090" ind1="" ind2="">
+   <subfield code="a">958480291383</subfield>
+  </datafield>
+  <datafield tag="866" ind1="" ind2="">
+   <subfield code="a">Available from 1981 volume: 1 issue: 1. </subfield>
+   <subfield code="s">1000000000002565</subfield>
+   <subfield code="t">1000000000001905</subfield>
+   <subfield code="x">LearnTechLib - The Learning and Technology Library Journals:Full Text</subfield>
+   <subfield code="z">1000000000961415</subfield>
+  </datafield>
+  <datafield tag="901" ind1="" ind2="">
+   <subfield code="1">^QA20.C65 J68</subfield>
+  </datafield>
+ </record>
+ <record>
+  <leader>-----nas-a2200000z--4500</leader>
+  <controlfield tag="008">171121uuuuuuuuuxx-uu-|------u|----|eng-d</controlfield>
+  <datafield tag="010" ind1="" ind2="">
+   <subfield code="a">sn 98005030 </subfield>
+  </datafield>
+  <datafield tag="245" ind1="" ind2="0">
+   <subfield code="a">Information technology in childhood education annual</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">INFORMATION TECHNOLOGY IN CHILDHOOD</subfield>
+  </datafield>
+  <datafield tag="260" ind1="" ind2="">
+   <subfield code="a">Charlottesville, VA</subfield>
+   <subfield code="b">Association for the Advancement of Computing in Ed</subfield>
+  </datafield>
+  <datafield tag="022" ind1="" ind2="">
+   <subfield code="a">1522-8185</subfield>
+  </datafield>
+  <datafield tag="090" ind1="" ind2="">
+   <subfield code="a">962824994225</subfield>
+  </datafield>
+  <datafield tag="866" ind1="" ind2="">
+   <subfield code="a">Available from 1999 volume: 1999 issue: 1 until 2004 volume: 2004 issue: 1. </subfield>
+   <subfield code="s">1000000000002565</subfield>
+   <subfield code="t">1000000000001905</subfield>
+   <subfield code="x">LearnTechLib - The Learning and Technology Library Journals:Full Text</subfield>
+   <subfield code="z">1000000000961412</subfield>
+  </datafield>
+ </record>
+ <record>
+  <leader>-----nas-a2200000z--4500</leader>
+  <controlfield tag="008">171121uuuuuuuuuxx-uu-|------u|----|eng-d</controlfield>
+  <datafield tag="010" ind1="" ind2="">
+   <subfield code="a">   97664010 </subfield>
+  </datafield>
+  <datafield tag="245" ind1="" ind2="0">
+   <subfield code="a">International journal of educational telecommunications</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">INTERNATIONAL JOURNAL OF EDUCATIONAL</subfield>
+  </datafield>
+  <datafield tag="260" ind1="" ind2="">
+   <subfield code="a">Charlottesville, VA</subfield>
+   <subfield code="b">Association for the Advancement of Computing in Education</subfield>
+  </datafield>
+  <datafield tag="022" ind1="" ind2="">
+   <subfield code="a">1077-9124</subfield>
+  </datafield>
+  <datafield tag="776" ind1="" ind2="">
+   <subfield code="x">1943-5959</subfield>
+  </datafield>
+  <datafield tag="090" ind1="" ind2="">
+   <subfield code="a">110978984350173</subfield>
+  </datafield>
+  <datafield tag="866" ind1="" ind2="">
+   <subfield code="a">Available from 1995 volume: 1 issue: 1 until 2001 volume: 7 issue: 4. </subfield>
+   <subfield code="s">1000000000002565</subfield>
+   <subfield code="t">1000000000001905</subfield>
+   <subfield code="x">LearnTechLib - The Learning and Technology Library Journals:Full Text</subfield>
+   <subfield code="z">1000000000961413</subfield>
+  </datafield>
+ </record>
+ <record>
+  <leader>-----nas-a2200000z--4500</leader>
+  <controlfield tag="008">171121uuuuuuuuuxx-uu-|------u|----|eng-d</controlfield>
+  <datafield tag="010" ind1="" ind2="">
+   <subfield code="a">   95649669 </subfield>
+  </datafield>
+  <datafield tag="245" ind1="" ind2="0">
+   <subfield code="a">TESL-EJ</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">TEACHING ENGLISH AS A SECOND LANGUAGE</subfield>
+  </datafield>
+  <datafield tag="260" ind1="" ind2="">
+   <subfield code="a">Berkeley, CA</subfield>
+   <subfield code="b">TESL-EJ</subfield>
+  </datafield>
+  <datafield tag="022" ind1="" ind2="">
+   <subfield code="a">1072-4303</subfield>
+  </datafield>
+  <datafield tag="090" ind1="" ind2="">
+   <subfield code="a">110978984444553</subfield>
+  </datafield>
+  <datafield tag="866" ind1="" ind2="">
+   <subfield code="a">Available from 2005 volume: 8 issue: 4. </subfield>
+   <subfield code="s">1000000000002565</subfield>
+   <subfield code="t">1000000000001905</subfield>
+   <subfield code="x">LearnTechLib - The Learning and Technology Library Journals:Full Text</subfield>
+   <subfield code="z">3880000000491133</subfield>
+  </datafield>
+  <datafield tag="901" ind1="" ind2="">
+   <subfield code="1">SCHOOLEL</subfield>
+  </datafield>
+ </record>
+ <record>
+  <leader>-----nas-a2200000z--4500</leader>
+  <controlfield tag="008">171121uuuuuuuuuxx-uu-|------u|----|eng-d</controlfield>
+  <datafield tag="010" ind1="" ind2="">
+   <subfield code="a">   93664085 </subfield>
+  </datafield>
+  <datafield tag="245" ind1="" ind2="4">
+   <subfield code="a">The Journal of the California Association of Professors of Educational Administration</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">J. CALIF. ASSOC. PROFR. EDUC. ADM.</subfield>
+  </datafield>
+  <datafield tag="260" ind1="" ind2="">
+   <subfield code="b">Caddo Gap Press</subfield>
+  </datafield>
+  <datafield tag="022" ind1="" ind2="">
+   <subfield code="a">1064-4474</subfield>
+  </datafield>
+  <datafield tag="090" ind1="" ind2="">
+   <subfield code="a">110985822459534</subfield>
+  </datafield>
+  <datafield tag="866" ind1="" ind2="">
+   <subfield code="a">Available from 2004 volume: 16. </subfield>
+   <subfield code="s">1000000000002565</subfield>
+   <subfield code="t">1000000000001905</subfield>
+   <subfield code="x">LearnTechLib - The Learning and Technology Library Journals:Full Text</subfield>
+   <subfield code="z">3880000000491107</subfield>
+  </datafield>
+ </record>
+ </collection>

@@ -1,0 +1,2 @@
+09:29:21,715 WARN  [org.apache.http.impl.auth.HttpAuthenticator] NEGOTIATE authentication error: No valid credentials provided (Mechanism level: No valid credentials provided (Mechanism level: Failed to find any Kerberos tgt))
+ 

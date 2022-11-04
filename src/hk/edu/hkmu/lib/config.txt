@@ -1,0 +1,5 @@
+LDAPURL~ldap://uasldap.lib.ouhk.edu.hk:389
+LDAPBASE~ou=People,o=lib.ouhk.edu.hk
+LOGPATH~/data/tomdev/webapps/ROOT/logs/
+FILEPROTECTIONKEY~32879238974sxdutllxchsi5233423424233423aabcdefaudfsfasf8325~The key used to protext the generated reports, lest other accessing the file via a full URL.
+ALLOWUSERS~wwyng,mksum,kyiu,skkiang~Who will be able to access the system

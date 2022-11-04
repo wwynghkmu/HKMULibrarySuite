@@ -1,0 +1,7 @@
+SVStartDate=20190301=The start date for the parameter order status 'SV' and 'RSV'. In the form YYYYMMDD.
+SVEndDate=20190412=The end date for the parameter order status  'SV' and 'RSV'. In the form YYYYMMDD.
+LCStartDate=20180401=The start date for the parameter order status 'LC'. In the form YYYYMMDD.
+LCEndDate=20190412=The end date for the parameter order status  'LC'. In the form YYYYMMDD.
+SCHOOL=B&A, A&SS, E&L, N&HS, SAO, S&T, RO, LIB=All the school codes marked in Aleph for the ASR Excel report sheets. <br> The last one is defined as other that if a title does not fall into the previous catagories, it falls into the last.
+FORTRIMSCHOOLCODE=4.15 Library Print Serials Renewal, 4.15 Library Standing Order Renewal, 4.15 Library E-Serials Renewal, 4.15 Library One-off Print Serials,4.15 Library One-off E-Serials,4.15 Library - New Print Serials & SO,4.15 Library - New E-Serials=For triming the z76_name (Budget name) by irrelevent strings to obtain the school code in ASR report. Delimited by ','. <br> <b> <i> Original: 4.15 Library Print Serials Renewal, 4.15 Library Standing Order Renewal, 4.15 Library E-Serials Renewal,<br> 4.15 Library One-off Print Serials,4.15 Library One-off E-Serials,4.15 Library - New Print Serials & SO,4.15 Library - New E-Serials </i> </b>
+BUDGETCODEFORM=SSS-BBBBBB-YYYY, SSS-BBBBBB-S-YYYY, SSS-BBBBBB-S-S-YYYY=Budget code forms. 'S' for school code, 'B' for budget code, and 'Y' for year. Delimited by ','. <br> <b> <i> Original: SSS-BBBBBB-YYYY, SSS-BBBBBB-S-YYYY, SSS-BBBBBB-S-S-YYYY </i> </b>

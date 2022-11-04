@@ -1,0 +1,9 @@
+B&A@Lee Shau Kee School of Business and Administration~320-746115,320-746120,320-746025~wwyng@ouhk.edu.hk
+E&L@School of Education and Languages~340-746115,340-746120,340-746025~wwyng@ouhk.edu.hk
+A&SS@School of Arts and Social Sciences~310-746115,310-746120,310-746025,3107461155,3107461205,3107460255~wwyng@ouhk.edu.hk
+S&T@School of Science and Technology~350-746115,350-746120,350-746025,3507461155,3507461205,3507460255~wwyng@ouhk.edu.hk
+N&HS@School of Nursing and Health Studies~3527461155,3527461205,3527460255~wwyng@ouhk.edu.hk
+LIB@Library~230-746115-20,230-746120-2-20,230-746120-3-20~wwyng@ouhk.edu.hk
+RO@Research Office~230-746025-2-20,230-746115-2-20,230-746120-22-20,230-746120-32-20~wwyng@ouhk.edu.hk
+RP@Library - Replacement~230-746025-3-20,230-746115-3-20,230-746120-23-20,230-746120-33-20~wwyng@ouhk.edu.hk
+SAO@Student Affairs Office~230-746025-4-20,230-746115-4-20,230-746120-24-20,230-746120-34-20~wwyng@ouhk.edu.hk

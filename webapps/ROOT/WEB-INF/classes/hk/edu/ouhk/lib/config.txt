@@ -1,0 +1,4 @@
+LDAPURL~ldap://uasldap.lib.ouhk.edu.hk:389~LDAP authenication server URL.
+LDAPBASE~ou=People,o=lib.ouhk.edu.hk~LDAP Server query base.
+LOGPATH~/data/tomdev/webapps/ROOT/logs/~Root system log path.
+ALLOWUSERS~wwyng,mksum,kyiu,skkiang~Who will be able to access the system

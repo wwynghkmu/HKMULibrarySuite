@@ -1,0 +1,7 @@
+SHAREPOINTHOST~sharepoint.ouhk.edu.hk~The host address of the share point
+SHAREPOINTFILENAME~/sites/LIB/myLIB/Documents/Temp/Leave_Record.xlsx~The SP file path for downloading.
+SHAREPOINTAPIFUNCTION~/sites/LIB/myLIB/_api/web/GetFileByServerRelativeUrl('FILENAME')/$value~The REST API function path of the SP.
+REPORTFOLDER~/data/tomdev/webapps/ROOT/adm/reports/staffLeaveMasterReport~Report folder.
+DOWNLOADFOLDER~/data/tomdev/webapps/ROOT/adm/reports/downloadedExcelfiles~Temp file for storing folder.
+REPORTFILE~Master_Leave_Record.xlsx~Master report file.
+ALLOWUSERS~wwyng,mksum,kyiu,skkiang,pkam,owent,lwfung,wmchung,mkmak~Who will be able to access the system

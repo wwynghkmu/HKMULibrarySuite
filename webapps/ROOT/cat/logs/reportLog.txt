@@ -1,0 +1,148 @@
+Thu Jan 09 14:58:22 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-11-08-16-24-40-SFXout.txt
+
+Thu Jan 09 14:58:24 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-11-08-16-24-40-SFXNotObtained.txt
+
+Thu Jan 09 14:58:27 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-11-08-16-24-40-SFXEnrichLog.txt
+
+Thu Jan 09 14:58:49 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-11-08-16-21-55.xml-marc
+
+Thu Jan 09 14:58:50 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-01-25-16-47-59.xml-marc
+
+Thu Jan 09 14:58:53 HKT 2020	192.168.8.54	wwyng	Request deleted:2018-11-19-15-57-39.xml-marc
+
+Thu Jan 09 14:58:56 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-12-16-17-48-38.xlsx
+
+Thu Jan 09 14:58:59 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-12-16-17-00-31.xlsx
+
+Thu Jan 09 14:59:04 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-12-16-17-00-19.xlsx
+
+Thu Jan 09 14:59:05 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-12-16-16-00-45.xlsx
+
+Thu Jan 09 14:59:07 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-12-13-09-05-54.xlsx
+
+Thu Jan 09 14:59:10 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-12-12-17-45-48.xlsx
+
+Thu Jan 09 14:59:13 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-12-12-17-19-49.xlsx
+
+Thu Jan 09 14:59:17 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-12-12-16-55-24.xlsx
+
+Thu Jan 09 14:59:21 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-12-12-16-50-09.xlsx
+
+Thu Jan 09 14:59:22 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-12-12-16-14-31.xlsx
+
+Thu Jan 09 14:59:24 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-12-12-16-03-21.xlsx
+
+Thu Jan 09 14:59:26 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-12-06-17-04-39.xlsx
+
+Thu Jan 09 14:59:29 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-12-06-16-37-51.xlsx
+
+Thu Jan 09 14:59:32 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-12-06-16-03-01.xlsx
+
+Thu Jan 09 14:59:36 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-12-06-15-47-52.xlsx
+
+Thu Jan 09 14:59:39 HKT 2020	192.168.8.54	wwyng	Request deleted:2019-12-06-14-26-02.xlsx
+
+Thu Jan 09 15:00:07 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-16-17-51-04-summaryStat.txt
+
+Thu Jan 09 15:00:09 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-16-17-51-04-outconvertRaw.mrc
+
+Thu Jan 09 15:00:11 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-16-17-51-04-outconvert.mrk
+
+Thu Jan 09 15:01:08 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-16-17-02-56-summaryStat.txt
+Thu Jan 09 15:01:09 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-16-17-02-56-outconvertRaw.mrc
+Thu Jan 09 15:01:12 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-16-17-02-56-outconvert.mrk
+Thu Jan 09 15:01:27 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-16-16-06-05-summaryStat.txt
+Thu Jan 09 15:01:30 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-16-16-06-05-outconvertRaw.mrc
+Thu Jan 09 15:01:33 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-16-16-06-05-outconvert.mrk
+Thu Jan 09 15:01:36 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-13-09-08-24-summaryStat.txt
+Thu Jan 09 15:01:39 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-13-09-08-24-outconvertRaw.mrc
+Thu Jan 09 15:01:42 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-13-09-08-24-outconvert.mrk
+Thu Jan 09 15:01:45 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-17-48-52-summaryStat.txt
+Thu Jan 09 15:01:48 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-17-48-52-outconvertRaw.mrc
+Thu Jan 09 15:01:51 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-17-48-52-outconvert.mrk
+Thu Jan 09 15:01:54 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-17-22-12-summaryStat.txt
+Thu Jan 09 15:01:55 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-17-22-12-outconvertRaw.mrc
+Thu Jan 09 15:01:57 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-17-22-12-outconvert.mrk
+Thu Jan 09 15:02:04 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-16-58-22-summaryStat.txt
+Thu Jan 09 15:02:09 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-16-58-22-outconvertRaw.mrc
+Thu Jan 09 15:02:11 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-16-58-22-outconvert.mrk
+Thu Jan 09 15:02:22 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-16-52-39-summaryStat.txt
+Thu Jan 09 15:02:27 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-16-52-39-outconvertRaw.mrc
+Thu Jan 09 15:02:28 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-16-52-39-outconvert.mrk
+Thu Jan 09 15:02:33 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-16-17-59-summaryStat.txt
+Thu Jan 09 15:02:38 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-16-17-59-outconvertRaw.mrc
+Thu Jan 09 15:02:40 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-16-17-59-outconvert.mrk
+Thu Jan 09 15:02:43 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-16-07-07-summaryStat.txt
+Thu Jan 09 15:02:44 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-16-07-07-outconvertRaw.mrc
+Thu Jan 09 15:02:47 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-12-16-07-07-outconvert.mrk
+Thu Jan 09 15:02:49 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-06-17-23-52-summaryStat.txt
+Thu Jan 09 15:02:51 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-06-17-23-52-outconvertRaw.mrc
+Thu Jan 09 15:02:54 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-06-17-23-52-outconvert.mrk
+Thu Jan 09 15:02:57 HKT 2020	192.168.8.54	wwyng	Report deleted:2018-11-19-16-00-29-SFXout.txt
+Thu Jan 09 15:03:00 HKT 2020	192.168.8.54	wwyng	Report deleted:2018-11-19-16-00-29-SFXEnrichLog.txt
+Thu Jan 09 15:03:07 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-06-16-40-21-summaryStat.txt
+Thu Jan 09 15:03:18 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-06-16-40-21-outconvertRaw.mrc
+Thu Jan 09 15:03:21 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-06-16-40-21-outconvert.mrk
+Thu Jan 09 15:03:22 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-06-16-05-32-summaryStat.txt
+Thu Jan 09 15:03:26 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-06-16-05-32-outconvertRaw.mrc
+Thu Jan 09 15:03:26 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-06-16-05-32-outconvert.mrk
+Thu Jan 09 15:03:28 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-06-15-50-24-summaryStat.txt
+Thu Jan 09 15:03:33 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-06-15-50-24-outconvertRaw.mrc
+Thu Jan 09 15:03:36 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-06-15-50-24-outconvert.mrk
+Thu Jan 09 15:03:40 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-06-14-29-36-summaryStat.txt
+Thu Jan 09 15:03:42 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-06-14-29-36-outconvertRaw.mrc
+Thu Jan 09 15:03:44 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-06-14-29-36-outconvert.mrk
+Thu Jan 09 15:03:45 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-05-15-50-38-summaryStat.txt
+Thu Jan 09 15:03:48 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-05-15-50-38-outconvertRaw.mrc
+Thu Jan 09 15:03:52 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-05-15-50-38-outconvert.mrk
+Thu Jan 09 15:03:55 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-03-17-30-58-summaryStat.txt
+Thu Jan 09 15:03:57 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-03-17-30-58-outconvertRaw.mrc
+Thu Jan 09 15:04:01 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-03-17-30-58-outconvert.mrk
+Thu Jan 09 15:04:58 HKT 2020	192.168.8.54	wwyng	Report deleted:2019-12-03-17-30-58-outconvert.mrk
+Thu Jan 09 15:06:33 HKT 2020	192.168.8.54	wwyng	Request started:2020-01-09-15-06-33.xlsx
+Thu Jan 09 15:09:08 HKT 2020	192.168.8.54	wwyng	Report generated for:2020-01-09-15-06-33.xlsx
+Thu Jan 09 15:06:46 HKT 2020	192.168.8.54	wwyng	Request started:2020-01-09-15-06-44.xml-marc
+Thu Jan 09 15:09:46 HKT 2020	192.168.8.54	wwyng	Report generated for:2020-01-09-15-06-44.xml-marc
+Wed Jan 22 14:28:27 HKT 2020	192.168.8.54	wwyng	Request started:2020-01-22-14-28-26.xlsx
+Wed Jan 22 14:30:40 HKT 2020	192.168.8.54	wwyng	Report generated for:2020-01-22-14-28-26.xlsx
+Wed Jan 22 14:57:32 HKT 2020	192.168.8.223	kyshum	Request started:2020-01-22-14-57-32.xlsx
+Wed Jan 22 15:01:11 HKT 2020	192.168.8.223	kyshum	Report generated for:2020-01-22-14-57-32.xlsx
+Wed Feb 05 09:43:51 HKT 2020	192.168.8.54	wwyng	Request started:2020-02-05-09-43-51.xlsx
+Wed Feb 05 09:46:21 HKT 2020	192.168.8.54	wwyng	Report generated for:2020-02-05-09-43-51.xlsx
+Wed Feb 05 09:49:00 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-01-22-15-01-10-summaryStat.txt
+Wed Feb 05 09:49:02 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-01-22-15-01-10-outconvertRaw.mrc
+Wed Feb 05 09:49:02 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-01-22-15-01-10-outconvert.mrk
+Wed Feb 05 09:49:03 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-01-22-14-30-40-summaryStat.txt
+Wed Feb 05 09:49:04 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-01-22-14-30-40-outconvertRaw.mrc
+Wed Feb 05 09:49:04 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-01-22-14-30-40-outconvert.mrk
+Wed Feb 05 09:49:05 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-01-09-15-09-08-summaryStat.txt
+Wed Feb 05 09:49:06 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-01-09-15-09-08-outconvertRaw.mrc
+Wed Feb 05 09:49:07 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-01-09-15-09-08-outconvert.mrk
+Wed Feb 05 09:48:52 HKT 2020	192.168.8.54	wwyng	Request started:2020-02-05-09-48-52.xlsx
+Wed Feb 05 09:51:23 HKT 2020	192.168.8.54	wwyng	Report generated for:2020-02-05-09-48-52.xlsx
+Wed Feb 05 09:54:02 HKT 2020	192.168.8.54	wwyng	Request started:2020-02-05-09-54-02.xlsx
+Wed Feb 05 09:56:28 HKT 2020	192.168.8.54	wwyng	Report generated for:2020-02-05-09-54-02.xlsx
+Wed Feb 05 09:57:33 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-01-09-15-09-08-outconvert.mrk
+Wed Feb 05 09:57:35 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-02-05-09-46-21-outconvert.mrk
+Wed Feb 05 09:57:36 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-02-05-09-46-21-outconvertRaw.mrc
+Wed Feb 05 09:57:36 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-02-05-09-46-21-summaryStat.txt
+Wed Feb 05 09:57:37 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-02-05-09-51-23-outconvert.mrk
+Wed Feb 05 09:57:38 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-02-05-09-51-23-outconvertRaw.mrc
+Wed Feb 05 09:57:38 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-02-05-09-51-23-summaryStat.txt
+Wed Feb 05 09:57:26 HKT 2020	192.168.8.54	wwyng	Request started:2020-02-05-09-57-25.xml-marc
+Wed Feb 05 10:00:28 HKT 2020	192.168.8.54	wwyng	Report generated for:2020-02-05-09-57-25.xml-marc
+Wed Feb 05 10:01:18 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-01-09-15-09-09-SFXout.txt
+Wed Feb 05 10:01:20 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-01-09-15-09-09-SFXNotObtained.txt
+Wed Feb 05 10:01:21 HKT 2020	192.168.8.54	wwyng	Report deleted:2020-01-09-15-09-09-SFXEnrichLog.txt
+Fri Feb 07 15:55:42 HKT 2020	192.168.8.54	wwyng	Request started:2020-02-07-15-55-42.xlsx
+Fri Feb 07 15:58:16 HKT 2020	192.168.8.54	wwyng	Report generated for:2020-02-07-15-55-42.xlsx
+Fri Feb 07 16:07:17 HKT 2020	192.168.8.54	wwyng	Request started:2020-02-07-16-07-16.xlsx
+Fri Feb 07 16:09:43 HKT 2020	192.168.8.54	wwyng	Report generated for:2020-02-07-16-07-16.xlsx
+Fri Feb 07 16:13:41 HKT 2020	192.168.8.54	wwyng	Request started:2020-02-07-16-13-40.xml-marc
+Fri Feb 07 16:16:37 HKT 2020	192.168.8.54	wwyng	Report generated for:2020-02-07-16-13-40.xml-marc
+Thu Feb 13 17:18:07 HKT 2020	192.168.8.54	wwyng	Request started:2020-02-13-17-18-07.xlsx
+Thu Feb 13 17:20:41 HKT 2020	192.168.8.54	wwyng	Report generated for:2020-02-13-17-18-07.xlsx
+Fri Feb 14 12:20:59 HKT 2020	192.168.8.54	wwyng	Request started:2020-02-14-12-20-59.xlsx
+Fri Feb 14 12:23:32 HKT 2020	192.168.8.54	wwyng	Report generated for:2020-02-14-12-20-59.xlsx
+Fri Feb 14 12:38:36 HKT 2020	192.168.8.54	wwyng	Request started:2020-02-14-12-38-36.xml-marc
+Fri Feb 14 12:41:36 HKT 2020	192.168.8.54	wwyng	Report generated for:2020-02-14-12-38-36.xml-marc

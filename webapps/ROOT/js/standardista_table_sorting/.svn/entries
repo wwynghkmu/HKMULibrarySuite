@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="7"
+   name=""
+   committed-date="2006-04-02T18:37:16.477608Z"
+   url="https://svn.sourceforge.net/svnroot/wwm-sts/trunk/standardista_table_sorting"
+   last-author="workingwithme"
+   kind="dir"
+   uuid="c80c3a3c-7610-0410-92b5-b060cfc25293"
+   repos="https://svn.sourceforge.net/svnroot/wwm-sts"
+   revision="8"/>
+<entry
+   committed-rev="3"
+   name="common.js"
+   text-time="2006-04-17T00:31:40.000000Z"
+   committed-date="2006-03-16T19:26:19.000000Z"
+   checksum="60070b664e844a9dd2159a94fec7b485"
+   last-author="workingwithme"
+   kind="file"
+   prop-time="2006-04-17T00:31:36.000000Z"/>
+<entry
+   committed-rev="9"
+   name="css.js"
+   text-time="2006-04-17T12:23:40.000000Z"
+   committed-date="2006-04-17T12:24:11.129209Z"
+   checksum="dbf8820608c6d6d569a309525baca3be"
+   last-author="workingwithme"
+   kind="file"
+   prop-time="2006-04-17T00:31:37.000000Z"
+   revision="9"/>
+<entry
+   committed-rev="3"
+   name="timer.html"
+   text-time="2006-04-17T00:31:40.000000Z"
+   committed-date="2006-03-16T19:26:19.000000Z"
+   checksum="c0cf1f26b5737110162c363f9c12ba91"
+   last-author="workingwithme"
+   kind="file"
+   prop-time="2006-04-17T00:31:37.000000Z"/>
+<entry
+   committed-rev="13"
+   name="standardista-table-sorting.js"
+   text-time="2006-04-18T05:56:14.000000Z"
+   committed-date="2006-04-18T06:00:09.660210Z"
+   checksum="8fea8902d462c11044e49319abfd299b"
+   last-author="workingwithme"
+   kind="file"
+   prop-time="2006-04-17T00:31:39.000000Z"
+   revision="13"/>
+<entry
+   committed-rev="13"
+   name="CHANGELOG.txt"
+   text-time="2006-04-18T05:57:44.000000Z"
+   committed-date="2006-04-18T06:00:09.660210Z"
+   checksum="28344ab33a0096314c26db93c218379a"
+   last-author="workingwithme"
+   kind="file"
+   prop-time="2006-04-17T00:31:39.000000Z"
+   revision="13"/>
+<entry
+   committed-rev="3"
+   name="style.css"
+   text-time="2006-04-17T00:31:40.000000Z"
+   committed-date="2006-03-16T19:26:19.000000Z"
+   checksum="dca1038dc80ef735e8853e6fb498c703"
+   last-author="workingwithme"
+   kind="file"
+   prop-time="2006-04-17T00:31:39.000000Z"/>
+<entry
+   committed-rev="13"
+   name="index.html"
+   text-time="2006-04-18T05:58:33.000000Z"
+   committed-date="2006-04-18T06:00:09.660210Z"
+   checksum="e1ac34515e7bfe676c9d01e348dbc3b1"
+   last-author="workingwithme"
+   kind="file"
+   prop-time="2006-04-17T00:31:39.000000Z"
+   revision="13"/>
+<entry
+   committed-rev="7"
+   name="README.txt"
+   text-time="2006-04-17T00:31:40.000000Z"
+   committed-date="2006-04-02T18:37:16.477608Z"
+   checksum="b4ee533b57367959b9cc9123d67ad899"
+   last-author="workingwithme"
+   kind="file"
+   prop-time="2006-04-17T00:31:39.000000Z"/>
+</wc-entries>

@@ -1,0 +1,91 @@
+Thu Jan 09 16:01:40 HKT 2020	192.168.8.54	wwyng	CAT LIB Tools config updated: 
+ALLOWUSERS~skkiang,wwyng,mksum,kyiu,kyshum,mkmak~Who will be able to access the system
+
+
+Thu Jan 09 16:01:47 HKT 2020	192.168.8.54	wwyng	CAT LIB Tools config updated: 
+COPYCAT_QUERY_LIST~JULAC,USTL,LCCLCC,MIT,CAMBR,OXFORD,NKFUST,BLLNU,HKSYU~is the whole list of institute codes of libraries to make Z39.50 query to. The Z39.50 server details associated with the institute code must be set before, in bqconfig.txt, for this setup to work. Avaiilable codes: LCC,WISCONSIN,ARLINGTON,MIT,CAMBRI,OXFORD,WASEDA,SINICA,YMING,NKFUST,BL,HKSYU,USTL,POLYU,HKBU,LNU,CUHK,CITYU,IED,HKU.
+EXISTTAG_FOR_MATCHING~ALL~defines the MARCtags that only if the return records contain such tags, CopyCATprogram will include the records on reports; the first 3 chars is aMARC tag value, the fourth is a subfield or control field indicator"_" which follows a control number; "ALL" will disable this function.e.g. "300a" means records will be retrived only if the records haveMARC tag 300 subfield a; "6XX_0" means records will be retrived onlyif records have MARC tag starting with "6" and have 2nd indicatorfield "0"
+TOT_DIGIT_RECORDID~9~defines totalnumber of the ILS record ID, and add "0" to the left if ILS record IDsdon
+CORRUPT_RECORD_STRING~}{,{{{~File "ccconfig.txt" ("CORRUPT_RECORD_STRING") defines strings which determine if a retued record, which contains the string(s), is corrupted.
+conNRm880~YES~Convert 880 CJKtitles to the original field, and remove all 880 lines?
+remove0XXexcept008~YES~Remove all the tags start with 00X except 008?
+rm9XX~YES~Remove all tags start with 9?
+rm856~YES~Remove 856 tag?
+con001~YES~Add 001 tag which contains your ILS
+simpChiToTradChin~YES~Convert simp chinese to trad chinese?
+removeLeader~NO~Remove leader?
+addEqualSign~YES~add the sign euqality between MARC Tag and its value?
+
+
+Wed Feb 05 17:34:22 HKT 2020	192.168.8.54	wwyng	CAT LIB Tools config updated: 
+COPYCAT_QUERY_LIST~JULAC,USTL,LCCLCC,MIT,CAMBR,OXFORD,NKFUST,BLLNU,HKSYU~is the whole list of institute codes of libraries to make Z39.50 query to. The Z39.50 server details associated with the institute code must be set before, in bqconfig.txt, for this setup to work. Avaiilable codes: LCC,WISCONSIN,ARLINGTON,MIT,CAMBRI,OXFORD,WASEDA,SINICA,YMING,NKFUST,BL,HKSYU,USTL,POLYU,HKBU,LNU,CUHK,CITYU,IED,HKU.
+EXISTTAG_FOR_MATCHING~ALL~defines the MARCtags that only if the return records contain such tags, CopyCATprogram will include the records on reports; the first 3 chars is aMARC tag value, the fourth is a subfield or control field indicator"_" which follows a control number; "ALL" will disable this function.e.g. "300a" means records will be retrived only if the records haveMARC tag 300 subfield a; "6XX_0" means records will be retrived onlyif records have MARC tag starting with "6" and have 2nd indicatorfield "0"
+TOT_DIGIT_RECORDID~9~defines totalnumber of the ILS record ID, and add "0" to the left if ILS record IDsdon
+CORRUPT_RECORD_STRING~}{,{{{~File "ccconfig.txt" ("CORRUPT_RECORD_STRING") defines strings which determine if a retued record, which contains the string(s), is corrupted.
+conNRm880~YES~Convert 880 CJKtitles to the original field, and remove all 880 lines?
+remove0XXexcept008~YES~Remove all the tags start with 00X except 008?
+rm9XX~YES~Remove all tags start with 9?
+rm856~YES~Remove 856 tag?
+con001~YES~Add 001 tag which contains your ILS
+simpChiToTradChin~YES~Convert simp chinese to trad chinese?
+removeLeader~NO~Remove leader?
+addEqualSign~YES~add the sign euqality between MARC Tag and its value?
+
+
+Mon Feb 17 15:13:25 HKT 2020	192.168.8.54	wwyng	CAT LIB Tools config updated: 
+ALLOWUSERS~skkiang,wwyng,mksum,kyiu,kyshum,mkmak~Who will be able to access the system
+
+
+Mon Feb 17 15:13:28 HKT 2020	192.168.8.54	wwyng	CAT LIB Tools config updated: 
+COPYCAT_QUERY_LIST~JULAC,USTL,LCCLCC,MIT,CAMBR,OXFORD,NKFUST,BLLNU,HKSYU~is the whole list of institute codes of libraries to make Z39.50 query to. The Z39.50 server details associated with the institute code must be set before, in bqconfig.txt, for this setup to work. Avaiilable codes: LCC,WISCONSIN,ARLINGTON,MIT,CAMBRI,OXFORD,WASEDA,SINICA,YMING,NKFUST,BL,HKSYU,USTL,POLYU,HKBU,LNU,CUHK,CITYU,IED,HKU.
+EXISTTAG_FOR_MATCHING~ALL~defines the MARCtags that only if the return records contain such tags, CopyCATprogram will include the records on reports; the first 3 chars is aMARC tag value, the fourth is a subfield or control field indicator"_" which follows a control number; "ALL" will disable this function.e.g. "300a" means records will be retrived only if the records haveMARC tag 300 subfield a; "6XX_0" means records will be retrived onlyif records have MARC tag starting with "6" and have 2nd indicatorfield "0"
+TOT_DIGIT_RECORDID~9~defines totalnumber of the ILS record ID, and add "0" to the left if ILS record IDsdon
+CORRUPT_RECORD_STRING~}{,{{{~File "ccconfig.txt" ("CORRUPT_RECORD_STRING") defines strings which determine if a retued record, which contains the string(s), is corrupted.
+conNRm880~YES~Convert 880 CJKtitles to the original field, and remove all 880 lines?
+remove0XXexcept008~YES~Remove all the tags start with 00X except 008?
+rm9XX~YES~Remove all tags start with 9?
+rm856~YES~Remove 856 tag?
+con001~YES~Add 001 tag which contains your ILS
+simpChiToTradChin~YES~Convert simp chinese to trad chinese?
+removeLeader~NO~Remove leader?
+addEqualSign~YES~add the sign euqality between MARC Tag and its value?
+
+
+Mon Feb 17 15:34:31 HKT 2020	192.168.8.54	wwyng	CAT LIB Tools config updated: 
+ALLOWUSERS~skkiang,wwyng,mksum,kyiu,kyshum,mkmak~Who will be able to access the system
+
+
+Mon Feb 17 15:34:34 HKT 2020	192.168.8.54	wwyng	CAT LIB Tools config updated: 
+COPYCAT_QUERY_LIST~JULAC,USTL,LCCLCC,MIT,CAMBR,OXFORD,NKFUST,BLLNU,HKSYU~is the whole list of institute codes of libraries to make Z39.50 query to. The Z39.50 server details associated with the institute code must be set before, in bqconfig.txt, for this setup to work. Avaiilable codes: LCC,WISCONSIN,ARLINGTON,MIT,CAMBRI,OXFORD,WASEDA,SINICA,YMING,NKFUST,BL,HKSYU,USTL,POLYU,HKBU,LNU,CUHK,CITYU,IED,HKU.
+EXISTTAG_FOR_MATCHING~ALL~defines the MARCtags that only if the return records contain such tags, CopyCATprogram will include the records on reports; the first 3 chars is aMARC tag value, the fourth is a subfield or control field indicator"_" which follows a control number; "ALL" will disable this function.e.g. "300a" means records will be retrived only if the records haveMARC tag 300 subfield a; "6XX_0" means records will be retrived onlyif records have MARC tag starting with "6" and have 2nd indicatorfield "0"
+TOT_DIGIT_RECORDID~9~defines totalnumber of the ILS record ID, and add "0" to the left if ILS record IDsdon
+CORRUPT_RECORD_STRING~}{,{{{~File "ccconfig.txt" ("CORRUPT_RECORD_STRING") defines strings which determine if a retued record, which contains the string(s), is corrupted.
+conNRm880~YES~Convert 880 CJKtitles to the original field, and remove all 880 lines?
+remove0XXexcept008~YES~Remove all the tags start with 00X except 008?
+rm9XX~YES~Remove all tags start with 9?
+rm856~YES~Remove 856 tag?
+con001~YES~Add 001 tag which contains your ILS
+simpChiToTradChin~YES~Convert simp chinese to trad chinese?
+removeLeader~NO~Remove leader?
+addEqualSign~YES~add the sign euqality between MARC Tag and its value?
+
+
+Mon Feb 17 15:34:41 HKT 2020	192.168.8.54	wwyng	CAT LIB Tools config updated: 
+ALLOWUSERS~skkiang,wwyng,mksum,kyiu,kyshum,mkmak~Who will be able to access the system
+
+
+Mon Feb 17 15:34:46 HKT 2020	192.168.8.54	wwyng	CAT LIB Tools config updated: 
+COPYCAT_QUERY_LIST~JULAC,USTL,LCCLCC,MIT,CAMBR,OXFORD,NKFUST,BLLNU,HKSYU~is the whole list of institute codes of libraries to make Z39.50 query to. The Z39.50 server details associated with the institute code must be set before, in bqconfig.txt, for this setup to work. Avaiilable codes: LCC,WISCONSIN,ARLINGTON,MIT,CAMBRI,OXFORD,WASEDA,SINICA,YMING,NKFUST,BL,HKSYU,USTL,POLYU,HKBU,LNU,CUHK,CITYU,IED,HKU.
+EXISTTAG_FOR_MATCHING~ALL~defines the MARCtags that only if the return records contain such tags, CopyCATprogram will include the records on reports; the first 3 chars is aMARC tag value, the fourth is a subfield or control field indicator"_" which follows a control number; "ALL" will disable this function.e.g. "300a" means records will be retrived only if the records haveMARC tag 300 subfield a; "6XX_0" means records will be retrived onlyif records have MARC tag starting with "6" and have 2nd indicatorfield "0"
+TOT_DIGIT_RECORDID~9~defines totalnumber of the ILS record ID, and add "0" to the left if ILS record IDsdon
+CORRUPT_RECORD_STRING~}{,{{{~File "ccconfig.txt" ("CORRUPT_RECORD_STRING") defines strings which determine if a retued record, which contains the string(s), is corrupted.
+conNRm880~YES~Convert 880 CJKtitles to the original field, and remove all 880 lines?
+remove0XXexcept008~YES~Remove all the tags start with 00X except 008?
+rm9XX~YES~Remove all tags start with 9?
+rm856~YES~Remove 856 tag?
+con001~YES~Add 001 tag which contains your ILS
+simpChiToTradChin~YES~Convert simp chinese to trad chinese?
+removeLeader~NO~Remove leader?
+addEqualSign~YES~add the sign euqality between MARC Tag and its value?
+
+

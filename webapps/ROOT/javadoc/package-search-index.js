@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"hk.edu.ouhk.lib"},{"l":"hk.edu.ouhk.lib.acq"},{"l":"hk.edu.ouhk.lib.adm"},{"l":"hk.edu.ouhk.lib.bookquery"},{"l":"hk.edu.ouhk.lib.cat"},{"l":"hk.edu.ouhk.lib.info"},{"l":"hk.edu.ouhk.lib.ser"}]
