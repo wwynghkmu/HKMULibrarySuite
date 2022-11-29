@@ -92,7 +92,7 @@ public final class Config extends hk.edu.hkmu.lib.Config {
 				String searchType = "";
 				platformName = entry.getValue()[1];
 				searchType = entry.getValue()[0];
-				if (!searchType.toLowerCase().equals("keyword")) {
+				if (!searchType.toLowerCase().equals("platform")) {
 					if (SEARCHITEMS.get(platformName) == null) {
 						SEARCHITEMS.put(platformName, new ArrayList<String>());
 					}

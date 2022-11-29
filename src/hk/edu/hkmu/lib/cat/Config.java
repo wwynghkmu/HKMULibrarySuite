@@ -73,6 +73,8 @@ public final class Config extends hk.edu.hkmu.lib.Config {
 					VALUESMOD.put(name, module);
 
 				}
+				stmt.close();
+				conn.close();
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

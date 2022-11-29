@@ -139,8 +139,10 @@ public class CheckeBookPlatform extends JFrame {
 					}
 				}
 			}
-			stmt.close();
-			conn.close();
+			if (stmt != null)
+				stmt.close();
+			if (conn != null)
+				conn.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 			out(e.getMessage());
@@ -186,37 +188,39 @@ public class CheckeBookPlatform extends JFrame {
 
 			platformName = entry.getValue()[1];
 
-			// if (platformName.contains("Wiley Online") || platformName.contains("Jstor"))
-			// {
-			primoKeyword = entry.getValue()[2];
-			primoLink = entry.getValue()[3];
-			searchType = entry.getValue()[0];
-			primoCreatorFacet = entry.getValue()[4];
+			//if (platformName.contains("AVON")) {
+				primoKeyword = entry.getValue()[2];
+				primoLink = entry.getValue()[3];
+				searchType = entry.getValue()[0];
+				primoCreatorFacet = entry.getValue()[4];
 
-			platforms[count][0] = searchType;
-			platforms[count][1] = platformName;
-			platforms[count][2] = primoKeyword;
-			// if (platforms[count][1].equals("萬方視頻")) {
-			platforms[count][3] = primoLink;
-			platforms[count][4] = primoCreatorFacet;
-			platforms[count][5] = "FAILED";
-			platforms[count][5] = "";
+				platforms[count][0] = searchType;
+				platforms[count][1] = platformName;
+				platforms[count][2] = primoKeyword;
+				//
+				platforms[count][3] = primoLink;
+				platforms[count][4] = primoCreatorFacet;
+				platforms[count][5] = "FAILED";
+				platforms[count][5] = "";
 
-			count++;
+				count++;
 
-			if (!searchType.toLowerCase().equals("keyword")) {
-				String[] list = new String[Config.SEARCHITEMS.get(platformName).size()];
-				int count2 = 0;
-				for (String item : Config.SEARCHITEMS.get(platformName)) {
-					list[count2] = item;
+				
+				
+				//Reader the keyword list
+				if (searchType.toLowerCase().equals("keyword")) {
+					String[] list = new String[Config.SEARCHITEMS.get(platformName).size()];
+					int count2 = 0;
+					for (String item : Config.SEARCHITEMS.get(platformName)) {
+						list[count2] = item;
 
-					count2++;
+						count2++;
+
+					}
+					searchList.put(platformName.toUpperCase(), list);
 
 				}
-				searchList.put(platformName.toUpperCase(), list);
-
-			}
-			// }
+			//}
 		}
 	}
 
@@ -299,22 +303,24 @@ public class CheckeBookPlatform extends JFrame {
 						pdriver.driver.switchTo().window(tabs.get(j));
 						pdriver.driver.close();
 					}
-					pdriver.driver.get(hk.edu.hkmu.lib.Config.VALUES.get("PRIMOURL"));
+					System.out.println("PrimoURL:" + hk.edu.hkmu.lib.Config.VALUES.get("PRIMOASEARCHURL"));
+
 					if (platforms[i][6] == null || platforms[i][6].equals(""))
 						platforms[i][6] = hk.edu.hkmu.lib.StringHandling.getTodayDBFormat();
-					// Performing Keyword searching.
-					if (platforms[i][0].equals("keyword")) {
+					// Performing Platform searching using Advanced Search.
+					if (platforms[i][0].equals("platform")) {
 						try {
+							pdriver.driver.get(hk.edu.hkmu.lib.Config.VALUES.get("PRIMOASEARCHURL"));
 							out("Finding the SearchBar");
-							pdriver.initSearchKeywordComponent(platforms[i][2]);
+							pdriver.initAdvancedSearchKeywordComponent(platforms[i][2]);
 							if (!platforms[i][2].toLowerCase().contains("video")) {
 								out("Clicking eBook facet");
 								pdriver.filterEBookFacet();
 							}
-							out("Clicking the facet 'lib_holding'");
-							pdriver.filterLibHoldingFacet();
-							out("Clicking facet_creator");
-							pdriver.filterCreatorFacet(platforms[i][4].toLowerCase());
+							// out("Clicking the facet 'lib_holding'");
+							// pdriver.filterLibHoldingFacet();
+							// out("Clicking facet_creator");
+							// pdriver.filterCreatorFacet(platforms[i][4].toLowerCase());
 							navigateResultPage(i);
 						} catch (Exception e) {
 							try {
@@ -328,40 +334,46 @@ public class CheckeBookPlatform extends JFrame {
 							out(e.getMessage());
 						}
 
-						// Performing ISBN searching.
-					} else if (platforms[i][0].toLowerCase().equals("isbn")) {
+						// Performing Keyword searching.
+					} else if (platforms[i][0].toLowerCase().equals("keyword")) {
+						pdriver.driver.get(hk.edu.hkmu.lib.Config.VALUES.get("PRIMOURL"));
 						Random r = new Random();
 						int isbnIndex = 0;
-						String isbn = "";
-						if (searchList != null) {
-							isbnIndex = r.nextInt(searchList.get(platforms[i][1].toUpperCase()).length);
-							isbn = searchList.get(platforms[i][1].toUpperCase())[isbnIndex];
-						}
-						out("\tSearching by ISBN: " + isbn);
-						platforms[i][2] = isbn;
-						out("Clicking eBook facet");
-						pdriver.initSearchKeywordComponent(isbn);
-						out("Finding the SearchBar");
-						pdriver.filterEBookFacet();
+						String keyword = "";
+						if (searchList != null && searchList.get(platforms[i][1].toUpperCase()) != null
+								&& searchList.get(platforms[i][1].toUpperCase()).length > 0) {
 
-						out("Clicking the facet 'lib_holding'");
-						pdriver.filterLibHoldingFacet();
-						if (!navigateResultPage(i)) {
 							isbnIndex = r.nextInt(searchList.get(platforms[i][1].toUpperCase()).length);
-							isbn = searchList.get(platforms[i][1].toUpperCase())[isbnIndex];
-							out("Searching by ISBN: " + isbn);
-							platforms[i][2] = isbn;
-							out("Finding the SearchBar");
-							pdriver.initSearchKeywordComponent(isbn);
+							keyword = searchList.get(platforms[i][1].toUpperCase())[isbnIndex];
+							out("\tSearching by ISBN: " + keyword);
+							platforms[i][2] = keyword;
 							out("Clicking eBook facet");
+							pdriver.initSearchKeywordComponent(keyword);
+							out("Finding the SearchBar");
 							pdriver.filterEBookFacet();
-							out("Clicking the facet 'lib_holding'");
-							pdriver.filterLibHoldingFacet();
-							navigateResultPage(i);
+							out("Clicking facet_platform");
+							pdriver.filterPlatformFacet(platforms[i][4].toLowerCase());
+							// out("Clicking the facet 'lib_holding'");
+							// pdriver.filterLibHoldingFacet();
+							if (!navigateResultPage(i)) {
+								isbnIndex = r.nextInt(searchList.get(platforms[i][1].toUpperCase()).length);
+								keyword = searchList.get(platforms[i][1].toUpperCase())[isbnIndex];
+								out("Searching by ISBN: " + keyword);
+								platforms[i][2] = keyword;
+								out("Finding the SearchBar");
+								pdriver.initSearchKeywordComponent(keyword);
+								out("Clicking eBook facet");
+								pdriver.filterEBookFacet();
+								// out("Clicking the facet 'lib_holding'");
+								// pdriver.filterLibHoldingFacet();
+								navigateResultPage(i);
+							}
+
 						}
 
 						// Performing EBA platform checking
 					} else if (platforms[i][0].toLowerCase().equals("eba")) {
+						pdriver.driver.get(hk.edu.hkmu.lib.Config.VALUES.get("PRIMOASEARCHURL"));
 						Random r = new Random();
 						int publisherIndex = r.nextInt(searchList.get(platforms[i][1].toUpperCase()).length);
 
@@ -645,14 +657,14 @@ public class CheckeBookPlatform extends JFrame {
 							// If this is a EBA title, the eBook is accessed via SFX. This helps to click on
 							// the SFX menu.
 							out("EBA checking.");
-							Thread.sleep(2000);
+							Thread.sleep(1000);
 							ArrayList<String> tabs2 = new ArrayList<String>(pdriver.driver.getWindowHandles());
 							pdriver.driver.switchTo().window(tabs2.get(1));
 
 							pdriver.wait.until(ExpectedConditions.visibilityOfElementLocated(
 									By.cssSelector(hk.edu.hkmu.lib.Config.VALUES.get("SFXLINK"))));
 
-							Thread.sleep(4000);
+							Thread.sleep(2000);
 
 							List<WebElement> linksEles2 = pdriver.driver
 									.findElements(By.cssSelector(hk.edu.hkmu.lib.Config.VALUES.get("SFXLINK")));
@@ -689,7 +701,7 @@ public class CheckeBookPlatform extends JFrame {
 
 						}
 
-						Thread.sleep(15000);
+						Thread.sleep(5000);
 						out("Link matched. Going to save.");
 						break;
 					} else {
@@ -720,7 +732,7 @@ public class CheckeBookPlatform extends JFrame {
 				String pageOri = "";
 				try {
 					pdriver.driver.switchTo().window(tabs2.get(1));
-					Thread.sleep(60000);
+					Thread.sleep(30000);
 					screenshotFile = ((TakesScreenshot) pdriver.driver).getScreenshotAs(OutputType.FILE);
 					BufferedImage image = ImageIO.read(screenshotFile);
 					page = pdriver.driver.getPageSource();

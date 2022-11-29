@@ -52,7 +52,7 @@ public class PrimoDriver {
 			if (!platform.toLowerCase().trim().equals("none")) {
 				Thread.sleep(2000);
 				clickMore();
-
+						
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(hk.edu.hkmu.lib.Config.VALUES
 						.get("PLATFORMFACET").replaceAll("PLATFORM", platform.toLowerCase()))));
 
@@ -99,6 +99,39 @@ public class PrimoDriver {
 			e0.printStackTrace();
 		}
 	} // end filterCreatorFacet()
+	
+
+	
+	
+	
+	
+	public void initAdvancedSearchKeywordComponent(String keyword) {
+		try {
+			WebElement searchBar;
+			Thread.sleep(2000);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("input_32")));
+			searchBar = driver.findElement(By.id("input_32"));
+			searchBar.click();
+			searchBar.clear();
+			searchBar.sendKeys(keyword);
+			searchBar.sendKeys(Keys.RETURN);
+			searchBar.sendKeys(Keys.TAB);
+			if (StringHandling.getTodayDateOfWeek() == 4) {
+				driver.navigate().refresh();
+				Thread.sleep(5000);
+			}
+			Thread.sleep(2000);
+		} catch (Exception e0) {
+			try {
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
+
+			e0.printStackTrace();
+		}
+
+	} // end initSearchKeywordComponent()
+	
 
 	public void initSearchKeywordComponent(String keyword) {
 		try {

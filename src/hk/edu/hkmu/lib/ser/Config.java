@@ -62,7 +62,8 @@ public final class Config extends hk.edu.hkmu.lib.Config {
 						COUNTER5PLATFORMS.get(name)[0] = value;
 						COUNTER5PLATFORMS.get(name)[1] = des;
 					}
-
+				stmt.close();
+				conn.close();
 				}
 			} catch (Exception e) {
 				e.printStackTrace();

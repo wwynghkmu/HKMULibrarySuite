@@ -8,6 +8,6 @@ public class TestAdmStaffLeaveConsolidation {
 	 * Download and consolidate the staff leave Excel file from OUHK SharePoint
 	 */
 	public static void main(String[] args) throws Exception {
-		FetchAndConsolidateStaffLeave fl = new FetchAndConsolidateStaffLeave("wwyng", "98731486xY");
+		FetchAndConsolidateStaffLeave fl = new FetchAndConsolidateStaffLeave("wwyng", "98731486aB");
 	}
 }
