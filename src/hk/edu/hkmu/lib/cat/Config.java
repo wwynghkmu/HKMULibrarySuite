@@ -65,12 +65,17 @@ public final class Config extends hk.edu.hkmu.lib.Config {
 					String subName = StringHandling.trimNewLineChar(rs.getString("subName").trim());
 					String value = StringHandling.trimNewLineChar(rs.getString("value").trim());
 					String des = "NONE";
+					
 					if (rs.getString("description") != null)
 						des = StringHandling.trimNewLineChar(rs.getString("description").trim());
+					
 
+					
 					VALUES.put(name, value);
 					VALUESDES.put(name, name + ": " + des);
 					VALUESMOD.put(name, module);
+					
+					
 
 				}
 				stmt.close();

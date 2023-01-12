@@ -30,7 +30,7 @@ public class Config {
 	public static Map<String, String> VALUESMOD = new HashMap<String, String>();
 
 	public static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-	public static final String TSSERVICE_SERVER = "localhost";
+	public static final String TSSERVICE_SERVER = "tsservices.lib.hkmu.edu.hk";
 	 public static final String TSSERVICE_SERVER_LOGIN = "tomcat";
 	 public static final String TSSERVICE_SERVER_PWD = "tom959cat";
 	//public static final String TSSERVICE_SERVER_LOGIN = "tomdev";

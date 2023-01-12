@@ -732,7 +732,7 @@ public class CheckeBookPlatform extends JFrame {
 				String pageOri = "";
 				try {
 					pdriver.driver.switchTo().window(tabs2.get(1));
-					Thread.sleep(30000);
+					Thread.sleep(60000);
 					screenshotFile = ((TakesScreenshot) pdriver.driver).getScreenshotAs(OutputType.FILE);
 					BufferedImage image = ImageIO.read(screenshotFile);
 					page = pdriver.driver.getPageSource();

@@ -23,6 +23,7 @@ public class AcqEmailTodayEBookPlatformCheckResults {
 			rs.close();
 			stmt.close();
 			conn.close();
+			
 			EmailEBKPlatformReport e = new EmailEBKPlatformReport(batchID);
 		} catch (Exception e) {
 

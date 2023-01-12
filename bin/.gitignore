@@ -1,3 +1,6 @@
+/hk/
+/log4j.properties
+/AcqTestConfig.class
 /TestAcqCheckeBookPlatform.class
 /TestAcqEmail.class
 /TestAcqEmail2.class
@@ -8,7 +11,7 @@
 /TestCheckCert.class
 /TestChineseHandling.class
 /TestConfig.class
-/TestCopyCat.class
+/TestCopyCatLinux.class
 /TestCopyCatSFX.class
 /TestCopyCatSFXCMD.class
 /TestJava.class
@@ -27,5 +30,3 @@
 /TestZ3950earchByNonISBN.class
 /TestZ3950earchBySubject.class
 /TextHandling.class
-/hk/
-/log4j.properties
