@@ -1,0 +1,4 @@
+2022-10-14 14:29:36: Index 5 out of bounds for length 5
+2022-10-14 15:35:40: Index 5 out of bounds for length 5
+2022-10-14 15:52:01: Cannot invoke "String.length()" because "s" is null
+2022-10-14 15:52:44: Index 1 out of bounds for length 1
