@@ -31,3 +31,6 @@
 /TestZ3950earchBySubject.class
 /TextHandling.class
 /TestReadExcel.class
+/TestAlmaAPI.class
+/TestACQConfig.class
+/TestCallAlmaAPI.class
