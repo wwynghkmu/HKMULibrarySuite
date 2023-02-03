@@ -15,6 +15,21 @@ import java.util.regex.*;
  * @since Jan 29, 2019
  */
 public class StringHandling {
+
+	public static String extractUrl(String string) {
+
+		String regexString = "(?:^|[\\W])((ht|f)tp(s?):\\/\\/|www\\.)" + "(([\\w\\-]+\\.){1,}?([\\w\\-.~]+\\/?)*"
+				+ "[\\p{Alnum}.,%_=?&#\\-+()\\[\\]\\*$~@!:/{};']*)";
+		Pattern pattern = Pattern.compile(regexString, Pattern.CASE_INSENSITIVE);
+		Matcher matcher = pattern.matcher(string);
+		while (matcher.find()) {
+			return string.substring(matcher.start(0) + 1, matcher.end(0) - 1);
+		}
+
+		return "";
+
+	}
+
 	public static String removeAccents(String text) {
 		return text == null ? null
 				: Normalizer.normalize(text, Form.NFD).replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
@@ -91,8 +106,8 @@ public class StringHandling {
 		str = str.replace('–', '?');
 		String[] specChars = { "\\=", "\\-", "\\^", "#", "/", "@", "%", "&", "~", "[\\s|\t]or[\\s|\t]" };
 
-		String[] specChars2 = {"\\-", "《", "》", "〈", "〉", ",", "「", "」", "\"", "？", "‘", "’", "‚", "“", "”", "†", "‡", "‰",
-				"‹", "›", "♠", "♣", "♥", "♥", "♦", "‾", "←", "↑", "→", "↓", "™", "\\+", "\\*", "'", "\\.", "\\\\",
+		String[] specChars2 = { "\\-", "《", "》", "〈", "〉", ",", "「", "」", "\"", "？", "‘", "’", "‚", "“", "”", "†", "‡",
+				"‰", "‹", "›", "♠", "♣", "♥", "♥", "♦", "‾", "←", "↑", "→", "↓", "™", "\\+", "\\*", "'", "\\.", "\\\\",
 				"\\+", "\\?", "\\[", "\\]", "\\$", "\\(", "\\)", "\\{", "\\}", "\\!", "\\<", "\\>", "\\|", "。", "、",
 				":", "・" };
 
@@ -326,20 +341,20 @@ public class StringHandling {
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
 		return formatter.format(today);
 	} // end getToday()
-	
+
 	public static int getTodayDateOfWeek() {
 		Date today = new Date();
 		Calendar c = Calendar.getInstance();
 		c.setTime(today);
 		return c.get(Calendar.DAY_OF_WEEK);
 	}
-	
+
 	public static String getTodayDateOnly() {
 		Date today = new Date();
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 		return formatter.format(today);
 	} // end getToday()
-	
+
 	public static String getTodayDBFormat() {
 		Date today = new Date();
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

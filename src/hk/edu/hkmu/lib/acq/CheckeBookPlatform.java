@@ -188,39 +188,37 @@ public class CheckeBookPlatform extends JFrame {
 
 			platformName = entry.getValue()[1];
 
-			//if (platformName.contains("AVON")) {
-				primoKeyword = entry.getValue()[2];
-				primoLink = entry.getValue()[3];
-				searchType = entry.getValue()[0];
-				primoCreatorFacet = entry.getValue()[4];
+			// if (platformName.contains("AVON")) {
+			primoKeyword = entry.getValue()[2];
+			primoLink = entry.getValue()[3];
+			searchType = entry.getValue()[0];
+			primoCreatorFacet = entry.getValue()[4];
 
-				platforms[count][0] = searchType;
-				platforms[count][1] = platformName;
-				platforms[count][2] = primoKeyword;
-				//
-				platforms[count][3] = primoLink;
-				platforms[count][4] = primoCreatorFacet;
-				platforms[count][5] = "FAILED";
-				platforms[count][5] = "";
+			platforms[count][0] = searchType;
+			platforms[count][1] = platformName;
+			platforms[count][2] = primoKeyword;
+			//
+			platforms[count][3] = primoLink;
+			platforms[count][4] = primoCreatorFacet;
+			platforms[count][5] = "FAILED";
+			platforms[count][5] = "";
 
-				count++;
+			count++;
 
-				
-				
-				//Reader the keyword list
-				if (searchType.toLowerCase().equals("keyword")) {
-					String[] list = new String[Config.SEARCHITEMS.get(platformName).size()];
-					int count2 = 0;
-					for (String item : Config.SEARCHITEMS.get(platformName)) {
-						list[count2] = item;
+			// Reader the keyword list
+			if (searchType.toLowerCase().equals("keyword")) {
+				String[] list = new String[Config.SEARCHITEMS.get(platformName).size()];
+				int count2 = 0;
+				for (String item : Config.SEARCHITEMS.get(platformName)) {
+					list[count2] = item;
 
-						count2++;
-
-					}
-					searchList.put(platformName.toUpperCase(), list);
+					count2++;
 
 				}
-			//}
+				searchList.put(platformName.toUpperCase(), list);
+
+			}
+			// }
 		}
 	}
 
@@ -283,10 +281,6 @@ public class CheckeBookPlatform extends JFrame {
 		progressJLabel.setText("Checking status: complete (start time: " + starttime + " end time: " + ts + ")");
 	}
 
-	/*
-	 * Obsoleted for reading eBook platform list from an Excel file originally.
-	 */
-
 	private void checkPlatform() {
 		try {
 			for (int i = 0; i < platforms.length; i++) {
@@ -317,10 +311,6 @@ public class CheckeBookPlatform extends JFrame {
 								out("Clicking eBook facet");
 								pdriver.filterEBookFacet();
 							}
-							// out("Clicking the facet 'lib_holding'");
-							// pdriver.filterLibHoldingFacet();
-							// out("Clicking facet_creator");
-							// pdriver.filterCreatorFacet(platforms[i][4].toLowerCase());
 							navigateResultPage(i);
 						} catch (Exception e) {
 							try {
@@ -353,8 +343,7 @@ public class CheckeBookPlatform extends JFrame {
 							pdriver.filterEBookFacet();
 							out("Clicking facet_platform");
 							pdriver.filterPlatformFacet(platforms[i][4].toLowerCase());
-							// out("Clicking the facet 'lib_holding'");
-							// pdriver.filterLibHoldingFacet();
+
 							if (!navigateResultPage(i)) {
 								isbnIndex = r.nextInt(searchList.get(platforms[i][1].toUpperCase()).length);
 								keyword = searchList.get(platforms[i][1].toUpperCase())[isbnIndex];
@@ -364,8 +353,6 @@ public class CheckeBookPlatform extends JFrame {
 								pdriver.initSearchKeywordComponent(keyword);
 								out("Clicking eBook facet");
 								pdriver.filterEBookFacet();
-								// out("Clicking the facet 'lib_holding'");
-								// pdriver.filterLibHoldingFacet();
 								navigateResultPage(i);
 							}
 
