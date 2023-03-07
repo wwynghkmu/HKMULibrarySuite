@@ -7,12 +7,17 @@ import java.nio.charset.StandardCharsets;
 public class AlmaCreateCourse {
 
 	private String json;
-	
+
+	public AlmaCreateCourse() {
+
+	}
+
 	public AlmaCreateCourse(String json) {
 		this.json = json;
 	}
 
-	public String CreateCourse() {
+	public String CreateCourse(String code, String name, String instructor, String school, String sd, String ed,
+			String term) {
 		String respondCode = "";
 		String respondBody = "";
 		try {
@@ -24,7 +29,25 @@ public class AlmaCreateCourse {
 			http.setDoOutput(true);
 			http.setRequestProperty("Content-Type", "application/json");
 
-			String data = "{\"link\":\"\",\"code\":\"PHI4361\",\"name\":\"Wittgenstein'sPhilosophy 2\",\"section\":\"01\",\"academic_department\":{\"value\":\"A&SS\"},\"processing_department\":{\"value\":\"C_DEP\"},\"term\":[{\"value\":\"AUTUMN\"}],\"status\":\"INACTIVE\",\"start_date\":\"2011-09-10Z\",\"end_date\":\"2013-12-31Z\",\"weekly_hours\":\"0\",\"participants\":\"35\",\"year\":\"2007\",\"instructor\":[{\"primary_id\":\"1234\"}],\"campus\":[{\"campus_code\":{\"value\":\"code\"},\"campus_participants\":\"30\"}],\"submit_by_date\":\"2013-12-01Z\"}";
+			// String data =
+			// "{\"link\":\"\",\"code\":\"PHI4361\",\"name\":\"Wittgenstein'sPhilosophy
+			// 2\",\"section\":\"01\",\"academic_department\":{\"value\":\"A&SS\"},\"processing_department\":{\"value\":\"C_DEP\"},\"term\":[{\"value\":\"AUTUMN\"}],\"status\":\"INACTIVE\",\"start_date\":\"2011-09-10Z\",\"end_date\":\"2013-12-31Z\",\"weekly_hours\":\"0\",\"participants\":\"35\",\"year\":\"2007\",\"instructor\":[{\"primary_id\":\"1234\"}],\"campus\":[{\"campus_code\":{\"value\":\"code\"},\"campus_participants\":\"30\"}],\"submit_by_date\":\"2013-12-01Z\"}";
+			
+			if(sd.equals(""))
+				sd = "2022-09-01";
+			
+			if(ed.equals(""))
+				ed = "2023-07-14";
+			
+			
+			String data = "{\"link\":\"\",\"code\":\"" + code + "\",\"name\":\"" + name
+					+ "\",\"section\":\"01\",\"academic_department\":{\"value\":\"" + school
+					+ "\"},\"processing_department\":{\"value\":\"CIR-CR\"},\"term\":[{\"value\":\"" + term
+					+ "\"}],\"status\":\"ACTIVE\",\"start_date\":\"" + sd + "\",\"end_date\":\"" + ed
+					+ "\",\"weekly_hours\":\"0\",\"participants\":\"0\",\"year\":\"2022\",\"instructor\":[{\"primary_id\":\""
+					+ instructor + "\"}],\"campus\":[{\"campus_code\":{\"value\":\"code\"},\"campus_participants\":\"0\"}],\"submit_by_date\":\"" + sd + "\"}";
+			
+			System.out.println(data);
 
 			byte[] out = data.getBytes(StandardCharsets.UTF_8);
 

@@ -16,7 +16,7 @@ public class TestAlmaAPI {
 			http.setDoOutput(true);
 			http.setRequestProperty("Content-Type", "application/json");
 
-			String data = "{\"link\":\"\",\"code\":\"PHI9999\",\"name\":\"Wittgenstein'sPhilosophy 2\",\"section\":\"01\",\"academic_department\":{\"value\":\"A&SS\"},\"processing_department\":{\"value\":\"C_DEP\"},\"term\":[{\"value\":\"AUTUMN\"}],\"status\":\"INACTIVE\",\"start_date\":\"2011-09-10Z\",\"end_date\":\"2013-12-31Z\",\"weekly_hours\":\"0\",\"participants\":\"35\",\"year\":\"2007\",\"instructor\":[{\"primary_id\":\"1234\"}],\"campus\":[{\"campus_code\":{\"value\":\"code\"},\"campus_participants\":\"30\"}],\"submit_by_date\":\"2013-12-01Z\"}";
+			String data = "{\"link\":\"\",\"code\":\"C_CODE\",\"name\":\"C_NAME\",\"section\":\"01\",\"academic_department\":{\"value\":\"C_DEPT\"},\"processing_department\":{\"value\":\"PROSS_DEPT\"},\"term\":[{\"value\":\"C_TERM\"}],\"status\":\"C_STATUS\",\"start_date\":\"C_START\",\"end_date\":\"C_END\",\"weekly_hours\":\"0\",\"participants\":\"0\",\"year\":\"C_YEAR\",\"instructor\":[{\"primary_id\":\"C_INSTRUCTOR\"}],\"campus\":[{\"campus_code\":{\"value\":\"code\"},\"campus_participants\":\"0\"}],\"submit_by_date\":\"C_SDATE\"}";
 
 			byte[] out = data.getBytes(StandardCharsets.UTF_8);
 

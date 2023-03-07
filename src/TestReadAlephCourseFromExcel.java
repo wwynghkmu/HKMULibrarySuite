@@ -9,8 +9,9 @@ import org.apache.commons.validator.routines.UrlValidator;
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.ss.usermodel.*;
 import hk.edu.hkmu.lib.*;
+import hk.edu.hkmu.lib.sys.*;
 
-public class TestReadExcel {
+public class TestReadAlephCourseFromExcel {
 	public static void main(String[] args) {
 
 		try {
@@ -100,6 +101,9 @@ public class TestReadExcel {
 
 				System.out.println(course_id + " " + course_name + " " + instructor + " " + school + " SD:>>>"
 						+ start_date + "<<<ED:" + end_date + " " + term + " ");
+				
+				AlmaCreateCourse ac = new AlmaCreateCourse ();
+				ac.CreateCourse(course_id, course_name, instructor, school, start_date, end_date, term);
 
 				/*
 				 * LocalDate sd =

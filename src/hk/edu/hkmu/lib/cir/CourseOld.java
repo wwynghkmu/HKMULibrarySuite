@@ -1,20 +1,19 @@
 package hk.edu.hkmu.lib.cir;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.StringReader;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.*;
+import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-
-import org.apache.commons.lang3.time.DateUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
-public class CourseTest {
-	HashMap<String, ArrayList> CourseHashMap = new HashMap<String, ArrayList>();
+public class CourseOld {
 	public ArrayList courseCodeArry = new ArrayList();
 	public ArrayList courseNameArry = new ArrayList();
 	public ArrayList statusArry = new ArrayList();
@@ -23,17 +22,13 @@ public class CourseTest {
 	public int index = 0;
 	public int offset = 0;
 	private String urlStr = "";
-	String tempDir = "";
-	URLConnection urlcon;
 
-	public CourseTest(String tempDir) {
-		this.tempDir = tempDir;
+	public CourseOld() {
 		readCourses();
 	}
 
-	public CourseTest(String urlStr, String tempDir) {
+	public CourseOld(String urlStr) {
 		this.urlStr = urlStr;
-		this.tempDir = tempDir;
 		readCourses();
 	}
 
@@ -42,51 +37,7 @@ public class CourseTest {
 		String urlStr = "https://api-ap.hosted.exlibrisgroup.com/almaws/v1/courses?apikey=l8xx41bf077192274811b545c60ba48df465&status=ACTIVE&order_by=code&limit=100&offset=0";
 		if (this.urlStr.equals(""))
 			this.urlStr = urlStr;
-		try {
-			File f = new File(tempDir + "Courses.ser");
-			if (f.exists()) {
-
-				long lmodify = f.lastModified();
-				Date lmdate = new Date(lmodify);
-				DateUtils du = new DateUtils();
-
-				Date today = new Date();
-				if (du.isSameDay(lmdate, today)) {
-					FileInputStream fileIn = new FileInputStream(tempDir + "Courses.ser");
-					ObjectInputStream in = new ObjectInputStream(fileIn);
-					CourseHashMap = (HashMap) in.readObject();
-					in.close();
-					fileIn.close();
-					courseCodeArry = CourseHashMap.get("courseCodeArry");
-					courseNameArry = CourseHashMap.get("courseNameArry");
-					statusArry = CourseHashMap.get("statusArry");
-					departmentArry = CourseHashMap.get("departmentArry");
-				} else {
-					readNextCourses();
-					CourseHashMap.put("courseCodeArry", courseCodeArry);
-					CourseHashMap.put("courseNameArry", courseNameArry);
-					CourseHashMap.put("statusArry", statusArry);
-					CourseHashMap.put("departmentArry", departmentArry);
-					FileOutputStream fileOut = new FileOutputStream(tempDir + "Courses.ser");
-					ObjectOutputStream out = new ObjectOutputStream(fileOut);
-					out.writeObject(CourseHashMap);
-
-				}
-
-			} else {
-				readNextCourses();
-				CourseHashMap.put("courseCodeArry", courseCodeArry);
-				CourseHashMap.put("courseNameArry", courseNameArry);
-				CourseHashMap.put("statusArry", statusArry);
-				CourseHashMap.put("departmentArry", departmentArry);
-				FileOutputStream fileOut = new FileOutputStream(tempDir + "Courses.ser");
-				ObjectOutputStream out = new ObjectOutputStream(fileOut);
-				out.writeObject(CourseHashMap);
-			}
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		readNextCourses();
 		System.out.println("TOTL: " + totalRecord);
 
 	}
@@ -98,8 +49,7 @@ public class CourseTest {
 		offset += 100;
 		try {
 			URL url = new URL(urlStr);
-			System.out.println(urlStr);
-			urlcon = url.openConnection();
+			URLConnection urlcon = url.openConnection();
 
 			urlcon.setConnectTimeout(3000);
 			BufferedReader buffread = new BufferedReader(new InputStreamReader(urlcon.getInputStream(), "UTF-8"));
@@ -107,7 +57,7 @@ public class CourseTest {
 			while ((inputLine = buffread.readLine()) != null)
 				outstr += inputLine;
 			buffread.close();
-
+			
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			InputSource is = new InputSource(new StringReader(outstr));
@@ -121,29 +71,33 @@ public class CourseTest {
 				if (nlist2.item(i).getFirstChild() != null)
 					courseCode = nlist2.item(i).getFirstChild().getNodeValue();
 				courseCodeArry.add(i, courseCode);
+				System.out.print(courseCodeArry.get(i));
 
 				nlist2 = doc.getElementsByTagName("name");
 				String courseName = "";
 				if (nlist2.item(i).getFirstChild() != null)
 					courseName = nlist2.item(i).getFirstChild().getNodeValue();
 				courseNameArry.add(i, courseName);
+				System.out.print(courseName);
 
 				nlist2 = doc.getElementsByTagName("status");
 				String status = "";
 				if (nlist2.item(i).getFirstChild() != null)
 					status = nlist2.item(i).getFirstChild().getNodeValue();
 				statusArry.add(i, status);
+				System.out.print(status);
 
 				nlist2 = doc.getElementsByTagName("academic_department");
 				String department = "";
 				if (nlist2.item(i).getFirstChild() != null)
 					department = nlist2.item(i).getFirstChild().getNodeValue();
 				departmentArry.add(i, department);
-
+				System.out.println(department);
 			}
 			if (totalRecord % 100 == 0) {
 				readNextCourses();
 			}
+			
 
 		} catch (Exception e) {
 			e.printStackTrace();
