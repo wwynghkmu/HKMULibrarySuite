@@ -102,6 +102,7 @@ public class AlephToAlmaCourseReadingList {
 
 				String course_id = value[0].trim();
 				course_id = course_id.replaceAll("\t", "");
+
 				String course_name = value[2].trim();
 
 				if (value[4] == null)
@@ -158,7 +159,8 @@ public class AlephToAlmaCourseReadingList {
 						mmsid = "991140920000541";
 						System.out.println("\tMMSID: " + mmsid);
 						System.out.println("\tSession: " + session);
-						writer.write(course_id + "\t" + session + "\t\t\t\t" + "RL_" + course_id + "\t" + course_name
+						writer.write(course_id + "\t" + session + "\t\t\t\t" + "RL_" + course_id + "_" + session + "\t"
+								+ course_name
 								+ "\t\t\tComplete\tComplete\tFULL\t\t\t\t\t\tSection1\t\t\t\t\tBK\tComplete\t\t" + mmsid
 								+ "\t\t" + title
 								+ "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n");

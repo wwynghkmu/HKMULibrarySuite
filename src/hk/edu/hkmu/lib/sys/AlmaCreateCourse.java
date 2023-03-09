@@ -44,9 +44,6 @@ public class AlmaCreateCourse {
 				ed = "2099-12-31";
 			}
 
-			System.out.println("SD: " + sd);
-			System.out.println("ED: " + ed);
-
 			if (sd.equals("0"))
 				sd = "2022-09-01";
 
@@ -59,11 +56,8 @@ public class AlmaCreateCourse {
 				year = year.substring(0, 4);
 			}
 
-			System.out.println("YER:" + year);
-
 			term = "";
 			for (int j = 1; j < terms.length; j++) {
-				System.out.println(terms[j]);
 				switch (terms[j]) {
 				case "April":
 					terms[j] = "TERM1";
@@ -74,27 +68,28 @@ public class AlmaCreateCourse {
 				case "October":
 					terms[j] = "TERM3";
 					break;
-
+				default:
+					terms[j] = terms[j].toUpperCase();
+					break;
 				}
 			}
 			
-
-			String data = "{\"link\":\"\",\"code\":\"" + code + "\",\"name\":\"" + name
-					+ "\",\"section\":\"" + session + "\",\"academic_department\":{\"value\":\"" + school
+			
+			System.out.println("CODE:" + code);
+			String data = "{\"link\":\"\",\"code\":\"" + code + "\",\"name\":\"" + name + "\",\"section\":\"" + session
+					+ "\",\"academic_department\":{\"value\":\"" + school
 					+ "\"},\"processing_department\":{\"value\":\"CIR-CR\"},\"term\":[";
 
 			if (terms.length > 1) {
 				for (int k = 1; k < terms.length; k++) {
 					term += "{\"value\":\"" + terms[k] + "\"}";
-					if(k != terms.length -1)
+					if (k != terms.length - 1)
 						term += ", ";
 				}
 			} else {
-				term =  "{\"value\":\"" + terms[0] + "\"}";
+				term = "{\"value\":\"" + terms[0] + "\"}";
 			}
-			
-			System.out.println(term);
-			
+
 			data += term;
 
 			data += "],\"status\":\"ACTIVE\",\"start_date\":\"" + sd + "\",\"end_date\":\"" + ed
@@ -102,8 +97,6 @@ public class AlmaCreateCourse {
 					+ "\",\"instructor\":[{\"primary_id\":\"" + instructor
 					+ "\"}],\"campus\":[{\"campus_code\":{\"value\":\"code\"},\"campus_participants\":\"0\"}],\"submit_by_date\":\""
 					+ sd + "\"}";
-			
-			
 
 			byte[] out = data.getBytes(StandardCharsets.UTF_8);
 
@@ -117,7 +110,7 @@ public class AlmaCreateCourse {
 				br = new BufferedReader(new InputStreamReader(http.getErrorStream()));
 			}
 			respondCode = http.getResponseCode() + " " + http.getResponseMessage();
-			System.out.println(respondCode);
+			 System.out.println(respondCode);
 			respondBody = br.readLine();
 			System.out.println(respondBody);
 			http.disconnect();
