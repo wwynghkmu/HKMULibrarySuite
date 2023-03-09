@@ -17,7 +17,7 @@ public class AlmaCreateCourse {
 	}
 
 	public String CreateCourse(String code, String name, String instructor, String school, String sd, String ed,
-			String term) {
+			String term, String year, String session) {
 		String respondCode = "";
 		String respondBody = "";
 		try {
@@ -32,22 +32,78 @@ public class AlmaCreateCourse {
 			// String data =
 			// "{\"link\":\"\",\"code\":\"PHI4361\",\"name\":\"Wittgenstein'sPhilosophy
 			// 2\",\"section\":\"01\",\"academic_department\":{\"value\":\"A&SS\"},\"processing_department\":{\"value\":\"C_DEP\"},\"term\":[{\"value\":\"AUTUMN\"}],\"status\":\"INACTIVE\",\"start_date\":\"2011-09-10Z\",\"end_date\":\"2013-12-31Z\",\"weekly_hours\":\"0\",\"participants\":\"35\",\"year\":\"2007\",\"instructor\":[{\"primary_id\":\"1234\"}],\"campus\":[{\"campus_code\":{\"value\":\"code\"},\"campus_participants\":\"30\"}],\"submit_by_date\":\"2013-12-01Z\"}";
-			
-			if(sd.equals(""))
+
+			if (!sd.equals("0")) {
+				if (!sd.equals(""))
+					sd = sd.substring(0, 4) + "-" + sd.substring(4, 6) + "-" + sd.substring(6, 8);
+
+				if (!ed.equals(""))
+					ed = ed.substring(0, 4) + "-" + ed.substring(4, 6) + "-" + ed.substring(6, 8);
+			} else {
+				sd = "1996-01-01";
+				ed = "2099-12-31";
+			}
+
+			System.out.println("SD: " + sd);
+			System.out.println("ED: " + ed);
+
+			if (sd.equals("0"))
 				sd = "2022-09-01";
+
+			if (ed.equals("0"))
+				ed = "2023-07-13";
+			term = term.trim();
+			String terms[] = term.split("\\$\\$\\d");
+
+			if (year.length() > 4) {
+				year = year.substring(0, 4);
+			}
+
+			System.out.println("YER:" + year);
+
+			term = "";
+			for (int j = 1; j < terms.length; j++) {
+				System.out.println(terms[j]);
+				switch (terms[j]) {
+				case "April":
+					terms[j] = "TERM1";
+					break;
+				case "September":
+					terms[j] = "TERM2";
+					break;
+				case "October":
+					terms[j] = "TERM3";
+					break;
+
+				}
+			}
 			
-			if(ed.equals(""))
-				ed = "2023-07-14";
-			
-			
+
 			String data = "{\"link\":\"\",\"code\":\"" + code + "\",\"name\":\"" + name
-					+ "\",\"section\":\"01\",\"academic_department\":{\"value\":\"" + school
-					+ "\"},\"processing_department\":{\"value\":\"CIR-CR\"},\"term\":[{\"value\":\"" + term
-					+ "\"}],\"status\":\"ACTIVE\",\"start_date\":\"" + sd + "\",\"end_date\":\"" + ed
-					+ "\",\"weekly_hours\":\"0\",\"participants\":\"0\",\"year\":\"2022\",\"instructor\":[{\"primary_id\":\""
-					+ instructor + "\"}],\"campus\":[{\"campus_code\":{\"value\":\"code\"},\"campus_participants\":\"0\"}],\"submit_by_date\":\"" + sd + "\"}";
+					+ "\",\"section\":\"" + session + "\",\"academic_department\":{\"value\":\"" + school
+					+ "\"},\"processing_department\":{\"value\":\"CIR-CR\"},\"term\":[";
+
+			if (terms.length > 1) {
+				for (int k = 1; k < terms.length; k++) {
+					term += "{\"value\":\"" + terms[k] + "\"}";
+					if(k != terms.length -1)
+						term += ", ";
+				}
+			} else {
+				term =  "{\"value\":\"" + terms[0] + "\"}";
+			}
 			
-			System.out.println(data);
+			System.out.println(term);
+			
+			data += term;
+
+			data += "],\"status\":\"ACTIVE\",\"start_date\":\"" + sd + "\",\"end_date\":\"" + ed
+					+ "\",\"weekly_hours\":\"0\",\"participants\":\"0\",\"year\":\"" + year
+					+ "\",\"instructor\":[{\"primary_id\":\"" + instructor
+					+ "\"}],\"campus\":[{\"campus_code\":{\"value\":\"code\"},\"campus_participants\":\"0\"}],\"submit_by_date\":\""
+					+ sd + "\"}";
+			
+			
 
 			byte[] out = data.getBytes(StandardCharsets.UTF_8);
 

@@ -1,6 +1,10 @@
 package hk.edu.hkmu.lib.sys;
 
 import java.io.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
@@ -26,6 +30,12 @@ public class AlephToAlmaCourseReadingList {
 	public static void main(String[] args) {
 
 		try {
+
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+
+			BufferedWriter writer = new BufferedWriter(new FileWriter("D:\\exportedReadList.txt"));
+			writer.write(
+					"coursecode\tsection_id\tsearchable_id1\tsearchable_id2\tsearchable_id3\treading_list_code\treadin_list_name\treading_list_descripotion\treading_list_subject\treading_list_status\tRLStatus\tvisibility\treading_list_assigned_to\treading_list_library_note\treading_list_instructor_note\towner_user_name\tcreativecomone\tsection_name\tsection_description\tsection_start_date\tsection_end_date\tsection_tags\tcitation_secondary_type\tcitation_status\tcitation_tags\tcitation_mms_id\tcitation_original_system_id\tcitation_title\tcitation_journal_title\tcitation_author\tcitation_publication_date\tcitation_edition\tcitation_isbn\tcitation_issn\tcitation_place_of_publication\tcitation_publisher\tcitation_volume\tcitation_issue\tcitation_pages\tcitation_start_page\tcitation_end_page\tcitation_doi\tcitation_oclc\tcitation_lccn\tcitation_chapter\trlterms_chapter_title\tcitation_chapter_author\teditor\tcitation_source\tcitation_source1\tcitation_source2\tcitation_source3\tcitation_source4\tcitation_source5\tcitation_source6\tcitation_source7\tcitation_source8\tcitation_source9\tcitation_source10\tcitation_note\tadditional_person_name\tfile_name\tcitation_public_note\tlicense_type\tcitation_instructor_note\tcitation_library_note\texternal_system_id");
 
 			HashMap<String, String[]> exceltable = new HashMap<String, String[]>();
 
@@ -64,9 +74,14 @@ public class AlephToAlmaCourseReadingList {
 					}
 
 					if (cell.getColumnIndex() == 0) {
-						exceltable.put(str, new String[row.getLastCellNum()]);
+
+						exceltable.put(str, new String[20]);
+
 						exceltable.get(str)[cell.getColumnIndex()] = str.replaceAll("....$", "").trim();
+						exceltable.get(str)[row.getLastCellNum() + 1] = str
+								.replaceAll(exceltable.get(str)[cell.getColumnIndex()], "").trim();
 						key = str;
+
 					} else {
 						exceltable.get(key)[cell.getColumnIndex()] = str;
 
@@ -86,6 +101,7 @@ public class AlephToAlmaCourseReadingList {
 				String[] value = exceltable.get(name);
 
 				String course_id = value[0].trim();
+				course_id = course_id.replaceAll("\t", "");
 				String course_name = value[2].trim();
 
 				if (value[4] == null)
@@ -104,28 +120,65 @@ public class AlephToAlmaCourseReadingList {
 				if (value[11].equals("0"))
 					value[11] = "19960321";
 
+				String session = value[18];
+				session = session.substring(2, 4);
+
 				String start_date = value[10].trim().replace("'", "");
 				String end_date = value[11].trim().replace("'", "");
 				if (value[12] == null)
 					value[12] = "";
 				String term = value[12].trim();
+				if (!course_id.equals("Z108_REC")) {
+					System.out.println(course_id + " " + course_name);
+					Connection conAleph = DriverManager
+							.getConnection("jdbc:oracle:thin:@aleph.lib.ouhk.edu.hk:1521:aleph22", "oul01", "oul01");
+					Statement stmt = conAleph.createStatement();
+					String sql = "select * from oul50.z13u where z13u_user_defined_7 like '%" + course_id + "%'";
+					if (!course_id.equals("Z108_REC"))
+						System.out.println("SQL:" + sql);
+					ResultSet rs = stmt.executeQuery(sql);
+					String rec_key;
+					String title;
+					while (rs.next()) {
+						rec_key = rs.getString("Z13U_REC_KEY").trim();
 
-				System.out.println(course_id + " " + course_name + " " + instructor + " " + school + " SD:>>>"
-						+ start_date + "<<<ED:" + end_date + " " + term + " ");
+						title = rs.getString("Z13U_USER_DEFINED_14");
+						System.out.println("\t" + course_id + " " + course_name + " " + rec_key + " " + title);
 
-				/*
-				 * LocalDate sd =
-				 * sdf.parse(start_date).toInstant().atZone(ZoneId.systemDefault()).toLocalDate(
-				 * ); LocalDate ed =
-				 * sdf.parse(end_date).toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-				 * 
-				 * if(!now.isAfter(sd) && now.isBefore(sd)) { exceltable.remove(key); }
-				 */
+						String mmsid = "";
 
+						File myObj = new File("d:\\852HKMU_INST_001_BIB_IDs.csv");
+						Scanner myReader = new Scanner(myObj);
+						while (myReader.hasNextLine()) {
+							String data = myReader.nextLine();
+							if (data.contains(rec_key))
+								mmsid = data.split(",")[0];
+						}
+						myReader.close();
+						mmsid = "991140920000541";
+						System.out.println("\tMMSID: " + mmsid);
+						System.out.println("\tSession: " + session);
+						writer.write(course_id + "\t" + session + "\t\t\t\t" + "RL_" + course_id + "\t" + course_name
+								+ "\t\t\tComplete\tComplete\tFULL\t\t\t\t\t\tSection1\t\t\t\t\tBK\tComplete\t\t" + mmsid
+								+ "\t\t" + title
+								+ "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n");
+					}
+					rs.close();
+					stmt.close();
+					conAleph.close();
+
+					/*
+					 * LocalDate sd =
+					 * sdf.parse(start_date).toInstant().atZone(ZoneId.systemDefault()).toLocalDate(
+					 * ); LocalDate ed =
+					 * sdf.parse(end_date).toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+					 * 
+					 * if(!now.isAfter(sd) && now.isBefore(sd)) { exceltable.remove(key); }
+					 */
+				}
 			}
 
-			System.out.println(dtf.format(now));
-
+			writer.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -19,6 +19,7 @@ import org.xml.sax.InputSource;
 public class Course {
 
 	public HashMap<String, ArrayList> courses = new HashMap<String, ArrayList>();
+	
 	// For storing the courses: courseArray[i].get(0) is Course Code,
 	// courseArray[i].get(1) is Course Name, courseArray[i].get(0) is Status,
 	// courseArray[i].get(0) is School
@@ -29,7 +30,11 @@ public class Course {
 	private String urlStr = "";
 	String tempDir = "";
 	URLConnection urlcon;
-
+	
+	
+	//urlStr: the whole API (including API Key) URL for fetching courses in Alma.
+	//e.g.: https://api-ap.hosted.exlibrisgroup.com/almaws/v1/courses?apikey=someAPIKey&status=ACTIVE&order_by=code&limit=100&offset=0
+	//tempDir: the temporary directory to store the object courseArray as cache of the result from Alma
 	public Course(String urlStr, String tempDir) {
 		this.urlStr = urlStr;
 		this.tempDir = tempDir;
