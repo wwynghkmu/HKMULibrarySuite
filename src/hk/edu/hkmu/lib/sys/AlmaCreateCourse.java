@@ -24,6 +24,12 @@ public class AlmaCreateCourse {
 
 			URL url = new URL(
 					"https://api-ap.hosted.exlibrisgroup.com/almaws/v1/courses?apikey=l8xx41bf077192274811b545c60ba48df465");
+
+			// Alma SandBox API:
+			// "https://api-ap.hosted.exlibrisgroup.com/almaws/v1/courses?apikey=l8xx41bf077192274811b545c60ba48df465"
+			// Alma Production API:
+			// "https://api-ap.hosted.exlibrisgroup.com/almaws/v1/courses?apikey=l8xxeb2a38bf0cb840e59f4ecf7a8f1c01f0"
+
 			HttpURLConnection http = (HttpURLConnection) url.openConnection();
 			http.setRequestMethod("POST");
 			http.setDoOutput(true);
@@ -73,8 +79,7 @@ public class AlmaCreateCourse {
 					break;
 				}
 			}
-			
-			
+
 			System.out.println("CODE:" + code);
 			String data = "{\"link\":\"\",\"code\":\"" + code + "\",\"name\":\"" + name + "\",\"section\":\"" + session
 					+ "\",\"academic_department\":{\"value\":\"" + school
@@ -110,7 +115,7 @@ public class AlmaCreateCourse {
 				br = new BufferedReader(new InputStreamReader(http.getErrorStream()));
 			}
 			respondCode = http.getResponseCode() + " " + http.getResponseMessage();
-			 System.out.println(respondCode);
+			System.out.println(respondCode);
 			respondBody = br.readLine();
 			System.out.println(respondBody);
 			http.disconnect();
