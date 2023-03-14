@@ -152,7 +152,7 @@ public class AlephToAlmaCourseReadingList {
 						Scanner myReader = new Scanner(myObj);
 						while (myReader.hasNextLine()) {
 							String data = myReader.nextLine();
-							if (data.contains(rec_key))
+							if (data.contains(rec_key) && ! data.contains("-OUL30"))
 								mmsid = data.split(",")[0];
 						}
 						myReader.close();

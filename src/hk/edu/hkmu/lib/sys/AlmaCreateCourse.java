@@ -23,7 +23,7 @@ public class AlmaCreateCourse {
 		try {
 
 			URL url = new URL(
-					"https://api-ap.hosted.exlibrisgroup.com/almaws/v1/courses?apikey=l8xx41bf077192274811b545c60ba48df465");
+					"https://api-ap.hosted.exlibrisgroup.com/almaws/v1/courses?apikey=l8xxeb2a38bf0cb840e59f4ecf7a8f1c01f0");
 
 			// Alma SandBox API:
 			// "https://api-ap.hosted.exlibrisgroup.com/almaws/v1/courses?apikey=l8xx41bf077192274811b545c60ba48df465"
