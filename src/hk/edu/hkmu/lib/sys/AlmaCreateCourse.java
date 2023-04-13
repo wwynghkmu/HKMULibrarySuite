@@ -4,17 +4,10 @@ import java.io.*;
 import java.net.*;
 import java.nio.charset.StandardCharsets;
 
+/*by William NG (HKMU LIB TSDI)
+ * This class use Alma API to create Alma Courses.
+ */
 public class AlmaCreateCourse {
-
-	private String json;
-
-	public AlmaCreateCourse() {
-
-	}
-
-	public AlmaCreateCourse(String json) {
-		this.json = json;
-	}
 
 	public String CreateCourse(String code, String name, String instructor, String school, String sd, String ed,
 			String term, String year, String session) {
@@ -50,11 +43,14 @@ public class AlmaCreateCourse {
 				ed = "2099-12-31";
 			}
 
+			//using default start date and end date of course if no dates are given.
 			if (sd.equals("0"))
 				sd = "2022-09-01";
 
 			if (ed.equals("0"))
 				ed = "2023-07-13";
+			
+			//parameter "term" accepts course terms in form of [term1],[term2],... the following split the term string into a JSON strings readable by Alma.
 			term = term.trim();
 			String terms[] = term.split("\\$\\$\\d");
 
@@ -81,6 +77,7 @@ public class AlmaCreateCourse {
 			}
 
 			System.out.println("CODE:" + code);
+			System.out.println("INST:" + instructor);
 			String data = "{\"link\":\"\",\"code\":\"" + code + "\",\"name\":\"" + name + "\",\"section\":\"" + session
 					+ "\",\"academic_department\":{\"value\":\"" + school
 					+ "\"},\"processing_department\":{\"value\":\"CIR-CR\"},\"term\":[";
@@ -103,6 +100,8 @@ public class AlmaCreateCourse {
 					+ "\"}],\"campus\":[{\"campus_code\":{\"value\":\"code\"},\"campus_participants\":\"0\"}],\"submit_by_date\":\""
 					+ sd + "\"}";
 
+			System.out.println(data);
+			
 			byte[] out = data.getBytes(StandardCharsets.UTF_8);
 
 			OutputStream stream = http.getOutputStream();
@@ -115,9 +114,9 @@ public class AlmaCreateCourse {
 				br = new BufferedReader(new InputStreamReader(http.getErrorStream()));
 			}
 			respondCode = http.getResponseCode() + " " + http.getResponseMessage();
-			System.out.println(respondCode);
+			//System.out.println(respondCode);
 			respondBody = br.readLine();
-			System.out.println(respondBody);
+			//System.out.println(respondBody);
 			http.disconnect();
 
 		} catch (Exception e) {

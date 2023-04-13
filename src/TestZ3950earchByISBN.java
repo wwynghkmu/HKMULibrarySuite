@@ -5,8 +5,8 @@ import hk.edu.hkmu.lib.bookquery.*;
 public class TestZ3950earchByISBN {
 	public static void main(String[] args) {
 
-		String inst = "JULAC";
-		String isbn = "9782846669160";
+		String inst = "HKMUALMA";
+		String isbn = "9027716048";
 		// String isbn = "9782846669160";
 		String vol = "";
 

@@ -13,6 +13,11 @@ import org.apache.poi.ss.usermodel.*;
 import hk.edu.hkmu.lib.*;
 import hk.edu.hkmu.lib.sys.*;
 
+/*
+ * By William NG (HKMU TSDI) 14 Mar 2023
+ * This class is is for Alma Implemenation Project (2023) to migrate Aleph's Course information of Aleph Oracle Table Z108 into Alma Course module. 
+ * It reads an Excel form of the Aleph Oracle table and then call the class "AlmaCreateCourse" to create Alma courses using Alma API.  
+ */
 public class AlephToAlmaCourseList {
 	public static void main(String[] args) {
 
@@ -77,6 +82,7 @@ public class AlephToAlmaCourseList {
 						key = str;
 					} else {
 						if (cell.getCellType().name().equals("NUMERIC")) {
+							//Stringtify numeric value in the Excel.
 							if (cell.getColumnIndex() == 10)
 								exceltable.get(key)[10] = (long) f + "";
 							if (cell.getColumnIndex() == 11)
@@ -144,7 +150,7 @@ public class AlephToAlmaCourseList {
 
 			}
 
-			System.out.println(dtf.format(now));
+			//System.out.println(dtf.format(now));
 
 		} catch (Exception e) {
 			e.printStackTrace();

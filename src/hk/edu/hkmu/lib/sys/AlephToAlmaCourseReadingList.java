@@ -17,12 +17,13 @@ import org.apache.poi.ss.usermodel.*;
 import hk.edu.hkmu.lib.*;
 
 /**
- * OUHK In-house Library Tool
+ * HKMU In-house Library Tool
  * 
  * @author Wai-yan NG
- * @author wwyng@ouhk.edu.hk
- *
- * @since Jan 27, 2023
+ * @author wwyng@hkmu.edu.hk
+ * @since 14 Mar 2023
+ * 
+ * This class is used by Alma Implementation Project to migrate Aleph course reading list into Alma Reading List / Citations
  */
 
 public class AlephToAlmaCourseReadingList {
