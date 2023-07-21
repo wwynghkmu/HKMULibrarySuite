@@ -6,12 +6,15 @@ import java.util.*;
 import java.util.regex.*;
 import org.apache.commons.lang3.StringEscapeUtils;
 
-/** OUHK In-house Library Tool - Represent a Book Item Information, including BIB and Item (Holding) records.
+/**
+ * OUHK In-house Library Tool - Represent a Book Item Information, including BIB
+ * and Item (Holding) records.
+ * 
  * @author Wai-yan NG
  * @author wwyng@ouhk.edu.hk
  * @version 1.0
  * @since 1.0
-*/
+ */
 
 public class BookItem {
 	public ISBN isbn;
@@ -19,7 +22,7 @@ public class BookItem {
 	public MARC marc;
 
 	public ArrayList<String> fulltextUrls;
-	
+
 	/*
 	 * holdingInfo is a 2 dimensional array that each row holds a holding of an item
 	 * Col 1 represents "Institution" Col 2 represents "Location" Col 3 represents
@@ -121,23 +124,25 @@ public class BookItem {
 		subject = str;
 	} // end setSubjects()
 
-	
-	/** Formalize a call no (removing head-tail spaces and standardize a space between the 1st and the 2nd cutter); validation feature disabled.
+	/**
+	 * Formalize a call no (removing head-tail spaces and standardize a space
+	 * between the 1st and the 2nd cutter); validation feature disabled.
+	 * 
 	 * @param callno A string represent an intended Call No.
 	 * @return A string of the formized call no.
-	*/
+	 */
 	public String validateCallNo(String callno) {
 		callno = callno.trim();
 		String str2 = new String(callno);
 		/*
-		if (str2.matches("^[0-9]") || !str2.matches(".*[0-9].*") || str2.matches("^\\..*")
-				|| (!str2.matches("[a-zA-Z].*[\\s|\\t].*") && !str2.matches("[a-zA-Z].*\\..*")) || str2.contains("microfilm"))
-			str = null;
-		*/
+		 * if (str2.matches("^[0-9]") || !str2.matches(".*[0-9].*") ||
+		 * str2.matches("^\\..*") || (!str2.matches("[a-zA-Z].*[\\s|\\t].*") &&
+		 * !str2.matches("[a-zA-Z].*\\..*")) || str2.contains("microfilm")) str = null;
+		 */
 
 		if (callno != null && !callno.matches("^[a-zA-Z].*\\..*")) {
 			callno = callno.replaceAll("^([a-zA-Z].*?)[\\s|\\t](.*)", "$1 .$2");
-		} //end if
+		} // end if
 		return callno;
 	}
 
@@ -160,7 +165,6 @@ public class BookItem {
 			str = str.replaceAll("Vol.:.*", "");
 			str = StringEscapeUtils.unescapeHtml4(str);
 			str = StringEscapeUtils.unescapeXml(str);
-			str = str.replaceAll("=.*", "");
 			str = strHandle.trimSpecialChars(str);
 
 			title = str;
@@ -255,9 +259,9 @@ public class BookItem {
 	public void setIsbn(String str) {
 		isbn.setIsbn(str);
 	} // end setIsbn10()
-	
+
 	public void setIssn(String str) {
-		issn=str;
+		issn = str;
 	} // end setIsbn10()
 
 	public void setPublisher(String str) {
@@ -316,7 +320,7 @@ public class BookItem {
 	public String getTitle() {
 		return title;
 	} // end getTitle
-	
+
 	public String getIssn() {
 		return issn;
 	}
@@ -432,6 +436,9 @@ public class BookItem {
 	} // end getSubject()
 
 	public ArrayList<String> getSubjects() {
+		if (subjects == null) {
+			subjects = new ArrayList();
+		}
 		return subjects;
 	} // end getSubjects
 

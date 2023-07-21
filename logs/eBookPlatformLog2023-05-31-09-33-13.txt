@@ -1,0 +1,435 @@
+2023-05-31 09:33:16: 
+
+Target Platform Information:
+2023-05-31 09:33:16: 	Search Type: platform
+2023-05-31 09:33:16: 	Ebk Platform: Taylor & Francis
+2023-05-31 09:33:16: 	Searching Keyword on Primo: taylor & francis
+2023-05-31 09:33:16: 	Platform Keyword on Primo's Accessing Link: Taylor & Francis
+2023-05-31 09:33:16: 	Creator Keyword on Primo's Facet: Taylor & Francis
+2023-05-31 09:33:19: Finding the SearchBar
+2023-05-31 09:33:19: Clicking eBook facet
+2023-05-31 09:33:38: nav: 0 of 10
+2023-05-31 09:33:40: nav: 0 of 1
+2023-05-31 09:33:43: Main ELe Text: 1
+BOOK
+Stylistics and the teaching of literature
+Widdowson, H. G.,
+Boston : Addison Wesley Longman Limited 1975
+Available Online
+2
+BOOK
+Fighting melancholia : Don Quixote's teaching
+Davoine, Françoise, Jacob, Agnès
+London : Karnac Books Ltd 2016
+Available Online
+3
+BOOK
+Adult literacy in a new era : reflections from the Open Book
+Ramdeholl, Dianne,
+Boulder, Colo. : Paradigm Publishers 2011
+Available Online
+4
+BOOK
+Situations and speech acts : toward a formal semantics of discourse
+Evans, David A. 1948-
+New York : Garland Publishing, Inc. 1985
+Available Online
+5
+BOOK
+Styles of discourse
+Coupland, Nikolas, 1950-
+London : Croom Helm 1988
+Available Online
+6
+BOOK
+Social work with children and families : reflections of a critical practitioner
+Rogowski, Steve,
+London : Routledge 2016
+Available Online
+7
+BOOK
+Olympic cities : city agendas, planning, and the world's games, 1896-2020
+Gold, John R., 1949-Gold, Margaret M.
+London ; New York : Routledge 2017
+Available Online
+8
+BOOK
+Foreign policy : thinking outside the box
+Etzioni, Amitai,
+London : Routledge 2016
+Available Online
+9
+BOOK
+Power and politeness in the workplace : a sociolinguistic analysis of talk at work
+Holmes, Janet, 1947- Stubbe, Maria
+London ; New York : Routledge 2015
+Available Online
+10
+BOOK
+Keeping the leadership in instructional leadership : developing your practice
+Carrier, Linda L.,
+New York ; London : Routledge 2017
+Available Online
+2023-05-31 09:33:43: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (b3b8b9d165d523b67babb19b68d688d4)] -> id: searchResultsContainer]
+2023-05-31 09:33:45: Check whether is a FRBRed record.
+2023-05-31 09:33:47: Not in FRBR
+2023-05-31 09:33:59: Getting all links of the target title.
+2023-05-31 09:34:03: No. of links records of the target title:1
+2023-05-31 09:34:03: Target link on browser: ebookviataylorfrancisviewfulltexthereviataylorfrancis
+2023-05-31 09:34:03: Link keyword in config file: taylorfrancis
+2023-05-31 09:34:08: Link matched. Going to save.
+2023-05-31 09:35:09: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 09:35:09: Title on Primo: EBOOKVIATAYLORFRANCISVIEWFULLTEXTHEREVIATAYLORFRANCIS
+2023-05-31 09:35:09: cannot reach the platform:Taylor & Francis
+2023-05-31 09:35:09: Host connected. 
+2023-05-31 09:35:10: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 09:35:10: sftp Channel exited.
+2023-05-31 09:35:10: Channel disconnected.
+2023-05-31 09:35:10: Host Session disconnected.
+2023-05-31 09:35:10: Going back
+2023-05-31 09:35:16: 
+
+Target Platform Information:
+2023-05-31 09:35:16: 	Search Type: platform
+2023-05-31 09:35:16: 	Ebk Platform: Peter Lang
+2023-05-31 09:35:16: 	Searching Keyword on Primo: Peter Lang
+2023-05-31 09:35:16: 	Platform Keyword on Primo's Accessing Link: Peter Lang
+2023-05-31 09:35:16: 	Creator Keyword on Primo's Facet: Verlag Peter Lang
+2023-05-31 09:35:17: Finding the SearchBar
+2023-05-31 09:35:17: Clicking eBook facet
+2023-05-31 09:35:36: nav: 0 of 10
+2023-05-31 09:35:38: nav: 0 of 1
+2023-05-31 09:35:41: Main ELe Text: 1
+BOOK
+Computer-assisted translation (CAT) tools in the translator training process
+Kornacki, Michał, 1982-
+Berlin ; New York : Peter Lang 2018
+Available Online
+2
+BOOK
+Visions and revisions : studies in theoretical and applied linguistics
+Łozowski, Przemysław, 1963-Stadnik, Katarzyna, 1978 December 11-
+Frankfurt am Main : Peter Lang Edition 2016
+Available Online
+3
+BOOK
+Exploring translation in language learning
+Smentek, Małgorzata,
+Frankfurt am Main ; New York : Peter Lang Edition 2017
+Available Online
+4
+BOOK
+Between global and local : adult learning and development
+Fragoso, AntónioKurantowicz, EwaLucio-Villegas, Emilio
+Frankfurt am Main : Peter Lang 2011
+Available at Ho Sik Yee Library Counter (Closed Stack) - Ho Sik Yee Library (LC5225.R47 B48 2011)
+Available Online
+5
+BOOK
+Conducting research in translation technologies
+Sánchez-Gijón, PilarTorres-Hostench, OlgaMesa-Lao, Bartolomé
+Oxford, England : Peter Lang 2015
+Available Online
+6
+BOOK
+In, on and through translation : Tabucchi's travelling texts
+Wren-Owens, Elizabeth,
+Oxford ; New York : Peter Lang 2018
+Available Online
+7
+BOOK
+Constructing translation competence
+Pietrzak, Paulina, 1984-Deckert, Mikołaj
+Frankfurt am Main, Germany ; Bern, Switzerland : Peter Lang Edition 2015
+Available Online
+8
+BOOK
+Language in the new millennium : applied-linguistic and cognitive-linguistic considerations
+Uberman, AgnieszkaDick-Bursztyn, Marta, 1972-
+Berlin : New York, N.Y. : Peter Lang 2018
+Available Online
+9
+BOOK
+The languages of dubbing : mainstream audiovisual translation in Italy
+Pavesi, MariaFormentelli, MaicolGhia, Elisa, 1982-
+Bern, Switzerland : Peter Lang 2014
+Available Online
+10
+BOOK
+The digital university : a dialogue and manifesto
+Peters, Michael 1948- Jandrić, Petar
+New York, N.Y. : Peter Lang 2018
+Available Online
+2023-05-31 09:35:41: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (b3b8b9d165d523b67babb19b68d688d4)] -> id: searchResultsContainer]
+2023-05-31 09:35:43: Check whether is a FRBRed record.
+2023-05-31 09:35:45: Not in FRBR
+2023-05-31 09:35:55: Getting all links of the target title.
+2023-05-31 09:35:59: No. of links records of the target title:1
+2023-05-31 09:35:59: Target link on browser: viewfulltextviewfulltexthereviapeterlang
+2023-05-31 09:35:59: Link keyword in config file: peterlang
+2023-05-31 09:36:05: Link matched. Going to save.
+2023-05-31 09:37:06: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 09:37:06: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIAPETERLANG
+2023-05-31 09:37:06: cannot reach the platform:Peter Lang
+2023-05-31 09:37:06: Host connected. 
+2023-05-31 09:37:06: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 09:37:06: sftp Channel exited.
+2023-05-31 09:37:06: Channel disconnected.
+2023-05-31 09:37:06: Host Session disconnected.
+2023-05-31 09:37:06: Going back
+2023-05-31 09:37:13: 
+
+Target Platform Information:
+2023-05-31 09:37:13: 	Search Type: platform
+2023-05-31 09:37:13: 	Ebk Platform: Wiley Online
+2023-05-31 09:37:13: 	Searching Keyword on Primo: Wiley InterScience
+2023-05-31 09:37:13: 	Platform Keyword on Primo's Accessing Link: Wiley
+2023-05-31 09:37:13: 	Creator Keyword on Primo's Facet: Wiley Online Library
+2023-05-31 09:37:17: Finding the SearchBar
+2023-05-31 09:37:17: Clicking eBook facet
+2023-05-31 09:37:36: nav: 0 of 10
+2023-05-31 09:37:38: nav: 0 of 1
+2023-05-31 09:37:41: Main ELe Text: 1
+BOOK
+Medical toxicology of drug abuse : synthesized chemicals and psychoactive plants
+Barceloux, Donald G.,
+Hoboken, N.J. : John Wiley & Sons Incorporated 2012
+Available Online
+2
+BOOK
+The new Blackwell companion to the city
+Bridge, GaryWatson, Sophie
+Chichester, West Sussex, United Kingdom : Blackwell Publishing Limited 2011
+Available Online
+3
+BOOK
+Therapist and client : a relational approach to psychotherapy
+Nolan, Patrick, 1951-
+Chichester, West Sussex, United Kingdom : John Wiley & Sons Limited 2012
+Available Online
+4
+BOOK
+Post-traumatic syndromes in childhood and adolescence : a handbook of research and practice
+Ardino, Vittoria
+Chichester, West Sussex, United Kingdom : John Wiley & Sons Limited 2011
+Available Online
+5
+BOOK
+The handbook of Alzheimer's disease and other dementias
+Budson, Andrew E.Kowall, Neil W.
+Chichester, West Sussex, United Kingdom : Blackwell Publishing Limited 2011
+Available Online
+6
+BOOK
+Psychological management of stroke
+Lincoln, Nadina B., Kneebone, Ian I.Macniven, Jamie A. B.Morris, Reg C.
+Chichester, West Sussex, United Kingdom : John Wiley & Sons Limited 2012
+Available Online
+7
+BOOK
+Reading assessment : linking language, literacy, and cognition
+Farrall, Melissa Lee,
+Hoboken, New Jersey : John Wiley and Sons, Incorporated 2012
+Available Online
+8
+BOOK
+The handbook of global health communication
+Obregon, RafaelWaisbord, Silvio R. 1961- (Silvio Ricardo)
+Chichester, West Sussex, United Kingdom : John Wiley & Sons, Incorporated 2012
+Available Online
+9
+BOOK
+Understanding girls' problem behavior : how girls' delinquency develops in the context of maturity and health, co-occurring problems, and relationships
+Kerr, Margaret, 1953-Stattin, HåkanEngels, Rutger C.M.EOverbeek, GeertjanAndershed, Anna-Karin
+Chichester, West Sussex, United Kingdom : John Wiley & Sons Limited 2011
+Available Online
+10
+BOOK
+Modelling under risk and uncertainty : an introduction to statistical, phenomenological, and computational methods
+Rocquigny, Etienne de,
+Chichester, West Sussex, United Kingdom : John Wiley & Sons Limited 2012
+Available Online
+2023-05-31 09:37:41: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (b3b8b9d165d523b67babb19b68d688d4)] -> id: searchResultsContainer]
+2023-05-31 09:37:43: Check whether is a FRBRed record.
+2023-05-31 09:37:45: Not in FRBR
+2023-05-31 09:37:55: Getting all links of the target title.
+2023-05-31 09:37:59: No. of links records of the target title:1
+2023-05-31 09:37:59: Target link on browser: viewfulltextviewfulltexthereviawiley
+2023-05-31 09:37:59: Link keyword in config file: wiley
+2023-05-31 09:38:05: Link matched. Going to save.
+2023-05-31 09:39:06: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 09:39:06: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIAWILEY
+2023-05-31 09:39:06: cannot reach the platform:Wiley Online
+2023-05-31 09:39:06: Host connected. 
+2023-05-31 09:39:06: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 09:39:06: sftp Channel exited.
+2023-05-31 09:39:06: Channel disconnected.
+2023-05-31 09:39:06: Host Session disconnected.
+2023-05-31 09:39:06: Going back
+2023-05-31 09:39:13: 
+
+Target Platform Information:
+2023-05-31 09:39:13: 	Search Type: platform
+2023-05-31 09:39:13: 	Ebk Platform: SAGE
+2023-05-31 09:39:13: 	Searching Keyword on Primo: sage
+2023-05-31 09:39:13: 	Platform Keyword on Primo's Accessing Link: Sage
+2023-05-31 09:39:13: 	Creator Keyword on Primo's Facet: Sage Publications
+2023-05-31 09:39:14: Finding the SearchBar
+2023-05-31 09:39:14: Clicking eBook facet
+2023-05-31 09:39:34: nav: 0 of 10
+2023-05-31 09:39:36: nav: 0 of 1
+2023-05-31 09:39:38: Main ELe Text: 1
+MULTIPLE VERSIONS
+Key themes in the ethnography of education
+Delamont, Sara, 1947-
+2 versions found. See all versions
+2
+BOOK
+The SAGE handbook of qualitative business and management research methods : history and traditions
+Cassell, Catherine, Cunliffe, Ann L.Grandy, Gina
+London : SAGE Publications Ltd 2018
+Available Online
+3
+MULTIPLE VERSIONS
+The SAGE handbook of visual research methods
+Margolis, Eric, 1947-;Pauwels, L. (Luc)
+2 versions found. See all versions
+4
+BOOK
+The Sage handbook of industrial, work & organizational psychology
+Ones, Deniz S., 1965-Anderson, Neil, 1961-Sinangil, Handan Kepir
+Thousand Oaks, California : SAGE 2018
+Available Online
+5
+MULTIPLE VERSIONS
+Essential counseling skills : practice and application guide
+Magnuson, Sandra L.,; Norem, Ken
+2 versions found. See all versions
+6
+BOOK
+The Sage handbook of consumer culture
+Kravets, OlgaMaclaran, PaulineMiles, Steven
+Thousand Oaks, California : SAGE 2018
+Available Online
+7
+BOOK
+Personality disorders : toward the DSM-V
+O'Donohue, William T.Fowler, Katherine A.Lilienfeld, Scott O., 1960-
+Los Angeles : SAGE 2007
+Available Online
+8
+BOOK
+The primary ICT and e-learning co-ordinator's manual
+Wright, James
+London : Paul Chapman Publishing 2007
+Available at Stanley Ho Library General Collection – Stanley Ho Library (LB1028.5 .W75 2007)
+Available Online
+9
+BOOK
+The politics of fear : what right-wing populist discourses mean
+Wodak, Ruth, 1950-
+Thousand Oaks, California : SAGE Publications 2015
+Available Online
+10
+BOOK
+Reflective practice for renewing schools : an action guide for educators
+York-Barr, Jennifer, 1958- Sommers, William A.Ghere, Gail S.Montie, Jo
+Thousand Oaks : Corwin 2016
+Available Online
+2023-05-31 09:39:38: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (b3b8b9d165d523b67babb19b68d688d4)] -> id: searchResultsContainer]
+2023-05-31 09:39:40: Check whether is a FRBRed record.
+2023-05-31 09:39:42: In FRBR Group. Trying to get the online record.
+2023-05-31 09:40:01: Getting all links of the target title.
+2023-05-31 09:40:05: No. of links records of the target title:1
+2023-05-31 09:40:05: Target link on browser: viewfulltextviewfulltexthereviasageaccesstothisebookisvaliduntil31august2023only
+2023-05-31 09:40:05: Link keyword in config file: sage
+2023-05-31 09:40:11: Link matched. Going to save.
+2023-05-31 09:41:11: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 09:41:11: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIASAGEACCESSTOTHISEBOOKISVALIDUNTIL31AUGUST2023ONLY
+2023-05-31 09:41:11: cannot reach the platform:SAGE
+2023-05-31 09:41:12: Host connected. 
+2023-05-31 09:41:12: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 09:41:12: sftp Channel exited.
+2023-05-31 09:41:12: Channel disconnected.
+2023-05-31 09:41:12: Host Session disconnected.
+2023-05-31 09:41:12: Going back
+2023-05-31 09:41:16: in FRBR. Going back again
+2023-05-31 09:41:19: 
+
+Target Platform Information:
+2023-05-31 09:41:19: 	Search Type: platform
+2023-05-31 09:41:19: 	Ebk Platform: World Scientific
+2023-05-31 09:41:19: 	Searching Keyword on Primo: world scientific
+2023-05-31 09:41:19: 	Platform Keyword on Primo's Accessing Link: World Scientific
+2023-05-31 09:41:19: 	Creator Keyword on Primo's Facet: World Scientific (Firm)
+2023-05-31 09:41:19: Finding the SearchBar
+2023-05-31 09:41:19: Clicking eBook facet
+2023-05-31 09:41:39: nav: 0 of 10
+2023-05-31 09:41:41: nav: 0 of 1
+2023-05-31 09:41:43: Main ELe Text: 1
+BOOK
+Pattern recognition and big data
+Pal, AmitaPal, Sankar K.
+Singapore : World Scientific Publishing Co. Pte Ltd. 2017
+Available Online
+2
+BOOK
+A neuroscientist : looks at robots
+Pfaff, Donald W., 1939-
+Singapore : World Scientific Publishing Co. Pte Ltd. 2016
+Available Online
+3
+BOOK
+Entrusted : stewardship for responsible wealth creation
+Ong, Boon Hwee, 1956- Goyder, Mark
+Singapore : World Scientific Publishing Co. Pte Ltd. : Stewardship Asia Centre CLG Limited 2020
+Available Online
+4
+BOOK
+Exercise and sports cardiology
+Thompson, Paul D. (Cardiologist)Fernandez, Antonio B.
+London : World Scientific Publishing Europe Ltd. 2018
+Available Online
+5
+BOOK
+Caring for dependent older persons
+Tan, Jit Seng, Teo, Shing Yuen
+Singapore : World Scientific Publishing Co. Pte Ltd. 2019
+Available Online
+6
+BOOK
+Lecture notes in introduction to corporate finance
+Brick, Ivan E.,
+New Jersey : World Scientific Publishing Co. Pte Ltd. 2017
+Available Online
+7
+BOOK
+The China horizon : glory and dream of a civilizational state
+張維為, 1957-
+Hoboken, N.J. : World Century Publishing Corporation 2016
+Available Online
+8
+BOOK
+The power of computational thinking : games, magic and puzzles to help you become a computational thinker
+Curzon, Paul, McOwan, Peter W.
+London : World Scientific Publishing Europe Ltd. 2017
+Available at Ho Sik Yee Library General Collection – Ho Sik Yee Library (Q325.7 .C87 2017)
+Available Online
+9
+BOOK
+Mental health of a nation
+Ng, Beng YeongFung, Daniel
+Singapore : World Scientific Publishing Co. Pte Ltd. 2018
+Available Online
+10
+BOOK
+Insomnia
+Shergis, Johannah, Ni, XiaojiaXue, Charlie ChangliLu, Chuan-jian, 1964-
+Singapore : World Scientific Publishing Co. Pte Ltd. 2018
+Available Online
+2023-05-31 09:41:43: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (b3b8b9d165d523b67babb19b68d688d4)] -> id: searchResultsContainer]
+2023-05-31 09:41:46: Check whether is a FRBRed record.
+2023-05-31 09:41:48: Not in FRBR
+2023-05-31 09:41:58: Getting all links of the target title.
+2023-05-31 09:42:02: No. of links records of the target title:1
+2023-05-31 09:42:02: Target link on browser: viewfulltextviewfulltexthereviaworl

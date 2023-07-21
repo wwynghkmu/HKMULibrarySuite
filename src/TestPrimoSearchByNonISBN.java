@@ -4,7 +4,7 @@ import hk.edu.hkmu.lib.bookquery.*;
 public class TestPrimoSearchByNonISBN {
 	public static void main(String[] args) {
 		
-		String inst = "HKSYU";
+		String inst = "OUHK";
 		String author = "村上春樹";
 		String title = " 沒有色彩的多崎作和他的巡禮之年";
 		String publisher = "";
@@ -15,6 +15,7 @@ public class TestPrimoSearchByNonISBN {
 		if(args.length != 0)
 			inst = args[0];
 		try{
+			
 		PrimoQueryByNonISBN q = new PrimoQueryByNonISBN(author, title, publisher, year, edition, vol, inst);
 		
 		if (q.match()) {

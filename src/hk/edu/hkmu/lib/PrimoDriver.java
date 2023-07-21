@@ -52,7 +52,7 @@ public class PrimoDriver {
 			if (!platform.toLowerCase().trim().equals("none")) {
 				Thread.sleep(2000);
 				clickMore();
-						
+
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(hk.edu.hkmu.lib.Config.VALUES
 						.get("PLATFORMFACET").replaceAll("PLATFORM", platform.toLowerCase()))));
 
@@ -99,18 +99,13 @@ public class PrimoDriver {
 			e0.printStackTrace();
 		}
 	} // end filterCreatorFacet()
-	
 
-	
-	
-	
-	
 	public void initAdvancedSearchKeywordComponent(String keyword) {
 		try {
 			WebElement searchBar;
 			Thread.sleep(2000);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("input_32")));
-			searchBar = driver.findElement(By.id("input_32"));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("input_53")));
+			searchBar = driver.findElement(By.id("input_53"));
 			searchBar.click();
 			searchBar.clear();
 			searchBar.sendKeys(keyword);
@@ -131,7 +126,6 @@ public class PrimoDriver {
 		}
 
 	} // end initSearchKeywordComponent()
-	
 
 	public void initSearchKeywordComponent(String keyword) {
 		try {
@@ -173,9 +167,13 @@ public class PrimoDriver {
 
 			Thread.sleep(2000);
 			clickMore();
+//			wait.until(ExpectedConditions
+//					.visibilityOfElementLocated(By.cssSelector(hk.edu.hkmu.lib.Config.VALUES.get("EBOOKFACET"))));
+//			clickEle = driver.findElement(By.cssSelector(hk.edu.hkmu.lib.Config.VALUES.get("EBOOKFACET")));
 			wait.until(ExpectedConditions
-					.visibilityOfElementLocated(By.cssSelector(hk.edu.hkmu.lib.Config.VALUES.get("EBOOKFACET"))));
-			clickEle = driver.findElement(By.cssSelector(hk.edu.hkmu.lib.Config.VALUES.get("EBOOKFACET")));
+					.visibilityOfElementLocated(By.cssSelector("span[title='books' i]")));
+			clickEle = driver.findElement(By.cssSelector("span[title='books' i]"));
+
 			actions.moveToElement(clickEle).click().build().perform();
 			Thread.sleep(2000);
 		} catch (Exception e0) {

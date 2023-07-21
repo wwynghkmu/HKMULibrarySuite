@@ -25,6 +25,7 @@ public final class Config extends hk.edu.hkmu.lib.Config {
 	public static Map<String, Object[]> BUDGET_CODES = new HashMap<String, Object[]>();
 	public static Map<String, String[]> PLATFORMS;
 	public static Map<String, ArrayList<String>> SEARCHITEMS;
+	public static ArrayList UNITS;
 
 	public static void init() {
 		BufferedReader br = null;
@@ -32,6 +33,7 @@ public final class Config extends hk.edu.hkmu.lib.Config {
 		Statement stmt = null;
 		SEARCHITEMS = new HashMap<String, ArrayList<String>>();
 		PLATFORMS = new HashMap<String, String[]>();
+		UNITS = new ArrayList();
 
 		try {
 			hk.edu.hkmu.lib.Config.init();
@@ -81,7 +83,12 @@ public final class Config extends hk.edu.hkmu.lib.Config {
 				} else if (module.toLowerCase().equals("root")) {
 					VALUES.put(name, value);
 					VALUESDES.put(name, des);
+				} else  if (module.toLowerCase().equals("newarrivals")){
+					UNITS.add(name);
+					VALUES.put(name, value);
+					VALUESDES.put(name, des);
 				}
+				
 
 			}
 
@@ -101,7 +108,7 @@ public final class Config extends hk.edu.hkmu.lib.Config {
 					rs = stmt.executeQuery(sql);
 					while (rs.next()) {
 						String searchItem = StringHandling.trimNewLineChar(rs.getString("searchItem".trim()));
-						if(searchItem!=null)
+						if (searchItem != null)
 							SEARCHITEMS.get(platformName).add(searchItem);
 					}
 				}

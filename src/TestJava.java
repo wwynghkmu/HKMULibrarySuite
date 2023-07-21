@@ -1,13 +1,29 @@
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.*;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class TestJava {
 	public static void main(String args[]) {
+
+		try {
+			Scanner scanner = new Scanner(new File("d:\\excludecourselist.txt"));
+
+			while (scanner.hasNextLine()) {
+				System.out.println(scanner.nextLine());
+			}
+
+			scanner.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
 		try {
 			URL url = new URL(
 					"https://api-ap.hosted.exlibrisgroup.com/almaws/v1/courses?apikey=l8xx41bf077192274811b545c60ba48df465");
@@ -33,6 +49,7 @@ public class TestJava {
 			System.out.println(http.getResponseCode() + " " + http.getResponseMessage());
 			System.out.println(br.lines().collect(Collectors.joining()));
 			http.disconnect();
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -11,14 +11,17 @@ import hk.edu.hkmu.lib.*;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 
 /**
  * * This class accepts parameters Author, Title, Publisher, Publishing Year,
  * Edition, Volume, and Institute. Author and Title are mandatory. For
- * Publisher, Publishing Year, or Edition, at least one must be filled. Volume and
- * Institute are optional. "-1" is the default code for note specifying
+ * Publisher, Publishing Year, or Edition, at least one must be filled. Volume
+ * and Institute are optional. "-1" is the default code for note specifying
  * edition/volume information. The "latest" edition is coded '0', no remote
  * query will occur and will result false. Primo first will be consulted for
  * bibliographical checking; then ILS will be consulted for item availability.
@@ -265,6 +268,9 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 
 			URLConnection con = url.openConnection();
 			con.setConnectTimeout(3000);
+
+			System.out.println("Query: " + Config.PRIMO_X_BASE + qstr);
+
 			doc = b.parse(con.getInputStream());
 			queryStr = Config.PRIMO_X_BASE + qstr;
 			debug += queryStr + "\n";
@@ -638,7 +644,13 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 		String queryAuthor = "";
 		str = strHandle.tidyString(str);
 		sArry = str.split(" ");
-		queryAuthor = "&query=" + Config.VALUES.get("PRIMO_SEARCHFIELD_AUTHOR") + ",contains," + sArry[0];
+		try {
+			queryAuthor = "&query=" + Config.VALUES.get("PRIMO_SEARCHFIELD_AUTHOR") + ",contains,"
+					+ URLEncoder.encode(sArry[0], StandardCharsets.UTF_8.toString());
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return queryAuthor;
 	} // end processQueryAuthor()
 
@@ -653,7 +665,14 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 		t = t.replace(" ", "%20");
 		t = t.replace(":", "%3A");
 
-		return "&query=general,contains,reference&query=general,contains," + t;
+		try {
+			return "&query=general,contains,reference&query=general,contains,"
+					+ URLEncoder.encode(t, StandardCharsets.UTF_8.toString());
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return "";
+		}
 	} // end processQueryTitleISODoc()
 
 	private String processQueryTitle(String t) {
@@ -679,11 +698,21 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 		String[] tArr = t.split(" ");
 		String query = "";
 		if (tArr.length == 1) {
-			query = "&query=title,contains," + t;
+			try {
+				query = "&query=title,contains," + URLEncoder.encode(t, StandardCharsets.UTF_8.toString());
+			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		} // end if
 
 		for (int i = 0; i < tArr.length; i++) {
-			query += "&query=title,contains," + tArr[i] + "*";
+			try {
+				query += "&query=title,contains," + URLEncoder.encode(tArr[i], StandardCharsets.UTF_8.toString()) + "*";
+			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		} // end for
 
 		// System.out.println("processQueryTitle(): " + query);
@@ -697,7 +726,12 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 		String[] tArr = t.split(" ");
 		String t2 = "";
 		if (tArr.length == 1) {
-			return "&query=title,contains," + t;
+			try {
+				return "&query=title,contains," + URLEncoder.encode(t, StandardCharsets.UTF_8.toString());
+			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		} // end if
 
 		if (tArr.length >= 2) {

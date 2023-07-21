@@ -1,0 +1,85 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>萬方視頻（國際版）</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="/bower/toastr/toastr.min.css" rel="stylesheet">
+    <link href="/styles/site.min.css" rel="stylesheet">
+    <link href="/styles/common.css" rel="stylesheet">
+    <link href="/styles/header.css" rel="stylesheet">
+    <link href="/styles/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/video_style.css">
+    <link rel="stylesheet" href="/styles/player.css">
+    <link rel="stylesheet" href="/lib/mediaelement/mediaelementplayer.min.css">
+  </head>
+  <body><div class="header" id="header">
+    <nav class="navbar navbar-default navbar-fixed-top top-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#codereplayermenu"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand logo" href="/zh_HK"><img class="hv-center" alt="Brand" src="/images/logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse top-collapse" id="codereplayermenu">
+          <form class="navbar-form navbar-left form-search" action="/zh_HK/search_result" method="get">
+            <div class="input-group div-search">
+              <input class="form-control" id="q" name="q" type="text" value=""><span class="glyphicon glyphicon-search icon-search"></span>
+              <div class="input-group-btn">
+                <button class="btn btn-default btn-search" type="button" onclick="autoSubmit();">搜 索</button>
+              </div>
+            </div>
+            <div class="search-thinks list-group" id="search-thinks"></div>
+          </form>
+          <div class="navbar-nav navbar-right belongWho clearfix">
+            <div class="login-box">
+              <div class="loginInfo dropdown"><a class="signOutDd dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="userIcon glyphicon glyphicon-user"></span>&nbsp;香港都會大學
+                  <input id="userIdsToSearch" type="hidden" value="hkgkdx"><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="signOut" href="/signout">退 出</a></li>
+                  <li class="description">(ip自動登錄)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="headDd dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">語 言 <span class="caret"></span></button>
+              <ul class="chgLang dropdown-menu">
+                <li><a href="zh_CN">中文簡體</a></li>
+                <li class="active"><a href="zh_HK">中文繁體</a></li>
+                <li><a href="ja_JP">日本語</a></li>
+                <li><a href="en_US">English</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="section" id="section">
+    <div class="player">
+      <div class="player-title">
+        <ol class="breadcrumb">
+          <li><a href="/zh_HK">頻 道</a></li>
+          <li><a href="/zh_HK/channel_detail/TMW">TMW Media</a></li>
+          <li><a href="javascript:window.location.reload(true);">Business Management</a></li>
+        </ol>
+        <div class="title">
+          <p>The Art of Common Sense &amp; Critical Thinking In The Workplace</p>
+        </div>
+      </div>
+      <div class="video-box">
+        <div class="video-input" id="video-input">
+          <div class="canPlay">
+            <span class="mejs__offscreen">Video Player</span><div id="mep_0" class="mejs__container mejs__container-keyboard-inactive mejs__video" tabindex="0" role="application" aria-label="Video Player" style="width: 800px; height: 490px; min-width: 217px;"><div class="mejs__inner"><div class="mejs__mediaelement"><mediaelementwrapper id="bgPlayer"><video id="bgPlayer_html5" autoplay="autoplay" preload="none" src="http://oss.newvideo.wanfangdata.com.hk/TMW/l7034.mp4?OSSAccessKeyId=LTAIdqogknV7rYdM&amp;Expires=1689230988&amp;Signature=UuCPdzOcN2M788FHAJpAuKFoKe4%3D" style="width: 800px; height: 490px;">
+              <source type="video/mp4" src="http://oss.newvideo.wanfangdata.com.hk/TMW/l7034.mp4?OSSAccessKeyId=LTAIdqogknV7rYdM&amp;Expires=1689230988&amp;Signature=UuCPdzOcN2M788FHAJpAuKFoKe4%3D">
+              <object type="application/x-shockwave-flash" data="../../node_modules/mediaelement/build/mediaelement-flash-video.swf">
+                <param name="movie" value="../../node_modules/mediaelement/build/mediaelement-flash-video.swf">
+              </object>
+            </video></mediaelementwrapper></div><div class="mejs__layers"><div class="mejs__poster mejs__layer" style="display: none; width: 800px; height: 490px;"></div><div class="mejs__overlay mejs__layer" style="display: none; width: 800px; height: 490px;"><div class="mejs__overlay-loading"><span class="mejs__overlay-loading-bg-img"></span></div></div><div class="mejs__overlay mejs__layer" style="display: none; width: 800px; height: 490px;"><div class="mejs__overlay-error"></div></div><div class="mejs__overlay mejs__layer mejs__overlay-play" style="display: none; width: 800px; height: 490px;"><div class="mejs__overlay-button" role="button" tabindex="0" aria-label="Play" aria-pressed="false"></div></div></div><div class="mejs__controls"><div class="mejs__button mejs__playpause-button mejs__play"><button type="button" aria-controls="mep_0" title="Play" aria-label="Play" tabindex="0"></button></div><div class="mejs__time mejs__currenttime-container" role="timer" aria-live="off"><span class="mejs__currenttime">00:00</span></div><div class="mejs__time-rail"><span class="mejs__time-total mejs__time-slider" role="slider" tabindex="0" aria-label="Time Slider" aria-valuemin="0" aria-valuemax="NaN" aria-valuenow="0" aria-valuetext="00:00"><span class="mejs__time-buffering" style="display: none;"></span><span class="mejs__time-loaded"></span><span class="mejs__time-current"></span><span class="mejs__time-hovered no-hover"></span><span class="mejs__time-handle"><span class="mejs__time-handle-content"></span></span><span class="mejs__time-float"><span class="mejs__time-float-current">00:00</span><span class="mejs__time-float-corner"></span></span></span></div><div class="mejs__time mejs__duration-container"><span class="mejs__duration">00:00</span></div><div class="mejs__button mejs__volume-button mejs__mute"><button type="button" aria-controls="mep_0" title="Mute" aria-label="Mute" tabindex="0"></button><a href="javascript:void(0);" class="mejs__volume-slider" aria-label="Volume Slider" aria-valuemin="0" aria-valuemax="100" role="slider" aria-orientation="vertical"><span class="mejs__offscreen">Use Up/Down Arrow keys to increase or decrease volume.</span><div class="mejs__volume-total"><div class="mejs__volume-current" style="bottom: 0px; height: 100%;"></div><div class="mejs__volume-handle" style="bottom: 100%; margin-bottom: -3px;"></div></div></a></div><div class="mejs__button mejs__fullscreen-button"><button type="button" aria-controls="mep_0" title="Fullscreen" aria-label="Fullscreen" tabindex="0"></button></div></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="info">
+        <div class="player-info">
+          <p class="info-title">The Art of Common Sense &amp; Critical Thinking In The Workplace</p>
+          <p class="abstract">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this program we'll learn if common sense can be learned and the many pet peeves people have on others unaware behavior. We'll learn the components and benefits of critical thinking. Examined is how critical thinking, common sense and common courtesy affected your development as a child, how it shapes your views on tolerance, diversity, and

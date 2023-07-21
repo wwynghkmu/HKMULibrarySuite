@@ -5,6 +5,7 @@ import com.jcraft.jsch.*;
 import hk.edu.hkmu.lib.*;
 import java.awt.GraphicsEnvironment;
 import java.io.*;
+import java.net.URLEncoder;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -203,22 +204,24 @@ public class CheckeBookPlatform extends JFrame {
 			platforms[count][5] = "FAILED";
 			platforms[count][5] = "";
 
-			count++;
+			if (platforms[count][1].contains("Human kinetics")) {
 
-			// Reader the keyword list
-			if (searchType.toLowerCase().equals("keyword")) {
-				String[] list = new String[Config.SEARCHITEMS.get(platformName).size()];
-				int count2 = 0;
-				for (String item : Config.SEARCHITEMS.get(platformName)) {
-					list[count2] = item;
+				count++;
 
-					count2++;
+				// Reader the keyword list
+				if (searchType.toLowerCase().equals("keyword")) {
+					String[] list = new String[Config.SEARCHITEMS.get(platformName).size()];
+					int count2 = 0;
+					for (String item : Config.SEARCHITEMS.get(platformName)) {
+						list[count2] = item;
+
+						count2++;
+
+					}
+					searchList.put(platformName.toUpperCase(), list);
 
 				}
-				searchList.put(platformName.toUpperCase(), list);
-
 			}
-			// }
 		}
 	}
 
@@ -297,6 +300,8 @@ public class CheckeBookPlatform extends JFrame {
 						pdriver.driver.switchTo().window(tabs.get(j));
 						pdriver.driver.close();
 					}
+					hk.edu.hkmu.lib.Config.VALUES.put("PRIMOASEARCHURL",
+							"https://hkmu.primo.exlibrisgroup.com/discovery/search?&tab=LibraryCatalog&search_scope=MyInstitution&vid=852HKMU_INST:hkmu&mode=advanced&offset=0&query=lds03,contains,");
 					System.out.println("PrimoURL:" + hk.edu.hkmu.lib.Config.VALUES.get("PRIMOASEARCHURL"));
 
 					if (platforms[i][6] == null || platforms[i][6].equals(""))
@@ -304,9 +309,10 @@ public class CheckeBookPlatform extends JFrame {
 					// Performing Platform searching using Advanced Search.
 					if (platforms[i][0].equals("platform")) {
 						try {
-							pdriver.driver.get(hk.edu.hkmu.lib.Config.VALUES.get("PRIMOASEARCHURL"));
+							pdriver.driver.get(hk.edu.hkmu.lib.Config.VALUES.get("PRIMOASEARCHURL")
+									+ URLEncoder.encode(platforms[i][2]));
 							out("Finding the SearchBar");
-							pdriver.initAdvancedSearchKeywordComponent(platforms[i][2]);
+							// pdriver.initAdvancedSearchKeywordComponent(platforms[i][2]);
 							if (!platforms[i][2].toLowerCase().contains("video")) {
 								out("Clicking eBook facet");
 								pdriver.filterEBookFacet();
@@ -326,7 +332,8 @@ public class CheckeBookPlatform extends JFrame {
 
 						// Performing Keyword searching.
 					} else if (platforms[i][0].toLowerCase().equals("keyword")) {
-						pdriver.driver.get(hk.edu.hkmu.lib.Config.VALUES.get("PRIMOURL"));
+						System.out.println("Search by KEYWORD");
+
 						Random r = new Random();
 						int isbnIndex = 0;
 						String keyword = "";
@@ -335,11 +342,15 @@ public class CheckeBookPlatform extends JFrame {
 
 							isbnIndex = r.nextInt(searchList.get(platforms[i][1].toUpperCase()).length);
 							keyword = searchList.get(platforms[i][1].toUpperCase())[isbnIndex];
+							hk.edu.hkmu.lib.Config.VALUES.put("PRIMOURL",
+									"https://hkmu.primo.exlibrisgroup.com/discovery/search?&tab=LibraryCatalog&search_scope=MyInstitution&vid=852HKMU_INST:hkmu&mode=advanced&offset=0&query=any,contains,"
+											+ keyword);
+							pdriver.driver.get(hk.edu.hkmu.lib.Config.VALUES.get("PRIMOURL"));
+
 							out("\tSearching by ISBN: " + keyword);
 							platforms[i][2] = keyword;
 							out("Clicking eBook facet");
-							pdriver.initSearchKeywordComponent(keyword);
-							out("Finding the SearchBar");
+
 							pdriver.filterEBookFacet();
 							out("Clicking facet_platform");
 							pdriver.filterPlatformFacet(platforms[i][4].toLowerCase());
@@ -388,6 +399,7 @@ public class CheckeBookPlatform extends JFrame {
 							navigateResultPage(i);
 						}
 					}
+
 				}
 			} // end for
 
@@ -421,17 +433,21 @@ public class CheckeBookPlatform extends JFrame {
 				e0.printStackTrace();
 				out(e0.getMessage());
 			}
-
-			for (int k = 0; k < resultMainEles.size(); k++) {
-				out("nav: " + k + " of " + resultMainEles.size());
+			int breifResultSize = resultMainEles.size();
+			for (int k = 0; k < breifResultSize; k++) {
+				out("nav: " + k + " of " + breifResultSize);
 				try {
 					Thread.sleep(2000);
 
-					pdriver.wait.until(ExpectedConditions
-							.visibilityOfElementLocated(By.cssSelector("prm-brief-result-container")));
-					resultMainEles = pdriver.driver.findElements(By.cssSelector("prm-brief-result-container"));
+					pdriver.wait
+							.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".list-item-wrapper")));
+					resultMainEles = pdriver.driver.findElements(By.cssSelector(".list-item-wrapper"));
 
-					out("nav: " + k + " of " + resultMainEles.size());
+					// pdriver.wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("searchResultsContainer")));
+					// resultMainEles =
+					// pdriver.driver.findElements(By.id("searchResultsContainer"));
+
+					out("nav: " + k + " of " + breifResultSize);
 
 				} catch (Exception e0) {
 					try {
@@ -450,14 +466,16 @@ public class CheckeBookPlatform extends JFrame {
 
 				try {
 
-					if (resultMainEles.size() > 1)
-						mainEle = resultMainEles.get(random.ints(0, resultMainEles.size()).findFirst().getAsInt());
+					if (breifResultSize > 1)
+						mainEle = resultMainEles.get(random.ints(0, breifResultSize - 1).findFirst().getAsInt());
 					else
 						mainEle = resultMainEles.get(0);
 
-					pdriver.wait.until(ExpectedConditions.visibilityOfElementLocated(
-							By.cssSelector("prm-search-result-thumbnail-container:first-child")));
-					clickEle = mainEle.findElement(By.cssSelector("prm-search-result-thumbnail-container:first-child"));
+					// out("Main ELe Text: " + mainEle.getText());
+					// out("Main ELe CSS: " + mainEle.toString());
+					pdriver.wait.until(ExpectedConditions
+							.visibilityOfElementLocated(By.cssSelector("prm-brief-result-container")));
+					clickEle = mainEle.findElement(By.cssSelector("prm-brief-result-container"));
 					pdriver.actions.moveToElement(clickEle).click().build().perform();
 
 				} catch (Exception e0) {
@@ -547,6 +565,9 @@ public class CheckeBookPlatform extends JFrame {
 				if (pdriver.driver.findElements(By.cssSelector(hk.edu.hkmu.lib.Config.VALUES.get("BACKTORESULTSET")))
 						.size() != 0) {
 					out("Going back");
+					out("K:" + k);
+					out("resultMainEles.size()" + breifResultSize);
+
 					pdriver.driver.navigate().back();
 					Thread.sleep(4000);
 					if (pdriver.isInFRBR()) {
@@ -583,13 +604,25 @@ public class CheckeBookPlatform extends JFrame {
 			try {
 				out("Getting all links of the target title.");
 				Thread.sleep(4000);
-				pdriver.wait.until(ExpectedConditions.visibilityOfElementLocated(
-						By.cssSelector(hk.edu.hkmu.lib.Config.VALUES.get("VIEWONLINELINK"))));
-				linksEles = pdriver.driver
-						.findElements(By.cssSelector(hk.edu.hkmu.lib.Config.VALUES.get("VIEWONLINELINK")));
-				titleEles = pdriver.driver
-						.findElements(By.cssSelector(hk.edu.hkmu.lib.Config.VALUES.get("BRIEFCONTENT")));
+				/*
+				 * pdriver.wait.until(ExpectedConditions.visibilityOfElementLocated(
+				 * By.cssSelector(hk.edu.hkmu.lib.Config.VALUES.get("VIEWONLINELINK"))));
+				 */
+				pdriver.wait.until(ExpectedConditions
+						.visibilityOfElementLocated(By.cssSelector("md-list-item[ng-repeat*='getServices']")));
+
+				/*
+				 * linksEles = pdriver.driver
+				 * .findElements(By.cssSelector(hk.edu.hkmu.lib.Config.VALUES.get(
+				 * "VIEWONLINELINK"))); titleEles = pdriver.driver
+				 * .findElements(By.cssSelector(hk.edu.hkmu.lib.Config.VALUES.get("BRIEFCONTENT"
+				 * )));
+				 */
+				linksEles = pdriver.driver.findElements(By.cssSelector("md-list-item[ng-repeat*='getServices']"));
+				titleEles = pdriver.driver.findElements(By.cssSelector("span[data-field-selector*='title']"));
+
 				title = titleEles.get(0).getText();
+				System.out.println("Title: " + title + "<<<Title");
 				checkTitle = title;
 				if (CJKStringHandling.isCJKString(checkTitle)) {
 					checkTitle = CJKStringHandling.convertToSimpChinese(checkTitle);

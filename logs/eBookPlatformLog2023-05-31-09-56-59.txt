@@ -1,0 +1,2603 @@
+2023-05-31 09:57:01: 
+
+Target Platform Information:
+2023-05-31 09:57:01: 	Search Type: platform
+2023-05-31 09:57:01: 	Ebk Platform: Taylor & Francis
+2023-05-31 09:57:01: 	Searching Keyword on Primo: taylor & francis
+2023-05-31 09:57:01: 	Platform Keyword on Primo's Accessing Link: Taylor & Francis
+2023-05-31 09:57:01: 	Creator Keyword on Primo's Facet: Taylor & Francis
+2023-05-31 09:57:03: Finding the SearchBar
+2023-05-31 09:57:03: Clicking eBook facet
+2023-05-31 09:57:23: nav: 0 of 10
+2023-05-31 09:57:25: nav: 0 of 1
+2023-05-31 09:57:28: Main ELe Text: 1
+BOOK
+Fighting melancholia : Don Quixote's teaching
+Davoine, Françoise, Jacob, Agnès
+London : Karnac Books Ltd 2016
+Available Online
+2
+BOOK
+Adult literacy in a new era : reflections from the Open Book
+Ramdeholl, Dianne,
+Boulder, Colo. : Paradigm Publishers 2011
+Available Online
+3
+BOOK
+Situations and speech acts : toward a formal semantics of discourse
+Evans, David A. 1948-
+New York : Garland Publishing, Inc. 1985
+Available Online
+4
+BOOK
+Styles of discourse
+Coupland, Nikolas, 1950-
+London : Croom Helm 1988
+Available Online
+5
+BOOK
+Stylistics and the teaching of literature
+Widdowson, H. G.,
+Boston : Addison Wesley Longman Limited 1975
+Available Online
+6
+BOOK
+Social work with children and families : reflections of a critical practitioner
+Rogowski, Steve,
+London : Routledge 2016
+Available Online
+7
+BOOK
+Olympic cities : city agendas, planning, and the world's games, 1896-2020
+Gold, John R., 1949-Gold, Margaret M.
+London ; New York : Routledge 2017
+Available Online
+8
+BOOK
+Foreign policy : thinking outside the box
+Etzioni, Amitai,
+London : Routledge 2016
+Available Online
+9
+BOOK
+Power and politeness in the workplace : a sociolinguistic analysis of talk at work
+Holmes, Janet, 1947- Stubbe, Maria
+London ; New York : Routledge 2015
+Available Online
+10
+BOOK
+Keeping the leadership in instructional leadership : developing your practice
+Carrier, Linda L.,
+New York ; London : Routledge 2017
+Available Online
+2023-05-31 09:57:28: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 09:57:30: Check whether is a FRBRed record.
+2023-05-31 09:57:32: Not in FRBR
+2023-05-31 09:57:44: Getting all links of the target title.
+2023-05-31 09:57:48: No. of links records of the target title:1
+2023-05-31 09:57:48: Target link on browser: ebookviataylorfrancisviewfulltexthereviataylorfrancis
+2023-05-31 09:57:48: Link keyword in config file: taylorfrancis
+2023-05-31 09:57:53: Link matched. Going to save.
+2023-05-31 09:58:55: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 09:58:55: Title on Primo: EBOOKVIATAYLORFRANCISVIEWFULLTEXTHEREVIATAYLORFRANCIS
+2023-05-31 09:58:55: cannot reach the platform:Taylor & Francis
+2023-05-31 09:58:55: Host connected. 
+2023-05-31 09:58:55: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 09:58:55: sftp Channel exited.
+2023-05-31 09:58:55: Channel disconnected.
+2023-05-31 09:58:55: Host Session disconnected.
+2023-05-31 09:58:56: Going back
+2023-05-31 09:59:02: 
+
+Target Platform Information:
+2023-05-31 09:59:02: 	Search Type: platform
+2023-05-31 09:59:02: 	Ebk Platform: Peter Lang
+2023-05-31 09:59:02: 	Searching Keyword on Primo: Peter Lang
+2023-05-31 09:59:02: 	Platform Keyword on Primo's Accessing Link: Peter Lang
+2023-05-31 09:59:02: 	Creator Keyword on Primo's Facet: Verlag Peter Lang
+2023-05-31 09:59:07: Finding the SearchBar
+2023-05-31 09:59:07: Clicking eBook facet
+2023-05-31 09:59:27: nav: 0 of 10
+2023-05-31 09:59:29: nav: 0 of 1
+2023-05-31 09:59:31: Main ELe Text: 1
+BOOK
+Computer-assisted translation (CAT) tools in the translator training process
+Kornacki, Michał, 1982-
+Berlin ; New York : Peter Lang 2018
+Available Online
+2
+BOOK
+Visions and revisions : studies in theoretical and applied linguistics
+Łozowski, Przemysław, 1963-Stadnik, Katarzyna, 1978 December 11-
+Frankfurt am Main : Peter Lang Edition 2016
+Available Online
+3
+BOOK
+Exploring translation in language learning
+Smentek, Małgorzata,
+Frankfurt am Main ; New York : Peter Lang Edition 2017
+Available Online
+4
+BOOK
+Between global and local : adult learning and development
+Fragoso, AntónioKurantowicz, EwaLucio-Villegas, Emilio
+Frankfurt am Main : Peter Lang 2011
+Available at Ho Sik Yee Library Counter (Closed Stack) - Ho Sik Yee Library (LC5225.R47 B48 2011)
+Available Online
+5
+BOOK
+Conducting research in translation technologies
+Sánchez-Gijón, PilarTorres-Hostench, OlgaMesa-Lao, Bartolomé
+Oxford, England : Peter Lang 2015
+Available Online
+6
+BOOK
+In, on and through translation : Tabucchi's travelling texts
+Wren-Owens, Elizabeth,
+Oxford ; New York : Peter Lang 2018
+Available Online
+7
+BOOK
+Constructing translation competence
+Pietrzak, Paulina, 1984-Deckert, Mikołaj
+Frankfurt am Main, Germany ; Bern, Switzerland : Peter Lang Edition 2015
+Available Online
+8
+BOOK
+Language in the new millennium : applied-linguistic and cognitive-linguistic considerations
+Uberman, AgnieszkaDick-Bursztyn, Marta, 1972-
+Berlin : New York, N.Y. : Peter Lang 2018
+Available Online
+9
+BOOK
+The languages of dubbing : mainstream audiovisual translation in Italy
+Pavesi, MariaFormentelli, MaicolGhia, Elisa, 1982-
+Bern, Switzerland : Peter Lang 2014
+Available Online
+10
+BOOK
+The digital university : a dialogue and manifesto
+Peters, Michael 1948- Jandrić, Petar
+New York, N.Y. : Peter Lang 2018
+Available Online
+2023-05-31 09:59:31: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 09:59:33: Check whether is a FRBRed record.
+2023-05-31 09:59:35: Not in FRBR
+2023-05-31 09:59:48: Getting all links of the target title.
+2023-05-31 09:59:52: No. of links records of the target title:1
+2023-05-31 09:59:52: Target link on browser: viewfulltextviewfulltexthereviapeterlang
+2023-05-31 09:59:52: Link keyword in config file: peterlang
+2023-05-31 09:59:57: Link matched. Going to save.
+2023-05-31 10:00:58: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:00:58: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIAPETERLANG
+2023-05-31 10:00:58: cannot reach the platform:Peter Lang
+2023-05-31 10:00:58: Host connected. 
+2023-05-31 10:00:58: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:00:58: sftp Channel exited.
+2023-05-31 10:00:58: Channel disconnected.
+2023-05-31 10:00:58: Host Session disconnected.
+2023-05-31 10:00:58: Going back
+2023-05-31 10:01:05: 
+
+Target Platform Information:
+2023-05-31 10:01:05: 	Search Type: platform
+2023-05-31 10:01:05: 	Ebk Platform: Wiley Online
+2023-05-31 10:01:05: 	Searching Keyword on Primo: Wiley InterScience
+2023-05-31 10:01:05: 	Platform Keyword on Primo's Accessing Link: Wiley
+2023-05-31 10:01:05: 	Creator Keyword on Primo's Facet: Wiley Online Library
+2023-05-31 10:01:05: Finding the SearchBar
+2023-05-31 10:01:05: Clicking eBook facet
+2023-05-31 10:01:25: nav: 0 of 10
+2023-05-31 10:01:27: nav: 0 of 1
+2023-05-31 10:01:29: Main ELe Text: 1
+BOOK
+Medical toxicology of drug abuse : synthesized chemicals and psychoactive plants
+Barceloux, Donald G.,
+Hoboken, N.J. : John Wiley & Sons Incorporated 2012
+Available Online
+2
+BOOK
+The new Blackwell companion to the city
+Bridge, GaryWatson, Sophie
+Chichester, West Sussex, United Kingdom : Blackwell Publishing Limited 2011
+Available Online
+3
+BOOK
+Therapist and client : a relational approach to psychotherapy
+Nolan, Patrick, 1951-
+Chichester, West Sussex, United Kingdom : John Wiley & Sons Limited 2012
+Available Online
+4
+BOOK
+Post-traumatic syndromes in childhood and adolescence : a handbook of research and practice
+Ardino, Vittoria
+Chichester, West Sussex, United Kingdom : John Wiley & Sons Limited 2011
+Available Online
+5
+BOOK
+The handbook of Alzheimer's disease and other dementias
+Budson, Andrew E.Kowall, Neil W.
+Chichester, West Sussex, United Kingdom : Blackwell Publishing Limited 2011
+Available Online
+6
+BOOK
+Psychological management of stroke
+Lincoln, Nadina B., Kneebone, Ian I.Macniven, Jamie A. B.Morris, Reg C.
+Chichester, West Sussex, United Kingdom : John Wiley & Sons Limited 2012
+Available Online
+7
+BOOK
+Reading assessment : linking language, literacy, and cognition
+Farrall, Melissa Lee,
+Hoboken, New Jersey : John Wiley and Sons, Incorporated 2012
+Available Online
+8
+BOOK
+The handbook of global health communication
+Obregon, RafaelWaisbord, Silvio R. 1961- (Silvio Ricardo)
+Chichester, West Sussex, United Kingdom : John Wiley & Sons, Incorporated 2012
+Available Online
+9
+BOOK
+Understanding girls' problem behavior : how girls' delinquency develops in the context of maturity and health, co-occurring problems, and relationships
+Kerr, Margaret, 1953-Stattin, HåkanEngels, Rutger C.M.EOverbeek, GeertjanAndershed, Anna-Karin
+Chichester, West Sussex, United Kingdom : John Wiley & Sons Limited 2011
+Available Online
+10
+BOOK
+Modelling under risk and uncertainty : an introduction to statistical, phenomenological, and computational methods
+Rocquigny, Etienne de,
+Chichester, West Sussex, United Kingdom : John Wiley & Sons Limited 2012
+Available Online
+2023-05-31 10:01:29: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:01:31: Check whether is a FRBRed record.
+2023-05-31 10:01:33: Not in FRBR
+2023-05-31 10:01:44: Getting all links of the target title.
+2023-05-31 10:01:48: No. of links records of the target title:1
+2023-05-31 10:01:48: Target link on browser: viewfulltextviewfulltexthereviawiley
+2023-05-31 10:01:48: Link keyword in config file: wiley
+2023-05-31 10:01:53: Link matched. Going to save.
+2023-05-31 10:02:55: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:02:55: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIAWILEY
+2023-05-31 10:02:55: cannot reach the platform:Wiley Online
+2023-05-31 10:02:55: Host connected. 
+2023-05-31 10:02:55: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:02:55: sftp Channel exited.
+2023-05-31 10:02:55: Channel disconnected.
+2023-05-31 10:02:55: Host Session disconnected.
+2023-05-31 10:02:55: Going back
+2023-05-31 10:03:02: 
+
+Target Platform Information:
+2023-05-31 10:03:02: 	Search Type: platform
+2023-05-31 10:03:02: 	Ebk Platform: SAGE
+2023-05-31 10:03:02: 	Searching Keyword on Primo: sage
+2023-05-31 10:03:02: 	Platform Keyword on Primo's Accessing Link: Sage
+2023-05-31 10:03:02: 	Creator Keyword on Primo's Facet: Sage Publications
+2023-05-31 10:03:06: Finding the SearchBar
+2023-05-31 10:03:06: Clicking eBook facet
+2023-05-31 10:03:25: nav: 0 of 10
+2023-05-31 10:03:27: nav: 0 of 1
+2023-05-31 10:03:30: Main ELe Text: 1
+MULTIPLE VERSIONS
+Key themes in the ethnography of education
+Delamont, Sara, 1947-
+2 versions found. See all versions
+2
+BOOK
+The SAGE handbook of qualitative business and management research methods : history and traditions
+Cassell, Catherine, Cunliffe, Ann L.Grandy, Gina
+London : SAGE Publications Ltd 2018
+Available Online
+3
+MULTIPLE VERSIONS
+The SAGE handbook of visual research methods
+Margolis, Eric, 1947-;Pauwels, L. (Luc)
+2 versions found. See all versions
+4
+BOOK
+The Sage handbook of industrial, work & organizational psychology
+Ones, Deniz S., 1965-Anderson, Neil, 1961-Sinangil, Handan Kepir
+Thousand Oaks, California : SAGE 2018
+Available Online
+5
+MULTIPLE VERSIONS
+Essential counseling skills : practice and application guide
+Magnuson, Sandra L.,; Norem, Ken
+2 versions found. See all versions
+6
+BOOK
+The Sage handbook of consumer culture
+Kravets, OlgaMaclaran, PaulineMiles, Steven
+Thousand Oaks, California : SAGE 2018
+Available Online
+7
+BOOK
+Personality disorders : toward the DSM-V
+O'Donohue, William T.Fowler, Katherine A.Lilienfeld, Scott O., 1960-
+Los Angeles : SAGE 2007
+Available Online
+8
+BOOK
+The primary ICT and e-learning co-ordinator's manual
+Wright, James
+London : Paul Chapman Publishing 2007
+Available at Stanley Ho Library General Collection – Stanley Ho Library (LB1028.5 .W75 2007)
+Available Online
+9
+BOOK
+The politics of fear : what right-wing populist discourses mean
+Wodak, Ruth, 1950-
+Thousand Oaks, California : SAGE Publications 2015
+Available Online
+10
+BOOK
+Reflective practice for renewing schools : an action guide for educators
+York-Barr, Jennifer, 1958- Sommers, William A.Ghere, Gail S.Montie, Jo
+Thousand Oaks : Corwin 2016
+Available Online
+2023-05-31 10:03:30: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:03:32: Check whether is a FRBRed record.
+2023-05-31 10:03:34: In FRBR Group. Trying to get the online record.
+2023-05-31 10:03:56: Getting all links of the target title.
+2023-05-31 10:04:00: No. of links records of the target title:1
+2023-05-31 10:04:00: Target link on browser: viewfulltextviewfulltexthereviasageaccesstothisebookisvaliduntil31august2023only
+2023-05-31 10:04:00: Link keyword in config file: sage
+2023-05-31 10:04:05: Link matched. Going to save.
+2023-05-31 10:05:06: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:05:06: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIASAGEACCESSTOTHISEBOOKISVALIDUNTIL31AUGUST2023ONLY
+2023-05-31 10:05:06: cannot reach the platform:SAGE
+2023-05-31 10:05:06: Host connected. 
+2023-05-31 10:05:07: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:05:07: sftp Channel exited.
+2023-05-31 10:05:07: Channel disconnected.
+2023-05-31 10:05:07: Host Session disconnected.
+2023-05-31 10:05:07: Going back
+2023-05-31 10:05:11: in FRBR. Going back again
+2023-05-31 10:05:14: 
+
+Target Platform Information:
+2023-05-31 10:05:14: 	Search Type: platform
+2023-05-31 10:05:14: 	Ebk Platform: World Scientific
+2023-05-31 10:05:14: 	Searching Keyword on Primo: world scientific
+2023-05-31 10:05:14: 	Platform Keyword on Primo's Accessing Link: World Scientific
+2023-05-31 10:05:14: 	Creator Keyword on Primo's Facet: World Scientific (Firm)
+2023-05-31 10:05:18: Finding the SearchBar
+2023-05-31 10:05:18: Clicking eBook facet
+2023-05-31 10:05:38: nav: 0 of 10
+2023-05-31 10:05:40: nav: 0 of 1
+2023-05-31 10:05:42: Main ELe Text: 1
+BOOK
+Pattern recognition and big data
+Pal, AmitaPal, Sankar K.
+Singapore : World Scientific Publishing Co. Pte Ltd. 2017
+Available Online
+2
+BOOK
+A neuroscientist : looks at robots
+Pfaff, Donald W., 1939-
+Singapore : World Scientific Publishing Co. Pte Ltd. 2016
+Available Online
+3
+BOOK
+Entrusted : stewardship for responsible wealth creation
+Ong, Boon Hwee, 1956- Goyder, Mark
+Singapore : World Scientific Publishing Co. Pte Ltd. : Stewardship Asia Centre CLG Limited 2020
+Available Online
+4
+BOOK
+Exercise and sports cardiology
+Thompson, Paul D. (Cardiologist)Fernandez, Antonio B.
+London : World Scientific Publishing Europe Ltd. 2018
+Available Online
+5
+BOOK
+Caring for dependent older persons
+Tan, Jit Seng, Teo, Shing Yuen
+Singapore : World Scientific Publishing Co. Pte Ltd. 2019
+Available Online
+6
+BOOK
+Lecture notes in introduction to corporate finance
+Brick, Ivan E.,
+New Jersey : World Scientific Publishing Co. Pte Ltd. 2017
+Available Online
+7
+BOOK
+The China horizon : glory and dream of a civilizational state
+張維為, 1957-
+Hoboken, N.J. : World Century Publishing Corporation 2016
+Available Online
+8
+BOOK
+The power of computational thinking : games, magic and puzzles to help you become a computational thinker
+Curzon, Paul, McOwan, Peter W.
+London : World Scientific Publishing Europe Ltd. 2017
+Available at Ho Sik Yee Library General Collection – Ho Sik Yee Library (Q325.7 .C87 2017)
+Available Online
+9
+BOOK
+Mental health of a nation
+Ng, Beng YeongFung, Daniel
+Singapore : World Scientific Publishing Co. Pte Ltd. 2018
+Available Online
+10
+BOOK
+Insomnia
+Shergis, Johannah, Ni, XiaojiaXue, Charlie ChangliLu, Chuan-jian, 1964-
+Singapore : World Scientific Publishing Co. Pte Ltd. 2018
+Available Online
+2023-05-31 10:05:42: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:05:44: Check whether is a FRBRed record.
+2023-05-31 10:05:46: Not in FRBR
+2023-05-31 10:05:56: Getting all links of the target title.
+2023-05-31 10:06:00: No. of links records of the target title:1
+2023-05-31 10:06:00: Target link on browser: viewfulltextviewfulltexthereviaworldscientific
+2023-05-31 10:06:00: Link keyword in config file: worldscientific
+2023-05-31 10:06:06: Link matched. Going to save.
+2023-05-31 10:07:07: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:07:07: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIAWORLDSCIENTIFIC
+2023-05-31 10:07:07: cannot reach the platform:World Scientific
+2023-05-31 10:07:07: Host connected. 
+2023-05-31 10:07:08: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:07:08: sftp Channel exited.
+2023-05-31 10:07:08: Channel disconnected.
+2023-05-31 10:07:08: Host Session disconnected.
+2023-05-31 10:07:08: Going back
+2023-05-31 10:07:14: 
+
+Target Platform Information:
+2023-05-31 10:07:14: 	Search Type: keyword
+2023-05-31 10:07:14: 	Ebk Platform: AVON (Database)
+2023-05-31 10:07:14: 	Searching Keyword on Primo: none
+2023-05-31 10:07:14: 	Platform Keyword on Primo's Accessing Link: none
+2023-05-31 10:07:14: 	Creator Keyword on Primo's Facet: none
+2023-05-31 10:07:15: 	Searching by ISBN: ouhkaleph000354349
+2023-05-31 10:07:15: Clicking eBook facet
+2023-05-31 10:07:23: Finding the SearchBar
+2023-05-31 10:07:43: Clicking facet_platform
+2023-05-31 10:07:48: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:07:48: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:07:48: Cannot invoke "java.util.List.size()" because "resultMainEles" is null
+2023-05-31 10:07:48: Searching by ISBN: ouhkaleph000354349
+2023-05-31 10:07:48: Finding the SearchBar
+2023-05-31 10:07:55: Clicking eBook facet
+2023-05-31 10:08:21: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:08:21: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:08:21: Cannot invoke "java.util.List.size()" because "resultMainEles" is null
+2023-05-31 10:08:21: 
+
+Target Platform Information:
+2023-05-31 10:08:21: 	Search Type: platform
+2023-05-31 10:08:21: 	Ebk Platform: Gale
+2023-05-31 10:08:21: 	Searching Keyword on Primo: gale
+2023-05-31 10:08:21: 	Platform Keyword on Primo's Accessing Link: Thomson Gale
+2023-05-31 10:08:21: 	Creator Keyword on Primo's Facet: Thomson Gale (Firm)
+2023-05-31 10:08:21: Finding the SearchBar
+2023-05-31 10:08:21: Clicking eBook facet
+2023-05-31 10:08:41: nav: 0 of 10
+2023-05-31 10:08:43: nav: 0 of 1
+2023-05-31 10:08:45: Main ELe Text: 1
+BOOK
+Encyclopedia of drugs, alcohol & addictive behavior
+Korsmeyer, Pamela, 1945-Kranzler, Henry R., 1950-
+Detroit, Mich. : Macmillan Reference USA c2009
+Available Online
+2
+BOOK
+Plague
+Hardman, Lizabeth.
+Detroit, Mich. : Lucent Books c2010
+Available Online
+3
+BOOK
+Psychology of classroom learning an encyclopedia
+Anderman, Eric M.Anderman, Lynley Hicks.
+Detroit, Mich. : Macmillan Reference USA c2009
+Available Online
+4
+BOOK
+Encyclopedia of global brands
+Detroit : St. James Press 2013
+Available Online
+5
+BOOK
+Computation and storage in the cloud : understanding the trade-offs
+Yuan, Dong, Yang, YunChen, Jinjun
+Waltham, Mass. : Elsevier 2013
+Available Online
+6
+BOOK
+Mobile user experience : patterns to make sense of it all
+Mendoza, Adrian,
+Waltham, Mass. : Morgan Kaufmann 2014
+Available Online
+7
+BOOK
+Reference and instructional services for information literacy skills in school libraries
+Lanning, Scott,
+Santa Barbara, Calif. : Libraries Unlimited 2014
+Available Online
+8
+BOOK
+The basics of web hacking : tools and techniques to attack the Web
+Pauli, Joshua J., White, Scott
+Waltham, Mass. : Syngress 2013
+Available Online
+9
+BOOK
+Investing in hedge funds : a guide to measuring risk and return characteristics
+Bali, Turan G., Atilgan, YigitDemirtas, K. Ozgur
+Oxford, U.K. : Academic Press 2013
+Available Online
+10
+BOOK
+The case for the Chief Data Officer : recasting the C-suite to leverage your most valuable asset
+Aiken, Peter, Gorman, Michael
+Waltham, Mass. : Morgan Kaufmann 2013
+Available Online
+2023-05-31 10:08:45: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:08:47: Check whether is a FRBRed record.
+2023-05-31 10:08:49: Not in FRBR
+2023-05-31 10:08:59: Getting all links of the target title.
+2023-05-31 10:09:04: No. of links records of the target title:1
+2023-05-31 10:09:04: Target link on browser: viewfulltextviewfulltexthereviathomsongale
+2023-05-31 10:09:04: Link keyword in config file: thomsongale
+2023-05-31 10:09:09: Link matched. Going to save.
+2023-05-31 10:10:11: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:10:11: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIATHOMSONGALE
+2023-05-31 10:10:11: cannot reach the platform:Gale
+2023-05-31 10:10:11: Host connected. 
+2023-05-31 10:10:11: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:10:11: sftp Channel exited.
+2023-05-31 10:10:11: Channel disconnected.
+2023-05-31 10:10:11: Host Session disconnected.
+2023-05-31 10:10:11: Going back
+2023-05-31 10:10:18: 
+
+Target Platform Information:
+2023-05-31 10:10:18: 	Search Type: platform
+2023-05-31 10:10:18: 	Ebk Platform: Elsevier Science
+2023-05-31 10:10:18: 	Searching Keyword on Primo: elsevier
+2023-05-31 10:10:18: 	Platform Keyword on Primo's Accessing Link: ScienceDirect
+2023-05-31 10:10:18: 	Creator Keyword on Primo's Facet: Elsevier Science (Firm)
+2023-05-31 10:10:23: Finding the SearchBar
+2023-05-31 10:10:23: Clicking eBook facet
+2023-05-31 10:10:42: nav: 0 of 10
+2023-05-31 10:10:44: nav: 0 of 1
+2023-05-31 10:10:46: Main ELe Text: 1
+BOOK
+Pathology and intervention in musculoskeletal rehabilitation
+Magee, David J., Zachazewski, James E.Quillen, William S.Manske, Robert C.
+Maryland Heights, Missouri : Elsevier 2016
+Available Online
+2
+BOOK
+Understanding virtual reality : interface, application, and design
+Sherman, William R., Craig, Alan B.
+Cambridge, Massachusetts : Morgan Kaufmann is an imprint of Elsevier 2019
+Available Online
+3
+BOOK
+Complementary therapies for physical therapy : a clinical decision-making approach
+Deutsch, Judith E. 1959- Anderson, Ellen Zambo
+St. Louis, Missouri : Saunders Elsevier 2008
+Available Online
+4
+MULTIPLE VERSIONS
+Contemporary financial intermediation
+Greenbaum, Stuart I.,; Thakor, Anjan V.;Boot, Arnoud W. A. 1960- (Willem Alexander)
+3 versions found. See all versions
+5
+BOOK
+Physiotherapy in mental health : a practical approach
+Everett, TinaDennis, M. (Maureen)Ricketts, Eirian
+Oxford, United Kingdom : Butterworth-Heinemann 1995
+Available Online
+6
+BOOK
+Addictive substances and neurological disease : alcohol, tobacco, caffeine, and drugs of abuse in everyday lifestyles
+Watson, Ronald R. (Ronald Ross)Zibadi, Sherma
+London : Academic Press is an imprint of Elsevier 2017
+Available Online
+7
+BOOK
+WISC-V : clinical use and interpretation
+Weiss, Lawrence G., Saklofske, Donald H.Holdnack, James A.Prifitera, Aurelio, 1952-
+London : Academic Press is an imprint of Elsevier 2019
+Available Online
+8
+BOOK
+5G physical layer : principles, models and technology components
+Zaidi, Ali, Athley, FredrikMedbo, JonasGustavsson, UlfDurisi, GiuseppeChen, Xiaoming
+London : Academic Press is an imprint of Elsevier 2018
+Available Online
+9
+BOOK
+Interventions for mental health : an evidence-based approach for physiotherapists and occupational therapists
+Everett, TinaDonaghy, MarieFeaver, Sally
+New York : Butterworth-Heinemann, an imprint of Elsevier Science Limited 2003
+Available Online
+10
+BOOK
+Functional movement development across the life span
+Cech, Donna, Martin, Suzanne (Suzanne C.)
+St. Louis, Missouri : Elsevier 2012
+Available Online
+2023-05-31 10:10:46: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:10:49: Check whether is a FRBRed record.
+2023-05-31 10:10:51: Not in FRBR
+2023-05-31 10:11:01: Getting all links of the target title.
+2023-05-31 10:11:05: No. of links records of the target title:2
+2023-05-31 10:11:05: Target link on browser: elsevierclinicalkeystudentfoundationphysiotherapyenglishlanguagepackage
+2023-05-31 10:11:05: Link keyword in config file: sciencedirect
+2023-05-31 10:11:05: Link keyword not match to the target link.
+2023-05-31 10:11:05: Target link on browser: viewfulltextviewfulltexthereviasciencedirect
+2023-05-31 10:11:05: Link keyword in config file: sciencedirect
+2023-05-31 10:11:10: Link matched. Going to save.
+2023-05-31 10:12:12: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:12:12: Title on Primo: ELSEVIERCLINICALKEYSTUDENTFOUNDATIONPHYSIOTHERAPYENGLISHLANGUAGEPACKAGE
+2023-05-31 10:12:12: cannot reach the platform:Elsevier Science
+2023-05-31 10:12:12: Host connected. 
+2023-05-31 10:12:12: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:12:12: sftp Channel exited.
+2023-05-31 10:12:12: Channel disconnected.
+2023-05-31 10:12:12: Host Session disconnected.
+2023-05-31 10:12:12: Going back
+2023-05-31 10:12:19: 
+
+Target Platform Information:
+2023-05-31 10:12:19: 	Search Type: platform
+2023-05-31 10:12:19: 	Ebk Platform: JSTOR (non SFX)
+2023-05-31 10:12:19: 	Searching Keyword on Primo: jstor
+2023-05-31 10:12:19: 	Platform Keyword on Primo's Accessing Link: JSTOR
+2023-05-31 10:12:19: 	Creator Keyword on Primo's Facet: JSTOR (Organization)
+2023-05-31 10:12:24: Finding the SearchBar
+2023-05-31 10:12:24: Clicking eBook facet
+2023-05-31 10:12:43: nav: 0 of 10
+2023-05-31 10:12:45: nav: 0 of 1
+2023-05-31 10:12:47: Main ELe Text: 1
+BOOK
+The art of Shakespeare's sonnets
+Vendler, Helen, 1933-,
+Cambridge, Massachusetts : The Belknap Press of Harvard University Press 1999 - 1997
+Available Online
+2
+BOOK
+Dialectical behavior therapy
+Chapman, Alexander L. Dixon-Gordon, Katherine L.
+Washington, DC : American Psychological Association 2020
+Available Online
+3
+BOOK
+Expand your English : a guide to improving your academic vocabulary
+Hart, Steve (Academic proofreader)
+Hong Kong : Hong Kong University Press 2017
+Available Online
+4
+BOOK
+The life model of social work practice : advances in theory and practice
+Gitterman, Alex, 1938- Knight, Carolyn (Professor)Germain, Carel B.
+New York : Columbia University Press 2021
+Available Online
+5
+BOOK
+Pink-slipped : what happened to women in the silent film industries?
+Gaines, Jane, 1946-
+Urbana : University of Illinois Press 2018
+Available Online
+6
+BOOK
+Homeward : life in the year after prison
+Western, Bruce, 1964-
+New York : Russell Sage Foundation 2018
+Available Online
+7
+BOOK
+Two cheers for higher education : why American universities are stronger than ever--and how to meet the challenges they face
+Brint, Steven G.,
+Princeton ; Oxford : Princeton University Press 2018
+Available Online
+8
+MULTIPLE VERSIONS
+The umbrella movement : civil resistance and contentious space in Hong Kong
+Ma, Ngok;Zheng, Wei (College teacher)
+2 versions found. See all versions
+9
+BOOK
+The great delusion : liberal dreams and international realities
+Mearsheimer, John J.,
+New Haven, Conn. : Yale University Press 2018
+Available Online
+10
+BOOK
+Samson's cords : imposing oaths in Milton, Marvell, and Butler
+Garganigo, Alex, 1969-
+Toronto : University of Toronto Press 2018
+Available Online
+2023-05-31 10:12:47: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:12:50: Check whether is a FRBRed record.
+2023-05-31 10:12:52: Not in FRBR
+2023-05-31 10:13:02: Getting all links of the target title.
+2023-05-31 10:13:06: No. of links records of the target title:2
+2023-05-31 10:13:06: Target link on browser: jstorunlimitedusageddabooktitles
+2023-05-31 10:13:06: Link keyword in config file: jstor
+2023-05-31 10:13:11: Link matched. Going to save.
+2023-05-31 10:14:13: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:14:13: Title on Primo: JSTORUNLIMITEDUSAGEDDABOOKTITLES
+2023-05-31 10:14:13: cannot reach the platform:JSTOR (non SFX)
+2023-05-31 10:14:13: Host connected. 
+2023-05-31 10:14:13: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:14:13: sftp Channel exited.
+2023-05-31 10:14:13: Channel disconnected.
+2023-05-31 10:14:13: Host Session disconnected.
+2023-05-31 10:14:13: Going back
+2023-05-31 10:14:20: 
+
+Target Platform Information:
+2023-05-31 10:14:20: 	Search Type: platform
+2023-05-31 10:14:20: 	Ebk Platform: ProQuest Ebook Central
+2023-05-31 10:14:20: 	Searching Keyword on Primo: ProQuest
+2023-05-31 10:14:20: 	Platform Keyword on Primo's Accessing Link: ProQuest Ebook Central
+2023-05-31 10:14:20: 	Creator Keyword on Primo's Facet: ProQuest (Firm)
+2023-05-31 10:14:20: Finding the SearchBar
+2023-05-31 10:14:20: Clicking eBook facet
+2023-05-31 10:14:39: nav: 0 of 10
+2023-05-31 10:14:41: nav: 0 of 1
+2023-05-31 10:14:43: Main ELe Text: 1
+BOOK
+Agent-based and individual-based modeling a practical introduction
+Railsback, Steven F. Grimm, Volker, 1958-
+Princeton : Princeton University Press c2012
+Available Online
+2
+MULTIPLE VERSIONS
+Practical research planning and design
+Leedy, Paul D.; Ormrod, Jeanne Ellis.
+9 versions found. See all versions
+3
+MULTIPLE VERSIONS
+Using multivariate statistics
+Tabachnick, Barbara G., 1936-; Fidell, Linda S.
+4 versions found. See all versions
+4
+MULTIPLE VERSIONS
+Consumer behavior buying, having, and being
+Solomon, Michael R.
+8 versions found. See all versions
+5
+MULTIPLE VERSIONS
+Asking questions in biology a guide to hypothesis testing, experimental design and presentation in practical work and research projects
+Barnard, C. J.; Gilbert, Francis S. 1956- (Francis Sylvest);McGregor, Peter K.
+2 versions found. See all versions
+6
+BOOK
+Bollywood's India : a public fantasy
+Joshi, Priya,
+New York, N.Y. : Columbia University Press 2015
+Available Online
+7
+BOOK
+A temporary future : the fiction of David Mitchell
+O'Donnell, Patrick, 1948-
+New York, N.Y. : Bloomsbury Academic 2015
+Available Online
+8
+BOOK
+Film worlds : a philosophical aesthetics of cinema
+Yacavone, Daniel,
+New York, N.Y. : Columbia University Press 2015
+Available Online
+9
+BOOK
+The disinherited majority : capital questions--Piketty and beyond
+Derber, Charles,
+Boulder, Colo. : Paradigm Publishers 2015
+Available Online
+10
+BOOK
+The reality test : still relying on strategy?
+Smith, Robert Rowland,
+London, U.K. : Profile Books Limited 2013
+Available Online
+2023-05-31 10:14:43: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:14:46: Check whether is a FRBRed record.
+2023-05-31 10:14:48: Not in FRBR
+2023-05-31 10:15:05: Getting all links of the target title.
+2023-05-31 10:15:09: No. of links records of the target title:1
+2023-05-31 10:15:09: Target link on browser: viewfulltextviewfulltexthereviaproquestebookcentral
+2023-05-31 10:15:09: Link keyword in config file: proquestebookcentral
+2023-05-31 10:15:14: Link matched. Going to save.
+2023-05-31 10:16:16: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:16:16: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIAPROQUESTEBOOKCENTRAL
+2023-05-31 10:16:16: cannot reach the platform:ProQuest Ebook Central
+2023-05-31 10:16:16: Host connected. 
+2023-05-31 10:16:16: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:16:16: sftp Channel exited.
+2023-05-31 10:16:16: Channel disconnected.
+2023-05-31 10:16:16: Host Session disconnected.
+2023-05-31 10:16:17: Going back
+2023-05-31 10:16:23: 
+
+Target Platform Information:
+2023-05-31 10:16:23: 	Search Type: platform
+2023-05-31 10:16:23: 	Ebk Platform: CNKI
+2023-05-31 10:16:23: 	Searching Keyword on Primo: CNKI
+2023-05-31 10:16:23: 	Platform Keyword on Primo's Accessing Link: CNKI工具書庫
+2023-05-31 10:16:23: 	Creator Keyword on Primo's Facet: 中國學術期刊(光盤版)電子雜誌社
+2023-05-31 10:16:28: Finding the SearchBar
+2023-05-31 10:16:28: Clicking eBook facet
+2023-05-31 10:16:48: nav: 0 of 10
+2023-05-31 10:16:50: nav: 0 of 1
+2023-05-31 10:16:52: Main ELe Text: 1
+BOOK
+元代文學史
+程千帆,
+武漢 : 武漢大學出版社 2013
+CNKI工具書庫
+Available at Stanley Ho Library General Collection – Stanley Ho Library (PL2294 .C446 2013)
+Available Online
+2
+BOOK
+中國古代文學通論. 隋唐五代卷 = A survey of classical Chinese literature
+蔣寅, 1959-
+瀋陽市 : 遼寧人民出版社 2005
+CNKI工具書庫
+Available Online
+3
+BOOK
+元曲三百首鑒賞辭典
+陳鵬閆麗紅
+武漢 : 崇文書局 2016
+CNKI工具書庫
+Available Online
+4
+BOOK
+中國古代文學通論. 魏晉南北朝卷 = A survey of classical Chinese literature
+劉躍進, 1958-
+瀋陽市 : 遼寧人民出版社 2005
+CNKI工具書庫
+Available Online
+5
+BOOK
+元曲小百科
+孟德, 李誠
+成都 : 巴蜀書社 2013
+CNKI工具書庫
+Available Online
+6
+BOOK
+中國歷代名文賞讀
+陳長喜
+天津市 : 天津古籍出版社 2007
+CNKI工具書庫
+Available at Stanley Ho Library General Collection – Stanley Ho Library (PL2455 .Z467 2007)
+Available Online
+7
+BOOK
+中國歷代名詩賞讀
+陳長喜
+天津市 : 天津古籍出版社 2007
+CNKI工具書庫
+Available at Stanley Ho Library General Collection – Stanley Ho Library (PL2518 .Z56 2007)
+Available Online
+8
+BOOK
+中國歷代小說賞讀
+陳長喜
+天津市 : 天津古籍出版社 2007
+CNKI工具書庫
+Available at Stanley Ho Library General Collection – Stanley Ho Library (PL2416 .Z466 2007)
+Available Online
+9
+BOOK
+中華宋詞鑒賞辭典
+中華書局. 編輯部
+北京 : 中華書局 2008
+CNKI工具書庫
+Available Online
+10
+BOOK
+中華山水名勝旅游文學大觀. 詩詞卷
+李時人,
+西安市 : 三秦出版社 1998
+CNKI工具書庫
+Available Online
+2023-05-31 10:16:52: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:16:54: Check whether is a FRBRed record.
+2023-05-31 10:16:56: Not in FRBR
+2023-05-31 10:17:07: Getting all links of the target title.
+2023-05-31 10:17:11: No. of links records of the target title:1
+2023-05-31 10:17:11: Target link on browser: viewfulltextviewfulltexthereviacnki工具书库
+2023-05-31 10:17:11: Link keyword in config file: cnki工具书库
+2023-05-31 10:17:16: Link matched. Going to save.
+2023-05-31 10:18:17: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:18:17: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIACNKI工具书库
+2023-05-31 10:18:17: cannot reach the platform:CNKI
+2023-05-31 10:18:17: Host connected. 
+2023-05-31 10:18:18: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:18:18: sftp Channel exited.
+2023-05-31 10:18:18: Channel disconnected.
+2023-05-31 10:18:18: Host Session disconnected.
+2023-05-31 10:18:18: Going back
+2023-05-31 10:18:24: 
+
+Target Platform Information:
+2023-05-31 10:18:24: 	Search Type: platform
+2023-05-31 10:18:24: 	Ebk Platform: Emerald
+2023-05-31 10:18:24: 	Searching Keyword on Primo: Emerald
+2023-05-31 10:18:24: 	Platform Keyword on Primo's Accessing Link: Emerald
+2023-05-31 10:18:24: 	Creator Keyword on Primo's Facet: Emerald Group Publishing
+2023-05-31 10:18:25: Finding the SearchBar
+2023-05-31 10:18:25: Clicking eBook facet
+2023-05-31 10:18:44: nav: 0 of 10
+2023-05-31 10:18:46: nav: 0 of 1
+2023-05-31 10:18:48: Main ELe Text: 1
+BOOK
+30-minute website marketing : a step by step guide
+Wilson, Lee,
+Bingley : Emerald Publishing Limited 2019
+Available Online
+2
+BOOK
+Values, rationality, and power : developing organizational wisdom : a case study of a Canadian healthcare authority
+Anderson, Brad C.,
+Bingley, U.K. : Emerald Publishing Limited 2019
+Available Online
+3
+BOOK
+Including a symposium on Ludwig Lachmann
+Fiorito, Luca, 1967-Scheall, ScottSuprinyak, Carlos Eduardo
+Bingley, U.K. : Emerald Publishing Limited 2019
+Available Online
+4
+BOOK
+Contemporary HRM Issues in the 21st century
+Holland, Peter W. H.
+Bingley : Emerald Publishing Limited 2019
+Available Online
+5
+BOOK
+Job crafting : the art of redesigning a job
+De Gennaro, Davide,
+Bingley, U.K. : Emerald Publishing Limited 2019
+Available Online
+6
+BOOK
+Research in the history of economic thought and methodology. Vol. 37C, including a symposium on Robert Heilbroner at 100
+Fiorito, Luca, 1967-Scheall, ScottSuprinyak, Carlos Eduardo
+Bingley, U.K. : Emerald Publishing Limited 2019
+Available Online
+7
+BOOK
+Advances in hospitality and leisure
+Chen, Joseph S.
+Bingley, U.K. : Emerald Publishing Limited 2019
+Available Online
+8
+BOOK
+Intelligent agriculture : developing a system for monitoring and controlling production
+Maldonado Guzmán, Gonzalo, Garza-Reyes, Jose ArturoSolano Romo, Lizeth Itziguery
+Bingley, U.K. : Emerald Publishing Limited 2019
+Available Online
+9
+BOOK
+All that's not fit to print : fake news and the call to action for librarians and information professional
+Affelt, Amy L., 1970-
+Bingley : Emerald Publishing Limited 2019
+Available Online
+10
+BOOK
+Peace, reconciliation and social justice leadership in the 21st century : the role of leaders and followers
+Schockman, H. EricHernández, VanessaBoitano de Moras, Aldo
+Bingley, U.K. : Emerald Publishing Limited 2019
+Available Online
+2023-05-31 10:18:48: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:18:51: Check whether is a FRBRed record.
+2023-05-31 10:18:53: Not in FRBR
+2023-05-31 10:19:04: Getting all links of the target title.
+2023-05-31 10:19:08: No. of links records of the target title:1
+2023-05-31 10:19:08: Target link on browser: viewfulltextviewfulltexthereviaemerald
+2023-05-31 10:19:08: Link keyword in config file: emerald
+2023-05-31 10:19:13: Link matched. Going to save.
+2023-05-31 10:20:14: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:20:14: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIAEMERALD
+2023-05-31 10:20:14: cannot reach the platform:Emerald
+2023-05-31 10:20:14: Host connected. 
+2023-05-31 10:20:14: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:20:14: sftp Channel exited.
+2023-05-31 10:20:14: Channel disconnected.
+2023-05-31 10:20:14: Host Session disconnected.
+2023-05-31 10:20:14: Going back
+2023-05-31 10:20:21: 
+
+Target Platform Information:
+2023-05-31 10:20:21: 	Search Type: platform
+2023-05-31 10:20:21: 	Ebk Platform: 萬方視頻
+2023-05-31 10:20:21: 	Searching Keyword on Primo: 萬方視頻
+2023-05-31 10:20:21: 	Platform Keyword on Primo's Accessing Link: 萬方視頻
+2023-05-31 10:20:21: 	Creator Keyword on Primo's Facet: 萬方視頻
+2023-05-31 10:20:21: Finding the SearchBar
+2023-05-31 10:20:21: Clicking eBook facet
+2023-05-31 10:20:44: nav: 0 of 10
+2023-05-31 10:20:46: nav: 0 of 1
+2023-05-31 10:20:48: Main ELe Text: 1
+VIDEO
+Cell phones : avoiding health dangers
+TMW Media Group
+Venice, Calif. : TMW Media Group 2019
+Available Online
+2
+VIDEO
+Support your sleep and improve the health and quality of your life
+TMW Media Group
+Venice, Calif. : TMW Media Group 2020
+Available Online
+3
+VIDEO
+Right attitude, right results
+TMW Media Group
+Venice, Calif. : TMW Media Group 2019
+Available Online
+4
+VIDEO
+The Brontë sisters
+Hossick, MalcolmAcademy Media (Firm)TMW Media Group
+Venice, Calif. : TMW Media Group 2020
+Available Online
+5
+VIDEO
+COVID-19 employee mental health, well-being and coping
+TMW Media Group
+Venice, Calif. : TMW Media Group 2020
+Available Online
+6
+MULTIPLE VERSIONS
+Famous authors : Virginia Woolf 1882-1941
+Hossick, Malcolm;Academy Media (Firm);TMW Media Group
+2 versions found. See all versions
+7
+VIDEO
+George Eliot : novelist (Mary Anne Evans)
+Hossick, MalcolmAcademy Media (Firm)TMW Media Group
+Venice, Calif. : TMW Media Group 2020
+Available Online
+8
+VIDEO
+The art of common sense and critical thinking in the workplace
+TMW Media Group
+Venice, Calif. : TMW Media Group 2019
+Available Online
+9
+VIDEO
+Interviewing : cover letter and resume
+TMW Media Group
+Venice, Calif. : TMW Media Group 2019
+Available Online
+10
+VIDEO
+Email effectiveness
+TMW Media Group
+Venice, Calif. : TMW Media Group 2019
+Available Online
+2023-05-31 10:20:48: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:20:50: Check whether is a FRBRed record.
+2023-05-31 10:20:52: Not in FRBR
+2023-05-31 10:21:02: Getting all links of the target title.
+2023-05-31 10:21:07: No. of links records of the target title:1
+2023-05-31 10:21:07: Target link on browser: evideovia万方视频accessthevideoherevia万方视频
+2023-05-31 10:21:07: Link keyword in config file: 万方视频
+2023-05-31 10:21:12: Link matched. Going to save.
+2023-05-31 10:22:12: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:22:12: Title on Primo: EVIDEOVIA万方视频ACCESSTHEVIDEOHEREVIA万方视频
+2023-05-31 10:22:12: cannot reach the platform:萬方視頻
+2023-05-31 10:22:12: Host connected. 
+2023-05-31 10:22:13: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:22:13: sftp Channel exited.
+2023-05-31 10:22:13: Channel disconnected.
+2023-05-31 10:22:13: Host Session disconnected.
+2023-05-31 10:22:13: Going back
+2023-05-31 10:22:20: 
+
+Target Platform Information:
+2023-05-31 10:22:20: 	Search Type: platform
+2023-05-31 10:22:20: 	Ebk Platform: Airiti
+2023-05-31 10:22:20: 	Searching Keyword on Primo: airiti
+2023-05-31 10:22:20: 	Platform Keyword on Primo's Accessing Link: Airiti
+2023-05-31 10:22:20: 	Creator Keyword on Primo's Facet: 華藝數位股份有限公司
+2023-05-31 10:22:20: Finding the SearchBar
+2023-05-31 10:22:20: Clicking eBook facet
+2023-05-31 10:22:38: nav: 0 of 10
+2023-05-31 10:22:40: nav: 0 of 1
+2023-05-31 10:22:42: Main ELe Text: 1
+BOOK
+棋王、樹王、孩子王
+阿城, 1949- 阿城, 1949-
+台北市 : 大地出版社 2007
+Available Online
+2
+BOOK
+寫論文其實並不難：學術新鮮人必讀本
+台灣 : 巨流圖書股份有限公司 2018
+Available Online
+3
+BOOK
+第一次學工程數學就上手（3）：線性代數
+台灣 : 五南圖書出版股份有限公司 2020
+Available Online
+4
+BOOK
+面向新世界：國際關係的復古與創新
+台灣 : 東美出版事業有限公司 2015
+Available Online
+5
+BOOK
+京盛宇的台茶革命：23堂台灣茶創業的經營體悟
+台灣 : 文經出版社有限公司 2018
+Available Online
+6
+BOOK
+羅賓．看：進入泰迪羅賓的影音世界
+香港 : 同窗文化有限公司 2012
+Available Online
+7
+BOOK
+現代知識貴族的精神：林毓生思想近作選
+香港 : 香港中文大學出版社 2020
+Available Online
+8
+BOOK
+歲時紀
+台灣 : 聯合文學出版社 2014
+Available Online
+9
+BOOK
+史記的人物世界
+台灣 : 三民書局股份有限公司 2021
+Available Online
+10
+BOOK
+開啟全新的我
+台灣 : 仁風文創書苑出版社 2017
+Available Online
+2023-05-31 10:22:42: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:22:44: Check whether is a FRBRed record.
+2023-05-31 10:22:46: Not in FRBR
+2023-05-31 10:22:57: Getting all links of the target title.
+2023-05-31 10:23:01: No. of links records of the target title:1
+2023-05-31 10:23:01: Target link on browser: viewfulltextviewfulltexthereviaairiti
+2023-05-31 10:23:01: Link keyword in config file: airiti
+2023-05-31 10:23:06: Link matched. Going to save.
+2023-05-31 10:24:07: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:24:07: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIAAIRITI
+2023-05-31 10:24:07: cannot reach the platform:Airiti
+2023-05-31 10:24:07: Host connected. 
+2023-05-31 10:24:07: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:24:07: sftp Channel exited.
+2023-05-31 10:24:07: Channel disconnected.
+2023-05-31 10:24:07: Host Session disconnected.
+2023-05-31 10:24:08: Going back
+2023-05-31 10:24:14: 
+
+Target Platform Information:
+2023-05-31 10:24:14: 	Search Type: platform
+2023-05-31 10:24:14: 	Ebk Platform: ChinaMaxx - Superstar
+2023-05-31 10:24:14: 	Searching Keyword on Primo: superstar
+2023-05-31 10:24:14: 	Platform Keyword on Primo's Accessing Link: Chinamaxx Digital Libraries
+2023-05-31 10:24:14: 	Creator Keyword on Primo's Facet: SuperStar
+2023-05-31 10:24:17: Finding the SearchBar
+2023-05-31 10:24:17: Clicking eBook facet
+2023-05-31 10:24:37: nav: 0 of 10
+2023-05-31 10:24:39: nav: 0 of 1
+2023-05-31 10:24:41: Main ELe Text: 1
+BOOK
+銀行制度創新與全能銀行發展 = Yinhang zhidu chuangxin yu quanneng yinhang fazhan
+李潔,
+北京 : 中國人民大學出版社 2003
+Available Online
+2
+BOOK
+唐宋傳奇總集. 唐五代
+袁閭琨薛洪勣
+鄭州 : 河南人民出版社 2001
+Available Online
+3
+BOOK
+校本行動研究 = School-based action research
+劉良華,
+成都 : 四川教育出版社 2002
+Available Online
+4
+BOOK
+創造教育
+俞學明, 鍾祖榮, 1965-劉文明, 1964-
+北京 : 教育科學出版社 1999
+Available Online
+5
+BOOK
+西方史學史
+張廣智, 1939- 陳新
+上海 : 復旦大學出版社 2000
+Available Online
+6
+BOOK
+語病求醫 : 文章語病的評析與修改
+金錫謨,
+北京 : 書目文獻出版社 1995
+Available at Stanley Ho Library General Collection – Stanley Ho Library (PL1241 .C5236 1995)
+Available Online
+7
+MULTIPLE VERSIONS
+墨學十論
+陳柱, 1889-1944,
+2 versions found. See all versions
+8
+BOOK
+老學八篇
+陳柱, 1889-1944
+上海 : 商務印書館 1928
+Available Online
+9
+BOOK
+西藏調查記
+張其勤.沈與白.
+上海 : 商務印書館 1924
+Available Online
+10
+BOOK
+銀行監管案例精編 = Yinhang jianguan anli jingbian
+周仲飛
+上海 : 上海財經大學出版社 2004
+Available Online
+2023-05-31 10:24:41: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:24:44: Check whether is a FRBRed record.
+2023-05-31 10:24:46: Not in FRBR
+2023-05-31 10:24:56: Getting all links of the target title.
+2023-05-31 10:25:00: No. of links records of the target title:1
+2023-05-31 10:25:00: Target link on browser: viewfulltextviewfulltexthereviachinamaxxdigitallibraries
+2023-05-31 10:25:00: Link keyword in config file: chinamaxxdigitallibraries
+2023-05-31 10:25:06: Link matched. Going to save.
+2023-05-31 10:26:07: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:26:07: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIACHINAMAXXDIGITALLIBRARIES
+2023-05-31 10:26:07: cannot reach the platform:ChinaMaxx - Superstar
+2023-05-31 10:26:07: Host connected. 
+2023-05-31 10:26:07: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:26:07: sftp Channel exited.
+2023-05-31 10:26:07: Channel disconnected.
+2023-05-31 10:26:07: Host Session disconnected.
+2023-05-31 10:26:07: Going back
+2023-05-31 10:26:14: 
+
+Target Platform Information:
+2023-05-31 10:26:14: 	Search Type: platform
+2023-05-31 10:26:14: 	Ebk Platform: Cambridge Core
+2023-05-31 10:26:14: 	Searching Keyword on Primo: cambridge university
+2023-05-31 10:26:14: 	Platform Keyword on Primo's Accessing Link: Cambridge University Press)
+2023-05-31 10:26:14: 	Creator Keyword on Primo's Facet: Cambridge University Press
+2023-05-31 10:26:16: Finding the SearchBar
+2023-05-31 10:26:16: Clicking eBook facet
+2023-05-31 10:26:36: nav: 0 of 10
+2023-05-31 10:26:38: nav: 0 of 1
+2023-05-31 10:26:40: Main ELe Text: 1
+BOOK
+Climate change and justice
+Moss, Jeremy
+Cambridge, U.K. : Cambridge University Press 2015
+Available Online
+2
+BOOK
+Accounting for carbon : monitoring, reporting and verifying emissions in the climate economy
+Bellassen, Valentin, 1985-Stephan, Nicolas
+Cambridge, U.K. : Cambridge University Press 2015
+Available Online
+3
+BOOK
+Modernism and Homer : the Odysseys of H.D., James Joyce, Osip Mandelstam, and Ezra Pound
+Flack, Leah Culligan,
+Cambridge : Cambridge University Press 2015
+Available Online
+4
+BOOK
+Dangerous crossings : race, species, and nature in a multicultural age
+Kim, Claire Jean,
+New York, N.Y. : Cambridge University Press 2015
+Available Online
+5
+BOOK
+Creating global opportunities : Mærsk line in containerisation 1973-2013
+Jephson, Chris, Morgen, Henning
+Cambridge, U.K. : Cambridge University Press 2014
+Available Online
+6
+BOOK
+The acquisition of heritage languages
+Montrul, Silvina,
+Cambridge, U.K. : Cambridge University Press 2016
+Available Online
+7
+BOOK
+Applied choice analysis
+Hensher, David A., 1947- Rose, John M.Greene, William H., 1951-
+Cambridge, U.K. : Cambridge University Press 2015
+Available Online
+8
+BOOK
+An artist's reminiscences
+Crane, Walter, 1845-1915,
+London, U.K. : Methuen and Company 1907 - 2015
+Available Online
+9
+BOOK
+Crisis, resilience and survival : lessons from the global auto industry
+Holweg, Matthias, Oliver, Nick
+Cambridge, U.K. : Cambridge University Press 2016
+Available Online
+10
+BOOK
+Current Federal Reserve policy under the lens of economic history : essays to commemorate the Federal Reserve System's centennial
+Humpage, Owen F.
+New York, N.Y. : Cambridge University Press 2015
+Available Online
+2023-05-31 10:26:40: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:26:42: Check whether is a FRBRed record.
+2023-05-31 10:26:44: Not in FRBR
+2023-05-31 10:26:55: Getting all links of the target title.
+2023-05-31 10:26:59: No. of links records of the target title:1
+2023-05-31 10:26:59: Target link on browser: viewfulltextviewfulltexthereviacambridgeuniversitypress
+2023-05-31 10:26:59: Link keyword in config file: cambridgeuniversitypress
+2023-05-31 10:27:04: Link matched. Going to save.
+2023-05-31 10:28:06: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:28:06: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIACAMBRIDGEUNIVERSITYPRESS
+2023-05-31 10:28:06: cannot reach the platform:Cambridge Core
+2023-05-31 10:28:06: Host connected. 
+2023-05-31 10:28:06: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:28:06: sftp Channel exited.
+2023-05-31 10:28:06: Channel disconnected.
+2023-05-31 10:28:06: Host Session disconnected.
+2023-05-31 10:28:06: Going back
+2023-05-31 10:28:13: 
+
+Target Platform Information:
+2023-05-31 10:28:13: 	Search Type: platform
+2023-05-31 10:28:13: 	Ebk Platform: Udn
+2023-05-31 10:28:13: 	Searching Keyword on Primo: UDN
+2023-05-31 10:28:13: 	Platform Keyword on Primo's Accessing Link: Udn 讀書館
+2023-05-31 10:28:13: 	Creator Keyword on Primo's Facet: 聯合線上股份有限公司
+2023-05-31 10:28:15: Finding the SearchBar
+2023-05-31 10:28:15: Clicking eBook facet
+2023-05-31 10:28:35: nav: 0 of 10
+2023-05-31 10:28:37: nav: 0 of 1
+2023-05-31 10:28:39: Main ELe Text: 1
+BOOK
+暴政 : 掌控關鍵年代的獨裁風潮, 洞悉時代之惡的20堂課 = On tyranny : twenty lessons from the twentieth century
+Snyder, Timothy, 劉維人
+新北市 : 聯經出版事業股份有限公司 2019
+Available Online
+2
+BOOK
+獨舞
+李琴峰,
+臺北市 : 聯合文學出版社股份有限公司 2019
+Available Online
+3
+BOOK
+漫遊女子 : 大城小傳, 踩踏都會空間的女性身姿 = Flâneuse : women walk the city in Paris, New York, Tokyo, Venice and London
+Elkin, Lauren, 許淳涵
+台北市 : 英屬蓋曼群島網路與書股份有限公司台灣分公司 2018
+Available Online
+4
+BOOK
+最美的國文課 : 宋詞 : 融合音樂, 電影, 哲學的宋詞跨界全解讀
+夏昆, 1970-
+新北市 : 野人文化股份有限公司 2018
+Available Online
+5
+BOOK
+翻倍效率工作術 : 不會就太可惜的 Excel + Power Bi 大數據視覺圖表設計與分析
+文淵閣工作室,
+台北市 : 碁峰資訊股份有限公司 2020
+Available at E-Library E-Library
+Available Online
+6
+BOOK
+乳癌術後的物理治療
+葉瑞珠,
+台北市 : 大塊文化出版股份有限公司 2017
+Available Online
+7
+BOOK
+物理治療師教你巴金森氏症病人的運動
+湯佩芳, 黃正雅
+台北市 : 大塊文化出版股份有限公司 2018
+Available Online
+8
+BOOK
+教養從跟孩子的情緒做朋友開始 : 孩子鬧脾氣正是開發全腦的好時機 = No-drama discipline : the whole-brain way to calm the chaos and nurture your child's developing mind
+Siegel, Daniel J., 1957- Bryson, Tina Payne洪慈敏
+台北市 : 采實文化事業股份有限公司 2016
+Available Online
+9
+BOOK
+鳶尾盛開 : 文學評論與作家印象
+張瑞芬, 1962-
+臺北市 : 聯合文學出版社股份有限公司 2009
+Available Online
+10
+BOOK
+我是我自己的新郎 = I married myself
+郭強生, 1964-
+臺北市 : 聯合文學出版社股份有限公司 2011
+Available Online
+2023-05-31 10:28:39: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:28:41: Check whether is a FRBRed record.
+2023-05-31 10:28:43: Not in FRBR
+2023-05-31 10:28:54: Getting all links of the target title.
+2023-05-31 10:28:58: No. of links records of the target title:1
+2023-05-31 10:28:58: Target link on browser: viewfulltextviewfulltexthereviaudn读书馆
+2023-05-31 10:28:58: Link keyword in config file: udn读书馆
+2023-05-31 10:29:03: Link matched. Going to save.
+2023-05-31 10:30:04: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:30:04: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIAUDN读书馆
+2023-05-31 10:30:04: cannot reach the platform:Udn
+2023-05-31 10:30:04: Host connected. 
+2023-05-31 10:30:04: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:30:04: sftp Channel exited.
+2023-05-31 10:30:04: Channel disconnected.
+2023-05-31 10:30:04: Host Session disconnected.
+2023-05-31 10:30:04: Going back
+2023-05-31 10:30:12: 
+
+Target Platform Information:
+2023-05-31 10:30:12: 	Search Type: platform
+2023-05-31 10:30:12: 	Ebk Platform: Superbookcity
+2023-05-31 10:30:12: 	Searching Keyword on Primo: superbookcity
+2023-05-31 10:30:12: 	Platform Keyword on Primo's Accessing Link: Superbookcity
+2023-05-31 10:30:12: 	Creator Keyword on Primo's Facet: Superbookcity
+2023-05-31 10:30:12: Finding the SearchBar
+2023-05-31 10:30:12: Clicking eBook facet
+2023-05-31 10:30:32: nav: 0 of 10
+2023-05-31 10:30:34: nav: 0 of 1
+2023-05-31 10:30:36: Main ELe Text: 1
+BOOK
+五四在香港 : 殖民情境民族主義及本土意識
+陳學然,
+香港 : 中華書局香港有限公司 2014 - 2013
+Available Online
+2
+BOOK
+中國現代設計的誕生
+郭恩慈, 蘇珏
+香港 : 三聯書店香港有限公司 2007
+Available at Ho Sik Yee Library General Collection – Ho Sik Yee Library (NK1483.A1 G86 2007)
+Available Online
+3
+BOOK
+歷史現場 : 韓少功讀史筆記
+韓少功,
+香港 : 三聯書店香港有限公司 2010
+Available at Stanley Ho Library General Collection – Stanley Ho Library (DS736 .H367 2010)
+Available Online
+4
+BOOK
+個人財務策劃 : 理論與實務
+鄭子雲陳工孟
+香港 : 商務印書館香港有限公司 2002
+Available at Stanley Ho Library General Collection – Stanley Ho Library (HG179 .G427 2002)
+Available Online
+5
+BOOK
+是銀幕不是熒幕, 是放映不是播映 : 當女明星還是大女明星
+林奕華,
+香港 : 三聯書店香港有限公司 2014
+Available at Ho Sik Yee Library General Collection – Ho Sik Yee Library (PN1998.2 .L5692 2014)
+Available Online
+6
+BOOK
+浮城述夢人香港作家訪談錄
+廖偉棠, 1975-
+香港 : 三聯書店香港有限公司 2012
+Available at Stanley Ho Library General Collection – Stanley Ho Library (PL2277 .L5374 2012)
+Available Online
+7
+BOOK
+歷史的際會 : 先秦史傳散文新讀
+何福仁,
+香港 : 三聯書店香港有限公司 2013
+Available at Stanley Ho Library General Collection – Stanley Ho Library (DS747.15 .H423 2013)
+Available Online
+8
+BOOK
+天下名士有部落 : 常州人物與文化群體
+周佳榮, 丁潔
+香港 : 三聯書店香港有限公司 2013
+Available at Stanley Ho Library General Collection – Stanley Ho Library (DS797.56.C436 C76 2013)
+Available Online
+9
+BOOK
+教育與承傳歷史文化的視角
+梁操雅. 羅天佑.
+香港 : 香港教育圖書公司 2011
+Available Online
+10
+BOOK
+甲申詩史 : 吳梅村書寫的一六四四
+陳岸峰,
+香港 : 中華書局香港有限公司 2014
+Available at Stanley Ho Library General Collection – Stanley Ho Library (DS753.65 .C44 2014)
+Available Online
+2023-05-31 10:30:36: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:30:38: Check whether is a FRBRed record.
+2023-05-31 10:30:40: Not in FRBR
+2023-05-31 10:30:51: Getting all links of the target title.
+2023-05-31 10:30:55: No. of links records of the target title:1
+2023-05-31 10:30:55: Target link on browser: viewfulltextviewfulltexthereviasuperbookcity
+2023-05-31 10:30:55: Link keyword in config file: superbookcity
+2023-05-31 10:31:00: Link matched. Going to save.
+2023-05-31 10:32:01: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:32:01: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIASUPERBOOKCITY
+2023-05-31 10:32:01: cannot reach the platform:Superbookcity
+2023-05-31 10:32:01: Host connected. 
+2023-05-31 10:32:01: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:32:01: sftp Channel exited.
+2023-05-31 10:32:01: Channel disconnected.
+2023-05-31 10:32:01: Host Session disconnected.
+2023-05-31 10:32:01: Going back
+2023-05-31 10:32:08: 
+
+Target Platform Information:
+2023-05-31 10:32:08: 	Search Type: platform
+2023-05-31 10:32:08: 	Ebk Platform: Springer
+2023-05-31 10:32:08: 	Searching Keyword on Primo: Springer
+2023-05-31 10:32:08: 	Platform Keyword on Primo's Accessing Link: Springer Link
+2023-05-31 10:32:08: 	Creator Keyword on Primo's Facet: SpringerLink (Online service)
+2023-05-31 10:32:09: Finding the SearchBar
+2023-05-31 10:32:09: Clicking eBook facet
+2023-05-31 10:32:28: nav: 0 of 10
+2023-05-31 10:32:30: nav: 0 of 1
+2023-05-31 10:32:33: Main ELe Text: 1
+BOOK
+Engagement of intercultural project customers : a relational model
+Lückmann, Patrick,
+Cham, Switzerland : Springer 2020
+Available Online
+2
+BOOK
+Augmented reality and virtual reality : changing realities in a dynamic world
+International Augmented and Virtual Reality Conference (5th : 2019 : Munich, Germany) Jung, TimothyDieck, M. Claudia tomRauschnabel, Philipp A.
+Cham, Switzerland : Springer 2020
+Available Online
+3
+BOOK
+Modern metaphors of Christian leadership : exploring Christian leadership in a contemporary organizational context
+Henson, Joshua D.
+Cham, Switzerland : Palgrave Macmillan 2020
+Available Online
+4
+BOOK
+Sustainable food chains and ecosystems : cooperative approaches for a changing world
+Mattas, KonstadinosKievit, Henk, 1971-Dijk, G. vanBaourakis, GeorgeZopounidis, Constantin
+Cham, Switzerland : Springer 2020
+Available Online
+5
+BOOK
+Responsible research for better business : creating useful and credible knowledge for business and society
+Zsolnai, LászlóThompson, Mike J.
+Cham, Switzerland : Palgrave Macmillan 2020
+Available Online
+6
+BOOK
+Supervision in the legal profession
+McNamara, Michael John,
+Singapore : Palgrave Macmillan 2020
+Available Online
+7
+BOOK
+Accounting, accountability and society : trends and perspectives in reporting, management and governance for sustainability
+Del Baldo, MaraDillard, Jesse F.Baldarelli, Maria GabriellaCiambotti, Massimo
+Cham, Switzerland : Springer 2020
+Available Online
+8
+BOOK
+Incentives for collaboration and competition : experimental evidence on innovation, behavior and performance
+Heite, Jonas,
+Wiesbaden, Germany : Springer Gabler 2020
+Available Online
+9
+BOOK
+Well-being in the workplace : governance and sustainability insights to promote workplace health
+Cvenkel, Nicole,
+Singapore : Springer 2020
+Available Online
+10
+BOOK
+Standards for management systems : a comprehensive guide to content, implementation tools, and certification schemes
+Kohl, Herfried, 1954-
+Cham, Switzerland : Springer 2020
+Available Online
+2023-05-31 10:32:33: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:32:35: Check whether is a FRBRed record.
+2023-05-31 10:32:37: Not in FRBR
+2023-05-31 10:32:47: Getting all links of the target title.
+2023-05-31 10:32:51: No. of links records of the target title:1
+2023-05-31 10:32:51: Target link on browser: viewfulltextviewfulltexthereviaspringerlink
+2023-05-31 10:32:51: Link keyword in config file: springerlink
+2023-05-31 10:32:57: Link matched. Going to save.
+2023-05-31 10:33:57: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:33:57: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIASPRINGERLINK
+2023-05-31 10:33:57: cannot reach the platform:Springer
+2023-05-31 10:33:58: Host connected. 
+2023-05-31 10:33:58: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:33:58: sftp Channel exited.
+2023-05-31 10:33:58: Channel disconnected.
+2023-05-31 10:33:58: Host Session disconnected.
+2023-05-31 10:33:58: Going back
+2023-05-31 10:34:04: 
+
+Target Platform Information:
+2023-05-31 10:34:04: 	Search Type: platform
+2023-05-31 10:34:04: 	Ebk Platform: OVID
+2023-05-31 10:34:04: 	Searching Keyword on Primo: Ovid Technologies
+2023-05-31 10:34:04: 	Platform Keyword on Primo's Accessing Link: Ovid
+2023-05-31 10:34:04: 	Creator Keyword on Primo's Facet: Ovid Technologies, Inc.
+2023-05-31 10:34:05: Finding the SearchBar
+2023-05-31 10:34:05: Clicking eBook facet
+2023-05-31 10:34:25: nav: 0 of 10
+2023-05-31 10:34:27: nav: 0 of 1
+2023-05-31 10:34:29: Main ELe Text: 1
+BOOK
+Hospital for Special Surgery's illustrated tips and tricks in foot and ankle surgery
+Rosenbaum, Andrew J.Levine, David (David S.)Hospital for Special Surgery
+Philadelphia, PA : Lippincott Williams & Wilkins 2020
+Available Online
+2
+BOOK
+ASSH manual of hand surgery
+Hammert, Warren C.Calfee, Ryan P.Bozentka, David J.Boyer, Martin I.American Society for Surgery of the Hand
+Philadelphia, PA : Lippincott Williams & Wilkins 2010
+Available Online
+3
+BOOK
+Illustrated tips and tricks for intraoperative imaging in fracture surgery
+Mamczak, Christiaan N.Smith, Christopher S.Gardner, Michael J.
+Philadelphia, PA : Lippincott Williams & Wilkins 2018
+Available Online
+4
+BOOK
+Functional training handbook
+Liebenson, Craig
+Philadelphia, PA : Lippincott Williams & Wilkins 2014
+Available Online
+5
+BOOK
+Musculoskeletal imaging : a core review
+Spicer, Paul J.Beaman, Francesca D.Blomquist, Gustav A.Montgomery, Justin R.Maxwell, Matthew E.
+Philadelphia, PA : Lippincott Williams & Wilkins 2021
+Available Online
+6
+BOOK
+Fundamentals of pediatric orthopedics
+Staheli, Lynn T.,
+Philadelphia, PA : Lippincott Williams & Wilkins 2016
+Available Online
+7
+BOOK
+Hip preservation surgery in children and adolescents
+Kim, Young-Jo, Novais, Eduardo N.
+Philadelphia, PA : Lippincott Williams & Wilkins 2021
+Available Online
+8
+BOOK
+Complications in surgery
+Mulholland, Michael W.Doherty, Gerard M.
+Philadelphia, PA : Lippincott Williams & Wilkins 2011
+Available Online
+9
+BOOK
+Foot & ankle
+Thordarson, David B.
+Philadelphia, PA : Lippincott Williams & Wilkins 2013
+Available Online
+10
+BOOK
+Knowledge translation in healthcare
+Kitson, Alison L., 1956- Wiechula, RickSalmond, Susan WarnerJordan, Zoe
+Philadelphia, PA : Lippincott Williams & Wilkins 2012
+Available Online
+2023-05-31 10:34:29: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:34:31: Check whether is a FRBRed record.
+2023-05-31 10:34:33: Not in FRBR
+2023-05-31 10:34:44: Getting all links of the target title.
+2023-05-31 10:34:48: No. of links records of the target title:1
+2023-05-31 10:34:48: Target link on browser: viewfulltextviewfulltexthereviaovid
+2023-05-31 10:34:48: Link keyword in config file: ovid
+2023-05-31 10:34:53: Link matched. Going to save.
+2023-05-31 10:35:54: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:35:54: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIAOVID
+2023-05-31 10:35:54: cannot reach the platform:OVID
+2023-05-31 10:35:54: Host connected. 
+2023-05-31 10:35:54: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:35:54: sftp Channel exited.
+2023-05-31 10:35:54: Channel disconnected.
+2023-05-31 10:35:54: Host Session disconnected.
+2023-05-31 10:35:54: Going back
+2023-05-31 10:36:01: 
+
+Target Platform Information:
+2023-05-31 10:36:01: 	Search Type: platform
+2023-05-31 10:36:01: 	Ebk Platform: EBSCO
+2023-05-31 10:36:01: 	Searching Keyword on Primo: ebsco
+2023-05-31 10:36:01: 	Platform Keyword on Primo's Accessing Link: EBSCO
+2023-05-31 10:36:01: 	Creator Keyword on Primo's Facet: EBSCO Industries
+2023-05-31 10:36:03: Finding the SearchBar
+2023-05-31 10:36:03: Clicking eBook facet
+2023-05-31 10:36:21: nav: 0 of 10
+2023-05-31 10:36:23: nav: 0 of 1
+2023-05-31 10:36:26: Main ELe Text: 1
+BOOK
+A rhetoric of the Decameron
+Migiel, Marilyn, 1954-
+Toronto, Ont. : University of Toronto Press c2003
+Available Online
+2
+MULTIPLE VERSIONS
+Why Americans hate the media and how it matters
+Ladd, Jonathan M., 1978-
+2 versions found. See all versions
+3
+BOOK
+Managing customer relationships a strategic framework
+Peppers, Don. Rogers, Martha, 1952-
+Hoboken, New Jersey : John Wiley & Sons c2004
+Available Online
+4
+BOOK
+Essentials of balanced scorecard
+Nair, Mohan.
+Hoboken, N.J. : John Wiley & Sons c2004
+Available Online
+5
+BOOK
+Word 2003 bible
+Heslop, Brent D. Angell, David.Kent, Peter, 1957-
+New York : Wiley 2003
+Available Online
+6
+BOOK
+Involuntary autobiographical memories an introduction to the unbidden past
+Berntsen, Dorthe.
+Cambridge, UK ; New York : Cambridge Univ. Press c2009
+Available Online
+7
+BOOK
+From economics imperialism to freakonomics the shifting boundaries between economics and other social sciences
+Fine, Ben. Milonakis, Dimitris.
+London ; New York : Routledge 2009
+Available Online
+8
+MULTIPLE VERSIONS
+A Confucian constitutional order how China's ancient past can shape its political future
+Jiang, Qing, 1953-; Bell, Daniel 1964- (Daniel A.);Fan, Ruiping.;Ryden, Edmund.
+2 versions found. See all versions
+9
+BOOK
+Collecting as modernist practice
+Braddock, Jeremy.
+Baltimore, Md. : The Johns Hopkins University Press 2012
+Available Online
+10
+BOOK
+The plum in the golden vase, or, Chin Pʻing Mei. Vol. 3, The aphrodisiac
+Xiaoxiaosheng. Roy, David Tod, 1933-2016.
+Princeton, N.J. : Princeton University Press c2006
+Available Online
+2023-05-31 10:36:26: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:36:28: Check whether is a FRBRed record.
+2023-05-31 10:36:30: Not in FRBR
+2023-05-31 10:36:43: Getting all links of the target title.
+2023-05-31 10:36:47: No. of links records of the target title:3
+2023-05-31 10:36:47: Target link on browser: jstorunlimitedusageddabooktitles
+2023-05-31 10:36:47: Link keyword in config file: ebsco
+2023-05-31 10:36:47: Link keyword not match to the target link.
+2023-05-31 10:36:47: Target link on browser: viewfulltextviewfulltexthereviaebsco
+2023-05-31 10:36:47: Link keyword in config file: ebsco
+2023-05-31 10:36:53: Link matched. Going to save.
+2023-05-31 10:37:54: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:37:54: Title on Primo: JSTORUNLIMITEDUSAGEDDABOOKTITLES
+2023-05-31 10:37:54: cannot reach the platform:EBSCO
+2023-05-31 10:37:54: Host connected. 
+2023-05-31 10:37:54: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:37:54: sftp Channel exited.
+2023-05-31 10:37:54: Channel disconnected.
+2023-05-31 10:37:54: Host Session disconnected.
+2023-05-31 10:37:54: Going back
+2023-05-31 10:38:00: 
+
+Target Platform Information:
+2023-05-31 10:38:00: 	Search Type: platform
+2023-05-31 10:38:00: 	Ebk Platform: Oxford Academic
+2023-05-31 10:38:00: 	Searching Keyword on Primo: oxford university press
+2023-05-31 10:38:00: 	Platform Keyword on Primo's Accessing Link: Oxford Academic
+2023-05-31 10:38:00: 	Creator Keyword on Primo's Facet: Oxford University Press
+2023-05-31 10:38:01: Finding the SearchBar
+2023-05-31 10:38:01: Clicking eBook facet
+2023-05-31 10:38:21: nav: 0 of 10
+2023-05-31 10:38:23: nav: 0 of 1
+2023-05-31 10:38:25: Main ELe Text: 1
+BOOK
+Welfare democracies and party politics : explaining electoral dynamics in times of changing welfare capitalism
+Manow, PhilipPalier, BrunoSchwander, Hanna
+Oxford : Oxford University Press 2018
+Available Online
+2
+BOOK
+The city of london and social democracy : the political economy of finance in Britain, 1959-1979
+Davies, Aled Rhys, 1988-
+Oxford : Oxford University Press 2017
+Available Online
+3
+BOOK
+Crime control and everyday life in the Victorian city : the police and the public
+Churchill, David, 1988-
+Oxford : Oxford University Press 2017
+Available Online
+4
+BOOK
+Manual of infection prevention and control
+Damani, N. N.
+New York, N.Y. : Oxford University Press 2012
+Available Online
+5
+BOOK
+The child as musician : a handbook of musical development
+McPherson, Gary
+Oxford, U.K. : Oxford University Press 2016
+Available Online
+6
+BOOK
+The knockoff economy : how imitation sparks innovation
+Raustiala, Kal, Sprigman, Christopher
+New York, N.Y. : Oxford University Press 2012
+Available Online
+7
+BOOK
+A process theory of organization
+Hernes, Tor,
+Oxford : Oxford University Press 2014
+Available Online
+8
+BOOK
+Economics and the virtues : building a new moral foundation
+Baker, Jennifer A.White, Mark D., 1971-
+New York : Oxford University Press 2016
+Available Online
+9
+BOOK
+The comfort of strangers : social life and literary form
+McWeeny, Gage,
+New York : Oxford University Press 2016
+Available Online
+10
+BOOK
+Out in the periphery : Latin America's gay rights revolution
+Encarnación, Omar Guillermo, 1962-
+New York : Oxford University Press 2016
+Available Online
+2023-05-31 10:38:25: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:38:27: Check whether is a FRBRed record.
+2023-05-31 10:38:29: Not in FRBR
+2023-05-31 10:38:41: Getting all links of the target title.
+2023-05-31 10:38:45: No. of links records of the target title:1
+2023-05-31 10:38:45: Target link on browser: viewfulltextviewfulltexthereviaoxfordacademic
+2023-05-31 10:38:45: Link keyword in config file: oxfordacademic
+2023-05-31 10:38:51: Link matched. Going to save.
+2023-05-31 10:39:53: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:39:53: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIAOXFORDACADEMIC
+2023-05-31 10:39:53: cannot reach the platform:Oxford Academic
+2023-05-31 10:39:53: Host connected. 
+2023-05-31 10:39:53: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:39:53: sftp Channel exited.
+2023-05-31 10:39:53: Channel disconnected.
+2023-05-31 10:39:53: Host Session disconnected.
+2023-05-31 10:39:53: Going back
+2023-05-31 10:40:00: 
+
+Target Platform Information:
+2023-05-31 10:40:00: 	Search Type: keyword
+2023-05-31 10:40:00: 	Ebk Platform: Cambridge - Higher Education
+2023-05-31 10:40:00: 	Searching Keyword on Primo: none
+2023-05-31 10:40:00: 	Platform Keyword on Primo's Accessing Link: Cambridge University Press - Textbook Collection
+2023-05-31 10:40:00: 	Creator Keyword on Primo's Facet: Cambridge University Press
+2023-05-31 10:40:01: 	Searching by ISBN: 9781108859943
+2023-05-31 10:40:01: Clicking eBook facet
+2023-05-31 10:40:08: Finding the SearchBar
+2023-05-31 10:40:28: Clicking facet_platform
+2023-05-31 10:40:54: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:40:54: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:40:54: Cannot invoke "java.util.List.size()" because "resultMainEles" is null
+2023-05-31 10:40:54: Searching by ISBN: 9781108866354
+2023-05-31 10:40:54: Finding the SearchBar
+2023-05-31 10:41:01: Clicking eBook facet
+2023-05-31 10:41:27: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:41:27: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:41:27: Cannot invoke "java.util.List.size()" because "resultMainEles" is null
+2023-05-31 10:41:27: 
+
+Target Platform Information:
+2023-05-31 10:41:27: 	Search Type: platform
+2023-05-31 10:41:27: 	Ebk Platform: Elgaronline
+2023-05-31 10:41:27: 	Searching Keyword on Primo: Edward Elgar
+2023-05-31 10:41:27: 	Platform Keyword on Primo's Accessing Link: Elgar
+2023-05-31 10:41:27: 	Creator Keyword on Primo's Facet: Edward Elgar Publishing
+2023-05-31 10:41:27: Finding the SearchBar
+2023-05-31 10:41:27: Clicking eBook facet
+2023-05-31 10:41:47: nav: 0 of 10
+2023-05-31 10:41:49: nav: 0 of 1
+2023-05-31 10:41:51: Main ELe Text: 1
+BOOK
+Financing nonprofits and other social enterprises : a benefits approach
+Young, Dennis R., 1943-
+Cheltenham, United Kingdom : Edward Elgar Publishing 2017
+Available Online
+2
+BOOK
+Research handbook of expatriates
+McNulty, YvonneSelmer, Jan, 1942-
+Cheltenham, United Kingdom : Edward Elgar Publishing 2017
+Available Online
+3
+BOOK
+Research handbook on work and well-being
+Burke, Ronald J.Page, Kathryn M.
+Cheltenham, United Kingdom : Edward Elgar Publishing 2017
+Available Online
+4
+BOOK
+Handbook on place branding and marketing
+Campelo, Adriana
+Cheltenham, England ; Northampton, Massachusetts : Edward Elgar Publishing 2017
+Available Online
+5
+BOOK
+An autecological theory of the firm and its environment
+Jones, Colin, 1966- Walter, G. H. 1954- (Gimme Hugh)
+Cheltenham, UK : Edward Elgar Publishing Limited 2017
+Available Online
+6
+BOOK
+Handbook of research on stress and well-being in the public sector
+Burke, Ronald J.Pignata, Silvia
+Northampton, Mass. : Edward Elgar Publishing 2020
+Available Online
+7
+BOOK
+The entrepreneurial scholar
+Dimov, Dimo (Professor of innovation and entrepreneurship),
+Northampton, Mass. : Edward Elgar Publishing 2020
+Available Online
+8
+BOOK
+Handbook of digital innovation
+Nambisan, SatishLyytinen, Kalle, 1953-Yoo, Youngjin
+Northampton, Mass. : Edward Elgar Publishing 2020
+Available Online
+9
+BOOK
+Teaching strategic management : a hands-on guide to teaching success
+Baumann, Sabine, 1966 September 2-
+Northampton, Mass. : Edward Elgar Publishing 2020
+Available Online
+10
+BOOK
+Gender, science and innovation : new perspectives
+Lawton Smith, Helen
+Northampton, Mass. : Edward Elgar Publishing 2020
+Available Online
+2023-05-31 10:41:51: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:41:53: Check whether is a FRBRed record.
+2023-05-31 10:41:56: Not in FRBR
+2023-05-31 10:42:09: Getting all links of the target title.
+2023-05-31 10:42:13: No. of links records of the target title:4
+2023-05-31 10:42:13: Target link on browser: viewfulltextviewfulltexthereviaelgar
+2023-05-31 10:42:13: Link keyword in config file: elgar
+2023-05-31 10:42:18: Link matched. Going to save.
+2023-05-31 10:43:20: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:43:20: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIAELGAR
+2023-05-31 10:43:20: cannot reach the platform:Elgaronline
+2023-05-31 10:43:20: Host connected. 
+2023-05-31 10:43:20: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:43:20: sftp Channel exited.
+2023-05-31 10:43:20: Channel disconnected.
+2023-05-31 10:43:20: Host Session disconnected.
+2023-05-31 10:43:20: Going back
+2023-05-31 10:43:27: 
+
+Target Platform Information:
+2023-05-31 10:43:27: 	Search Type: platform
+2023-05-31 10:43:27: 	Ebk Platform: IGI Global
+2023-05-31 10:43:27: 	Searching Keyword on Primo: IGI Global
+2023-05-31 10:43:27: 	Platform Keyword on Primo's Accessing Link: IGI Global
+2023-05-31 10:43:27: 	Creator Keyword on Primo's Facet: IGI Global
+2023-05-31 10:43:27: Finding the SearchBar
+2023-05-31 10:43:27: Clicking eBook facet
+2023-05-31 10:43:47: nav: 0 of 10
+2023-05-31 10:43:49: nav: 0 of 1
+2023-05-31 10:43:51: Main ELe Text: 1
+BOOK
+Learner-centered approaches to teaching in an age of transformational change
+Crawford, Caroline M.Bromer, Billi L.
+Hershey, Pennsylvania 701 E. Chocolate Avenue, Hershey, Pennsylvania, 17033, USA : IGI Global 2022
+Available Online
+2
+BOOK
+Curriculum development and online instruction for the 21st century
+Fudge, Tamara Phillips, 1957-Ferebee, Susan Shepherd, 1948-
+Hershey, Pennsylvania : IGI Global 2021
+Available Online
+3
+BOOK
+Navigating fake news, alternative facts, and misinformation in a post-truth world
+Dalkir, KimizKatz, Rebecca, 1987-
+Hershey, Pennsylvania : IGI Global 2020
+Available Online
+4
+BOOK
+Modern societal impacts of the model minority stereotype
+Hartlep, Nicholas Daniel
+Hershey, Pennsylvania : Information Science Reference 2015
+Available Online
+5
+BOOK
+Education 3.0 and eLearning across modalities
+Borden, Jeff D., 1970-
+Hershey, Pennsylvania : IGI Global 2022
+Available Online
+6
+BOOK
+Deep learning applications in medical imaging
+Saxena, Sanjay, 1986-Paul, Sudip, 1984-
+Hershey, Pennsylvania : IGI Global 2021
+Available Online
+7
+BOOK
+Designing, deploying, and evaluating virtual and augmented reality in education
+Akcayir, Gokce, 1990-Demmans Epp, Carrie, 1969-
+Hershey, Pennsylvania : IGI Global 2021
+Available Online
+8
+BOOK
+Management strategies for sustainability, new knowledge innovation, and personalized products and services
+Dogru, Caglar, 1983-Pejić-Bach, Mirjana
+Hershey, Pennsylvania : IGI Global 2022
+Available Online
+9
+BOOK
+Information manipulation and its impact across all industries
+Ebrahimi, Maryam, 1980-
+Hershey, Pennsylvania : IGI Global 2022
+Available Online
+10
+BOOK
+Ensuring adult and non-traditional learners' success with technology, design, and structure
+Jennings, Charity, 1974-
+Hershey, Pennsylvania : IGI Global 2021
+Available Online
+2023-05-31 10:43:51: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:43:53: Check whether is a FRBRed record.
+2023-05-31 10:43:55: Not in FRBR
+2023-05-31 10:44:09: Getting all links of the target title.
+2023-05-31 10:44:13: No. of links records of the target title:1
+2023-05-31 10:44:14: Target link on browser: viewfulltextviewfulltexthereviaigiglobalaccesstothisebookisvaliduntil30september2023only
+2023-05-31 10:44:14: Link keyword in config file: igiglobal
+2023-05-31 10:44:19: Link matched. Going to save.
+2023-05-31 10:45:20: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:45:20: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIAIGIGLOBALACCESSTOTHISEBOOKISVALIDUNTIL30SEPTEMBER2023ONLY
+2023-05-31 10:45:20: cannot reach the platform:IGI Global
+2023-05-31 10:45:20: Host connected. 
+2023-05-31 10:45:20: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:45:20: sftp Channel exited.
+2023-05-31 10:45:20: Channel disconnected.
+2023-05-31 10:45:20: Host Session disconnected.
+2023-05-31 10:45:20: Going back
+2023-05-31 10:45:27: 
+
+Target Platform Information:
+2023-05-31 10:45:27: 	Search Type: platform
+2023-05-31 10:45:27: 	Ebk Platform: Apabi
+2023-05-31 10:45:27: 	Searching Keyword on Primo: ApabiDlib
+2023-05-31 10:45:27: 	Platform Keyword on Primo's Accessing Link: Apabi
+2023-05-31 10:45:27: 	Creator Keyword on Primo's Facet: Apabi
+2023-05-31 10:45:32: Finding the SearchBar
+2023-05-31 10:45:32: Clicking eBook facet
+2023-05-31 10:45:52: nav: 0 of 10
+2023-05-31 10:45:54: nav: 0 of 1
+2023-05-31 10:45:56: Main ELe Text: 1
+BOOK
+中國史論集 合編本
+翦伯贊, 1898-
+北京 : 中華書局 2008
+Apabi e-book.
+Available Online
+2
+BOOK
+綠葉與黃金 短篇小說集
+劉心武.
+廣州 : 廣東人民出版社 1980
+Apabi e-book.
+Available Online
+3
+BOOK
+中國現代文學史論集
+王瑤, 1914-1989.
+北京 : 北京大學出版社 1998
+Apabi e-book.
+Available Online
+4
+BOOK
+報告政府
+韓少功.
+北京 : 作家出版社 2005
+Apabi e-book.
+Available Online
+5
+BOOK
+現代社會心理學名著菁華
+周曉虹.
+北京 : 社會科學文獻出版社 2007
+Apabi e-book.
+Available Online
+6
+BOOK
+李鴻章與淮軍
+豐吉.
+沈陽 : 遼寧人民出版社 2008
+Apabi e-book.
+Available Online
+7
+BOOK
+宋夏史研究 Song Xia shi yan jiu
+李華瑞.
+天津 : 天津古籍出版社 2006
+Apabi e-book.
+Available Online
+8
+BOOK
+聲色繁花紅樓夢
+燕泥.
+長春 : 吉林人民出版社 2007
+Apabi e-book.
+Available Online
+9
+BOOK
+血璃真諦
+神崎舒茜雅.
+北京 : 北京北大方正電子出版社 2012
+Apabi e-book.
+Available Online
+10
+BOOK
+從比較文學到世界文學 From comparative literature to world literature
+張隆溪.
+上海 : 復旦大學出版社 2012
+Apabi e-book.
+Available Online
+2023-05-31 10:45:56: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:45:58: Check whether is a FRBRed record.
+2023-05-31 10:46:00: Not in FRBR
+2023-05-31 10:46:11: Getting all links of the target title.
+2023-05-31 10:46:15: No. of links records of the target title:1
+2023-05-31 10:46:15: Target link on browser: viewfulltextviewfulltexthereviaapabi
+2023-05-31 10:46:15: Link keyword in config file: apabi
+2023-05-31 10:46:20: Link matched. Going to save.
+2023-05-31 10:47:21: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:47:21: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIAAPABI
+2023-05-31 10:47:21: cannot reach the platform:Apabi
+2023-05-31 10:47:21: Host connected. 
+2023-05-31 10:47:21: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:47:21: sftp Channel exited.
+2023-05-31 10:47:21: Channel disconnected.
+2023-05-31 10:47:21: Host Session disconnected.
+2023-05-31 10:47:22: Going back
+2023-05-31 10:47:29: 
+
+Target Platform Information:
+2023-05-31 10:47:29: 	Search Type: platform
+2023-05-31 10:47:29: 	Ebk Platform: 瀚文民國書庫
+2023-05-31 10:47:29: 	Searching Keyword on Primo: 北京瀚文典藏文化有限公司
+2023-05-31 10:47:29: 	Platform Keyword on Primo's Accessing Link: 瀚文民國書庫
+2023-05-31 10:47:29: 	Creator Keyword on Primo's Facet: none
+2023-05-31 10:47:36: Finding the SearchBar
+2023-05-31 10:47:36: Clicking eBook facet
+2023-05-31 10:47:56: nav: 0 of 10
+2023-05-31 10:47:58: nav: 0 of 1
+2023-05-31 10:48:00: Main ELe Text: 1
+BOOK
+考证白香词谱·. 卷二
+中华图书馆 1918
+Available Online
+2
+BOOK
+老英雄范筑先
+教育部民众读物编审委员会 19??
+Available Online
+3
+BOOK
+考察四川化学工业报告
+黄海化学工业研究社 1931
+Available Online
+4
+BOOK
+考察日本教育纪略
+中华书局 1936
+Available Online
+5
+BOOK
+老河口支线经济调查
+1937
+Available Online
+6
+BOOK
+考正同音字汇
+锦章图书馆 19??
+Available Online
+7
+BOOK
+考察胶济铁路报告
+19??
+Available Online
+8
+BOOK
+老百姓社论集
+老百姓编刊社 1940
+Available Online
+9
+BOOK
+考古原人史
+商务印书馆 1931
+Available Online
+10
+BOOK
+考证古本三国志演义. (四)
+大众书局 1934
+Available Online
+2023-05-31 10:48:00: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:48:02: Check whether is a FRBRed record.
+2023-05-31 10:48:04: Not in FRBR
+2023-05-31 10:48:15: Getting all links of the target title.
+2023-05-31 10:48:19: No. of links records of the target title:1
+2023-05-31 10:48:19: Target link on browser: ebookvia瀚文民国书库viewfulltextherevia瀚文民国书库viewfulltextherevia瀚文民国书库viewfulltextherevia瀚文民国书库
+2023-05-31 10:48:19: Link keyword in config file: 瀚文民国书库
+2023-05-31 10:48:24: Link matched. Going to save.
+2023-05-31 10:49:27: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:49:27: Title on Primo: EBOOKVIA瀚文民国书库VIEWFULLTEXTHEREVIA瀚文民国书库VIEWFULLTEXTHEREVIA瀚文民国书库VIEWFULLTEXTHEREVIA瀚文民国书库
+2023-05-31 10:49:27: cannot reach the platform:瀚文民國書庫
+2023-05-31 10:49:27: Host connected. 
+2023-05-31 10:49:27: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:49:27: sftp Channel exited.
+2023-05-31 10:49:27: Channel disconnected.
+2023-05-31 10:49:27: Host Session disconnected.
+2023-05-31 10:49:27: Going back
+2023-05-31 10:49:34: 
+
+Target Platform Information:
+2023-05-31 10:49:34: 	Search Type: keyword
+2023-05-31 10:49:34: 	Ebk Platform: SAGE Business Cases (Database)
+2023-05-31 10:49:34: 	Searching Keyword on Primo: none
+2023-05-31 10:49:34: 	Platform Keyword on Primo's Accessing Link: none
+2023-05-31 10:49:34: 	Creator Keyword on Primo's Facet: none
+2023-05-31 10:49:36: 	Searching by ISBN: ouhkaleph000360581
+2023-05-31 10:49:36: Clicking eBook facet
+2023-05-31 10:49:43: Finding the SearchBar
+2023-05-31 10:50:03: Clicking facet_platform
+2023-05-31 10:50:08: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:50:08: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:50:08: Cannot invoke "java.util.List.size()" because "resultMainEles" is null
+2023-05-31 10:50:08: Searching by ISBN: ouhkaleph000360581
+2023-05-31 10:50:08: Finding the SearchBar
+2023-05-31 10:50:16: Clicking eBook facet
+2023-05-31 10:50:41: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:50:41: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:50:41: Cannot invoke "java.util.List.size()" because "resultMainEles" is null
+2023-05-31 10:50:41: 
+
+Target Platform Information:
+2023-05-31 10:50:41: 	Search Type: platform
+2023-05-31 10:50:41: 	Ebk Platform: Bloomsbury Collections
+2023-05-31 10:50:41: 	Searching Keyword on Primo: Bloomsbury
+2023-05-31 10:50:41: 	Platform Keyword on Primo's Accessing Link: Bloomsbury Collections
+2023-05-31 10:50:41: 	Creator Keyword on Primo's Facet: Bloomsbury (Firm)
+2023-05-31 10:50:41: Finding the SearchBar
+2023-05-31 10:50:41: Clicking eBook facet
+2023-05-31 10:51:01: nav: 0 of 10
+2023-05-31 10:51:03: nav: 0 of 1
+2023-05-31 10:51:05: Main ELe Text: 1
+BOOK
+Michael Chekhov technique in the twenty-first century : new pathways
+Fleming, CassCornford, Tom
+London : Methuen Drama 2020
+Available Online
+2
+BOOK
+New nonfiction film : art, poetics, and documentary theory
+Waldron, Dara,
+New York : Bloomsbury Academic 2018
+Available Online
+3
+BOOK
+The Babylonian planet : culture and encounter under globalization
+Neef, Sonja,
+London : Bloomsbury Academic 2022
+Available Online
+4
+BOOK
+Imaginative teaching through creative writing : a guide for secondary classrooms
+Drew, ChrisClark, Michael DeanAsh, Amy
+London : Bloomsbury Academic 2021
+Available Online
+5
+MULTIPLE VERSIONS
+Education and technology : key issues and debates
+Selwyn, Neil,
+2 versions found. See all versions
+6
+BOOK
+Vocal projections : voices in documentary
+Honess Roe, AnnabellePramaggiore, Maria, 1960-
+New York : Bloomsbury Academic 2019
+Available Online
+7
+BOOK
+Learner corpus research : new perspectives and applications
+Brezina, Vaclav, 1979-Flowerdew, Lynne
+London : Bloomsbury Academic 2018
+Available Online
+8
+BOOK
+Language learner strategies : contexts, issues and applications in second language learning and teaching
+Grenfell, Michael, 1953- Harris, Vee, 1949-
+London ; Bloomsbury Academic 2017
+Available Online
+9
+BOOK
+Sociologies of poetry translation : emerging perspectives
+Blakesley, Jacob
+London : Bloomsbury Academic 2018
+Available Online
+10
+BOOK
+Acquiring metaphorical expressions in a second language : performance by chinese learners of english
+Mengying Xia, Chris,
+London: Bloomsbury Academic 2019
+Available Online
+2023-05-31 10:51:05: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:51:07: Check whether is a FRBRed record.
+2023-05-31 10:51:09: Not in FRBR
+2023-05-31 10:51:20: Getting all links of the target title.
+2023-05-31 10:51:24: No. of links records of the target title:1
+2023-05-31 10:51:24: Target link on browser: viewfulltextviewfulltexthereviabloomsburycollections
+2023-05-31 10:51:24: Link keyword in config file: bloomsburycollections
+2023-05-31 10:51:29: Link matched. Going to save.
+2023-05-31 10:52:30: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:52:30: Title on Primo: VIEWFULLTEXTVIEWFULLTEXTHEREVIABLOOMSBURYCOLLECTIONS
+2023-05-31 10:52:30: cannot reach the platform:Bloomsbury Collections
+2023-05-31 10:52:30: Host connected. 
+2023-05-31 10:52:30: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:52:30: sftp Channel exited.
+2023-05-31 10:52:30: Channel disconnected.
+2023-05-31 10:52:30: Host Session disconnected.
+2023-05-31 10:52:30: Going back
+2023-05-31 10:52:37: 
+
+Target Platform Information:
+2023-05-31 10:52:37: 	Search Type: keyword
+2023-05-31 10:52:37: 	Ebk Platform: LCO
+2023-05-31 10:52:37: 	Searching Keyword on Primo: none
+2023-05-31 10:52:37: 	Platform Keyword on Primo's Accessing Link: none
+2023-05-31 10:52:37: 	Creator Keyword on Primo's Facet: none
+2023-05-31 10:52:39: 	Searching by ISBN: 9781414493596
+2023-05-31 10:52:39: Clicking eBook facet
+2023-05-31 10:52:46: Finding the SearchBar
+2023-05-31 10:53:06: Clicking facet_platform
+2023-05-31 10:53:11: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:53:11: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:53:11: Cannot invoke "java.util.List.size()" because "resultMainEles" is null
+2023-05-31 10:53:11: Searching by ISBN: 9781414493596
+2023-05-31 10:53:11: Finding the SearchBar
+2023-05-31 10:53:19: Clicking eBook facet
+2023-05-31 10:53:44: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:53:44: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:53:44: Cannot invoke "java.util.List.size()" because "resultMainEles" is null
+2023-05-31 10:53:44: 
+
+Target Platform Information:
+2023-05-31 10:53:44: 	Search Type: keyword
+2023-05-31 10:53:44: 	Ebk Platform: Brill Academic
+2023-05-31 10:53:44: 	Searching Keyword on Primo: brill
+2023-05-31 10:53:44: 	Platform Keyword on Primo's Accessing Link: BrillOnline
+2023-05-31 10:53:44: 	Creator Keyword on Primo's Facet: none
+2023-05-31 10:53:44: 	Searching by ISBN: 9789004227804 
+2023-05-31 10:53:44: Clicking eBook facet
+2023-05-31 10:53:52: Finding the SearchBar
+2023-05-31 10:54:12: Clicking facet_platform
+2023-05-31 10:54:17: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:54:17: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:54:17: Cannot invoke "java.util.List.size()" because "resultMainEles" is null
+2023-05-31 10:54:17: Searching by ISBN: 9789004202498 
+2023-05-31 10:54:17: Finding the SearchBar
+2023-05-31 10:54:24: Clicking eBook facet
+2023-05-31 10:54:50: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:54:50: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:54:50: Cannot invoke "java.util.List.size()" because "resultMainEles" is null
+2023-05-31 10:54:50: 
+
+Target Platform Information:
+2023-05-31 10:54:50: 	Search Type: keyword
+2023-05-31 10:54:50: 	Ebk Platform: Human kinetics Library
+2023-05-31 10:54:50: 	Searching Keyword on Primo: none
+2023-05-31 10:54:50: 	Platform Keyword on Primo's Accessing Link: Human Kinetics Library
+2023-05-31 10:54:50: 	Creator Keyword on Primo's Facet: none
+2023-05-31 10:54:52: 	Searching by ISBN: 9781718209695
+2023-05-31 10:54:52: Clicking eBook facet
+2023-05-31 10:54:59: Finding the SearchBar
+2023-05-31 10:55:19: Clicking facet_platform
+2023-05-31 10:55:24: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:55:24: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:55:24: Cannot invoke "java.util.List.size()" because "resultMainEles" is null
+2023-05-31 10:55:24: Searching by ISBN: 9781718209589
+2023-05-31 10:55:24: Finding the SearchBar
+2023-05-31 10:55:31: Clicking eBook facet
+2023-05-31 10:55:57: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:55:57: Expected condition failed: waiting for visibility of element located by By.cssSelector: prm-brief-result (tried for 5 second(s) with 500 milliseconds interval)
+2023-05-31 10:55:57: Cannot invoke "java.util.List.size()" because "resultMainEles" is null
+2023-05-31 10:55:57: 
+
+Target Platform Information:
+2023-05-31 10:55:57: 	Search Type: platform
+2023-05-31 10:55:57: 	Ebk Platform: Hyread
+2023-05-31 10:55:57: 	Searching Keyword on Primo: Hyweb
+2023-05-31 10:55:57: 	Platform Keyword on Primo's Accessing Link: Hyread
+2023-05-31 10:55:57: 	Creator Keyword on Primo's Facet: Hyweb Technology Co., Ltd.
+2023-05-31 10:55:57: Finding the SearchBar
+2023-05-31 10:55:57: Clicking eBook facet
+2023-05-31 10:56:15: nav: 0 of 10
+2023-05-31 10:56:17: nav: 0 of 1
+2023-05-31 10:56:19: Main ELe Text: 1
+BOOK
+活用Word 2016 : 一做就上手的職場必備文書處理102招
+楊宗誌, 陳敏清
+台北市 : 松崗資產管理股份有限公司 2016
+HyRead e-book
+Available Online
+2
+BOOK
+Office 2016高效實用範例必修16課
+文淵閣工作室,
+台北市 : 碁峰資訊股份有限公司 2016
+HyRead e-book
+Available Online
+3
+BOOK
+學習科技入門
+顏春煌, 郭秋田曾展鵬
+新北市 : 國立空中大學 2011
+HyRead e-book
+Available Online
+4
+BOOK
+20世紀中國文學新視野
+溫奉橋,
+北京 : 中國社會科學出版社 2016
+HyRead e-book
+Available Online
+5
+BOOK
+超實用! : Word.Excel.PowerPoint辦公室Office必備50招省時技
+張雯燕,
+新北市 : 博碩文化股份有限公司 2015
+HyRead e-book
+Available Online
+6
+BOOK
+在文藝思想與文化政策中
+徐訏, 1908-1980,
+台北市 : 釀出版 2016
+HyRead e-book
+Available Online
+7
+BOOK
+消失的國度
+邱金士,
+台北市 : 麥田出版 2015
+HyRead e-book
+Available Online
+8
+BOOK
+小坡的生日
+老舍, 1899-1966,
+桃園市 : 昌明文化有限公司 2017
+Available Online
+9
+BOOK
+人才管理信息論
+戴維民林平忠賀雲華
+北京 : 藍天出版社 2005
+HyRead e-book
+Available Online
+10
+BOOK
+管理信息系統十日通 = Managerial information system be proficient
+張書珩, 楊永斌
+北京 : 金城出版社 2005
+HyRead e-book
+Available Online
+2023-05-31 10:56:19: Main ELe CSS: [[ChromeDriver: chrome on WINDOWS (a1948a5bcc46da2ddd29bb18f927f9be)] -> id: searchResultsContainer]
+2023-05-31 10:56:22: Check whether is a FRBRed record.
+2023-05-31 10:56:24: Not in FRBR
+2023-05-31 10:56:36: Getting all links of the target title.
+2023-05-31 10:56:40: No. of links records of the target title:1
+2023-05-31 10:56:40: Target link on browser: ebookviahyreadviewfulltexthereviahyreadebook
+2023-05-31 10:56:40: Link keyword in config file: hyread
+2023-05-31 10:56:45: Link matched. Going to save.
+2023-05-31 10:57:45: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.127)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LIBW14150', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\wwyng\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57023}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a1948a5bcc46da2ddd29bb18f927f9be
+2023-05-31 10:57:45: Title on Primo does NOT match title on the eBook Platform.
+2023-05-31 10:57:45: Title on Primo: EBOOKVIAHYREADVIEWFULLTEXTHEREVIAHYREADEBOOK
+2023-05-31 10:57:45: cannot reach the platform:Hyread
+2023-05-31 10:57:45: Host connected. 
+2023-05-31 10:57:45: sftp channel opened and connected. /data/tomcat/webapps/ROOT/acq/reports/eBkPlatformChecking
+2023-05-31 10:57:45: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=113.0.5672.127)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LIBW14150', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\wwyng\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57023}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a1948a5bcc46da2ddd29bb18f927f9be
+2023-05-31 10:57:45: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.127)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LIBW14150', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\wwyng\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57023}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a1948a5bcc46da2ddd29bb18f927f9be
+*** Element info: {Using=css selector, value=span[translate='fulldisplay.deatiles.back']}
+2023-05-31 10:57:47: Completed Platform Checking.
+2023-05-31 10:57:49: platform Taylor & FrancisChecking time: 2023-05-31 09:57:44 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:57:51: platform Peter LangChecking time: 2023-05-31 09:59:48 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:57:53: platform Wiley OnlineChecking time: 2023-05-31 10:01:44 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:57:55: platform SAGEChecking time: 2023-05-31 10:03:56 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:57:57: platform World ScientificChecking time: 2023-05-31 10:05:56 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:57:59: platform AVON (Database)Checking time: 2023-05-31 10:07:14 Checking result: 
+2023-05-31 10:58:01: platform GaleChecking time: 2023-05-31 10:08:59 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:03: platform Elsevier ScienceChecking time: 2023-05-31 10:11:01 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:05: platform JSTOR (non SFX)Checking time: 2023-05-31 10:13:02 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:07: platform ProQuest Ebook CentralChecking time: 2023-05-31 10:15:05 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:09: platform CNKIChecking time: 2023-05-31 10:17:07 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:11: platform EmeraldChecking time: 2023-05-31 10:19:04 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:13: platform 萬方視頻Checking time: 2023-05-31 10:21:02 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:15: platform AiritiChecking time: 2023-05-31 10:22:57 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:17: platform ChinaMaxx - SuperstarChecking time: 2023-05-31 10:24:56 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:19: platform Cambridge CoreChecking time: 2023-05-31 10:26:55 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:21: platform UdnChecking time: 2023-05-31 10:28:54 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:23: platform SuperbookcityChecking time: 2023-05-31 10:30:51 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:25: platform SpringerChecking time: 2023-05-31 10:32:47 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:27: platform OVIDChecking time: 2023-05-31 10:34:44 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:29: platform EBSCOChecking time: 2023-05-31 10:36:43 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:31: platform Oxford AcademicChecking time: 2023-05-31 10:38:41 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:33: platform Cambridge - Higher EducationChecking time: 2023-05-31 10:40:00 Checking result: 
+2023-05-31 10:58:35: platform ElgaronlineChecking time: 2023-05-31 10:42:09 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:37: platform IGI GlobalChecking time: 2023-05-31 10:44:09 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:39: platform ApabiChecking time: 2023-05-31 10:46:11 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:41: platform 瀚文民國書庫Checking time: 2023-05-31 10:48:15 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:43: platform SAGE Business Cases (Database)Checking time: 2023-05-31 10:49:34 Checking result: 
+2023-05-31 10:58:45: platform Bloomsbury CollectionsChecking time: 2023-05-31 10:51:20 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.
+2023-05-31 10:58:47: platform LCOChecking time: 2023-05-31 10:52:37 Checking result: 
+2023-05-31 10:58:49: platform Brill AcademicChecking time: 2023-05-31 10:53:44 Checking result: 
+2023-05-31 10:58:51: platform Human kinetics LibraryChecking time: 2023-05-31 10:54:50 Checking result: 
+2023-05-31 10:58:54: platform HyreadChecking time: 2023-05-31 10:55:57 Checking result: FAILED - Failed after 10 tries. It seems the platform is down.

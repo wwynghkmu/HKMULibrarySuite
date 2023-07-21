@@ -1,0 +1,1182 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<link href="/resources/front/mg/css/singleBookDetail/index.css" rel="stylesheet" type="text/css">
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="full-screen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="address=no">
+<link href="/resources/front/mg/css/base.css" rel="stylesheet" type="text/css">
+<link href="/resources/front/mg/css/reader.css" rel="stylesheet" type="text/css">
+<link href="/resources/common/css/common.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="/resources/front/mg/images/top_logo.png" type="image/x-icon">
+
+<script src="//hm.baidu.com/hm.js?abe114adb81a2985c7b937386ef794c4"></script><script src="/resources/common/js/jquery-3.3.1.min.js" charset="utf-8"></script>
+<script src="/resources/common/js/jquery.form.js" charset="utf-8"></script>
+<!-- 弹出信息插件 -->
+<script src="/resources/common/js/layer/layer.js" charset="utf-8"></script><link rel="stylesheet" href="http://www.hwshu.com.ezproxy.lib.hkmu.edu.hk/resources/common/js/layer/skin/layer.css" id="layui_layer_skinlayercss" style="">
+<script src="/resources/common/js/global.js" charset="utf-8"></script>
+<script src="/resources/common/js/mgutil.js" charset="utf-8"></script>
+
+<link href="/resources/common/js/bootstrap/css/bootstrap-modal.css" rel="stylesheet" type="text/css">
+<script src="/resources/common/js/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+
+
+<script>
+	var app = "";
+	var page_prevPage = '上一頁',
+		page_nextPage = '下一頁',
+		page_homePage = '首頁',
+		page_endPage = '尾頁',
+		page_showDetail = '查看詳情',
+		page_get = '共命中',
+		page_result = '條結果',
+		page_addToFavourite = '加入收藏',
+		page_readOnline = '在線閱讀',
+		page_readCount = '閱讀量',
+		page_yes = '是',
+		page_no = '否',
+		page_not_have_content = '暫無正文',
+		page_is_search = '正在檢索中，請稍後'
+		;
+		(function() {
+		    var tagsTemplate = '<div class="tags">' +
+		            '<div class="tags-box">' +
+		            '<div class="tags-title" style="font-size:16px;">请选择标签：</div>' +
+		            '<div id="J_TagList" class="tags-list"></div>' +
+
+		            '<div class="tags-add">' +
+		            '<div id="J_TagAddToggleBtn" class="tags-item tags-add-btn">' +
+		            '<em>+</em>' +
+		            '<span class="tags-item-txt">新建标签</span>' +
+		            '</div>' +
+		            '</div>' +
+		            '<div id="J_TagForm" class="tags-form">' +
+		            '<input id="J_TagInput" class="fl tags-form-input" type="text">' +
+		            '<a id="J_TagAddBtn" href="javascript:;" class="fl tags-form-btn">贴上</a>' +
+		            '</div>' +
+		            '<div class="tags-btn-group">' +
+		            '<div id="J_TagBtnOk" class="tags-btn tags-btn-ok">确定</div>' +
+		            '<div id="J_TagBtnClose" class="tags-btn tags-btn-close">关闭</div>' +
+		            '</div>' +
+		            '</div>' +
+		            '<div class="tags-arrow"></div>' +
+		            '</div>';
+
+		    var containerEle,
+		        listEle,
+		        toggleAddBtnEle,
+		        formEle,
+		        inputEle,
+		        addBtnEle,
+		        okBtnEle,
+		        closeBtnEle,
+		        currentBookId,
+		        visible = false,
+		        tagMaxLength = 6,
+		        tagMaxCount = 12;
+		    // 初始标签框架
+		    function initializeTags() {
+		        containerEle = $(tagsTemplate).hide()
+		                .appendTo('body');
+		        listEle = containerEle.find('#J_TagList');
+		        toggleAddBtnEle = containerEle.find('#J_TagAddToggleBtn');
+		        formEle = containerEle.find('#J_TagForm');
+		        inputEle = containerEle.find('#J_TagInput');
+		        addBtnEle = containerEle.find('#J_TagAddBtn');
+		        okBtnEle = containerEle.find('#J_TagBtnOk');
+		        closeBtnEle = containerEle.find('#J_TagBtnClose');
+
+		        bindHandlers();
+		    }
+
+		    // 绑定事件
+		    function bindHandlers() {
+
+		        // 点击添加标签显示输入框
+		        toggleAddBtnEle.click(function () {
+		            formEle.show();
+		        });
+
+		        // 贴上标签
+		        addBtnEle.click(function () {
+		            var tagName = $.trim(inputEle.val());
+		            if (tagName) {
+		            	if(tagName.length > tagMaxLength ){
+		            		layer.alert(page_tagLength_error_1 + tagMaxLength + page_tagLength_error_2);
+		            		return false;
+		            	}
+		            	var allTags = listEle.find('.tags-item');
+		                if (allTags.length >= tagMaxCount) {
+		                	layer.alert(page_tagCount_error);
+		                	return false;
+		                }
+		                //标签名称重复性校验
+		                var checkRel = false;
+		                listEle.find('.tags-item .tags-item-txt').each(function () {
+		                    var tempName = $(this).text();
+		                    if(tagName == tempName){
+		                    	checkRel = true;
+		                    	return;
+		                    }
+		                });
+		                if(checkRel){
+		                	layer.alert(page_tagExists_error);
+		                	return ;
+		                }
+		                addOneTag(tagName, '', true);
+		                clearInput();
+		            }
+		        });
+		        
+		        // 确定提交
+		        okBtnEle.click(submitTags);
+
+		        // 关闭弹窗
+		        closeBtnEle.click(hideTagBox);
+		    }
+
+		    // 隐藏弹窗
+		    function hideTagBox() {
+		        containerEle.hide();
+		        listEle.find('.tags-item-delete').click();
+		        clearInput();
+		        visible = false;
+		    }
+
+		    // 清空输入框
+		    function clearInput() {
+		        inputEle.val('');
+		    }
+
+		    // 添加标签
+		    function addOneTag(tagName, tagId, selected) {
+		        var tagHtml = '<div class="tags-item">' +
+		                    '<span class="tags-item-txt" data-id="' + tagId + '">' + tagName + '</span>' +
+		                    '<a class="tags-item-delete" href="javascript:;">X</a>' +
+		                '</div>',
+		            tagEle = $(tagHtml);
+
+		        if (selected) {
+		            tagEle.addClass('tags-item-selected');
+		        }
+
+		        tagEle.click(function() {
+		            tagEle.addClass('tags-item-selected');
+		        })
+		            .find('.tags-item-delete').click(function (e) {
+		                tagEle.removeClass('tags-item-selected');
+		                e.stopPropagation();
+		            });
+		        listEle.append(tagEle);
+		    }
+
+		    function initializeTagList(data) {
+		    	var tagList = data.tFavouriteTagList,
+		    		favouriteTagIds = data.favouriteTagIds;
+		    	$('#J_TagList').empty();
+		        $.each(tagList, function (index, tagItem) {
+		            addOneTag(tagItem.tagname, tagItem.id,favouriteTagIds && favouriteTagIds.indexOf(','+tagItem.id+',')>=0);
+		        })
+		    }
+
+		    // 收集标签
+		    function collectTags() {
+		        var tagNames = [],
+		            tagIds = [],
+		            hasSelected = false;
+		        listEle.find('.tags-item-selected .tags-item-txt').each(function () {
+		            var tagId = $(this).data('id'),
+		                tagName = $(this).text();
+
+		            if (tagId) {
+		                tagIds.push(tagId);
+		            } else {
+		                tagNames.push(tagName);
+		            }
+
+		            hasSelected = true;
+		        });
+		        return hasSelected ? {
+		            bookId: currentBookId,
+		            tagNames: tagNames,
+		            tagIds: tagIds
+		        } : null;
+		    }
+		    
+		    // 打开标签弹窗
+		    /*
+		    * 
+		    * @param dir {Number} 弹窗显示位置, 1,2,3,4分别对应上右下左, 默认左
+		    **/
+		    function openTagsDialog(bookId, targetEle, dir) {
+		    	var poiLeft = 0,
+		            poiLeft = 0,
+		            offset = $(targetEle).offset() || {
+		                left: 0,
+		                top: 0
+		            };
+		            try {
+		            	if (closeInfoLayer) {
+		                	closeInfoLayer();
+		                }
+					} catch (e) {
+					}
+		        window.currentFavouriteBookId = bookId;
+		        currentBookId = bookId;
+
+		        if (visible) {
+		            listEle.find('.tags-item-delete').click();
+		            clearInput();
+		        }
+		        visible = true;
+		        showLoading();
+
+		        switch(dir) {
+		            case 1:
+		                break;
+		            case 2:
+		                break;
+		            case 3:
+		                poiLeft = offset.left - 278 + $(targetEle).width() / 2;
+		                poiTop = offset.top + $(targetEle).height() + 20;
+		                containerEle.addClass('tags-dir-bottom');
+		                break;
+		            case 4:
+		            default:
+		                poiLeft = offset.left - 575;
+		                poiTop = offset.top - 155;
+		                containerEle.removeClass('tags-dir-bottom');
+		                break;
+		        }
+
+		        
+
+		        containerEle.css({
+		            left: poiLeft,
+		            top: poiTop,
+		            background:"rgba(247, 245, 228, 0.97)"
+		        })
+		            .show();
+		        fetchTagList(bookId);
+
+		    }
+
+		    // 显示loading
+		    function showLoading() {
+		        containerEle.addClass('tags-loading');
+		    }
+
+		    // 隐藏loading
+		    function hideLoading() {
+		        containerEle.removeClass('tags-loading');
+		    }
+
+		    // 获取数据源
+		    function fetchTagList(bookId) {
+		    	MGUtil.ajax(app + "/front/singleBookDetail/loadFavouriteTags",{
+		    		bookId : bookId
+		    	},function(data) {
+		    		hideLoading();
+		    		if(data && data.error){
+		    			if(data.error){layer.alert(data.message);hideTagBox();return;}
+		    		}
+		    		if (data && data.tFavouriteTagList && $.isArray(data.tFavouriteTagList)) {
+		    			//openLoagin();
+		    			initializeTagList(data);
+		    		} else {    			
+		    			hideTagBox();
+		    		}
+		    	},true);
+		    }
+		    
+		    // 提交保存标签数据
+		    function submitTags() {
+//		    	alert(currentFavouriteBookId);
+		        var tagData = collectTags();
+		        if (tagData) {
+		        	$('#tempForm').remove();
+		        	var form = $('<form id="tempForm"></form>').appendTo($('body'));
+		        	form.append('<input type="hidden" name="bookId" value="'+tagData.bookId+'"/>');
+		        	var tagIds = tagData.tagIds;
+		        	for(var i=0;tagIds && i<tagIds.length;i++){
+		        		form.append('<input type="hidden" name="favouriteTagIds" value="'+tagIds[i]+'"/>');
+		        	}
+		        	var tagNames = tagData.tagNames;
+		        	for(var i=0;tagNames && i<tagNames.length;i++){
+		        		form.append('<input type="hidden" name="favouriteTagNames" value="'+tagNames[i]+'"/>');
+		        	}
+		        	MGUtil.ajaxForm(app + '/front/singleBookDetail/setFavouriteBook','tempForm',function(data){
+			           	 layer.alert(data.message);
+			           	 hideTagBox();
+			         })
+		        } else {
+		    	   layer.alert('请选择标签');
+		        }
+
+		    }
+
+		    window.initializeTags = initializeTags;
+
+		    window.openTag = openTagsDialog;
+		    
+		    window.closeTag = hideTagBox;
+		})();
+</script>
+</head><body><div id="J_LoginDialog" class="login-float">
+    <div class="login">
+		<form id="loginDialogForm" method="post">
+			<div class="name">當前站點：香港都会大学</div>
+			<a href="/front/index/toregist.do" class="zhuce">註冊</a> 
+			
+			<div class="login-panel">
+			  <div class="login-row login-row-username">
+			    <label>用戶名: </label><input name="account" type="text">
+			  </div>
+			  <div class="login-row login-row-passwprd">
+			    <label>密 碼: </label><input name="password" type="password">
+			  </div>
+			  <div class="login-row login-row-code">
+			  	<label>驗證碼: </label>
+			    <input name="imageCode" type="text" placeholder="驗證碼">
+			    <a class=" login-code-img" href="javascript:void(0);"><img src="/resources/common/jsp/image.jsp" alt="不清楚，换一张" onclick="changImage(this)"></a>
+			  </div>
+			  <div class="login-row login-row-submit">
+			    <div class="jizhu"><input type="checkbox" name="checkbox" class="input_a">自動登錄</div>
+			    <a id="doDialogLogin" href="javascript:void(0);" class="btn">登 錄</a>
+			  </div>
+			</div>
+		</form>
+	</div>
+
+    <div id="J_LoginDialogClose" class="login-float-close">
+        <a href="javascript:;"></a>
+    </div>
+</div>
+<script>
+    $(function () {
+        function openLogin() {
+            $('#J_LoginDialog').show();
+        }
+
+        function closeLogin() {
+            $('#J_LoginDialog').hide();
+        }
+        function changImage(img){
+         	img.src = "/resources/common/jsp/image.jsp?"+new Date();
+        }
+        $('#J_LoginDialogClose').click(closeLogin);
+
+        window.openLogin = openLogin;
+        window.closeLogin = closeLogin;
+        window.changImage = changImage;
+
+        $('#doDialogLogin').click(function(){
+            MGUtil.ajaxForm(app + '/front/index/dologin.do','loginDialogForm',function(json){
+                var state = json.state,//0:用户名或密码验证失败 1：登录成功 2：未激活 3：输入项不合法
+                        message = json.message;
+                if(state == 0 || state == 3){
+                    layer.alert(message);
+                }else if(state == 2){
+                    var readerId = json.readerId;
+                    layer.alert(message,function(){
+                        MGUtil.submitByForm(app + '/front/index/toreactive/'+readerId+'.do');
+                    });
+                }else if(state == 1){
+                	closeLogin();
+            		layer.closeAll();
+            		var userInfoSpan = $('.header .top-userinfo');
+            		userInfoSpan.empty();
+            		userInfoSpan.append('您好&nbsp;&nbsp;');
+            		var reader = json.reader;
+            		userInfoSpan.append(
+            				'<a href="/front/home/toPersonal" style="color: #fff;">'+
+            					(reader.nickname?reader.nickname : '請完善資料') +
+            				'</a>&nbsp;&nbsp;'
+            		);
+            		userInfoSpan.append('<a href="/front/index/logout.do" class="fcff">註銷</a>');
+            		/**
+                	layer.alert('登錄成功',function(){
+                	});*/
+                }
+            });
+        });
+    });
+
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?abe114adb81a2985c7b937386ef794c4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+</script>
+
+<title>瀚文民國書庫-單本詳情</title>
+<script src="/resources/common/js/layer/layer.js" charset="utf-8"></script>
+<script src="/resources/front/mg/js/singleBookDetail/index.js" charset="utf-8"></script>
+<script>
+	var page_tagLength_error_1= '標籤內容不能超過',
+	page_tagLength_error_2='個字',
+	page_tagCount_error='您的標籤個數已達到上限',
+	page_tagExists_error='該標籤已存在';
+	
+	var dialogTxt = {
+    		ok: '確 定',
+    		calcel_btn: '取 消'
+    };
+	
+	//var total_price = unit_price * '66';
+
+   //阅读全文
+   	function addRecommend(bookId,bookName){
+	   MGUtil.ajax('/front/index/ajaxToLogin',{},function(){
+		   var url = '/front/singleBookDetail/readerAddRecommend';
+	   		var dialogHTML = '<div class="promopt-dialog">' +
+	     		  '<div class="promopt-dialog-row">' +
+                  '<label style="font-size:90%;">如有需要复制纸本图书的图书馆，请与销售《瀚文民国书库》的代理联系。</label><br><br>' +
+	       	    '<label>推薦理由: </label> <textarea name="reason" rows="3"  style="resize: none;" ></textarea>' +
+	       	  '</div>' +
+	       		'<div class="promopt-dialog-row">' +
+	       			'<label>購買本數: </label> <input name="amount" type="text" value="1" />' +
+	       		'</div>' +
+	       	'</div>';
+	       	var reasonErrorMsg = '推薦理由不能為空';
+	       	var amountErrorMsg = '購買本數輸入有誤';
+	       	
+	       	var dialogElement = null;
+	       	
+	   		layer.open({
+	   			type: 1,
+	   			title: ['推薦購買', 'font-size:18px;background:#3c2615;color:#fff'],
+	   			content: dialogHTML,
+	   			area: ['440px'],
+	   			btn: [dialogTxt.ok, dialogTxt.calcel_btn],
+	   			success: function(element) {
+	   				dialogElement = $(element);
+	   			},
+	   			end: function() {
+	   				dialogElement = null;
+	   			},
+	   			yes: function(index) {
+	   				var reason = dialogElement.find('[name=reason]').val(),
+	   					amount = parseInt(dialogElement.find('[name=amount]').val());
+	   				if (!reason) {
+	   					layer.alert(reasonErrorMsg);
+	   					return;
+	   				}
+	   				if (!amount) {
+	   					layer.alert(amountErrorMsg);
+	   					return;
+	   				}
+	   				MGUtil.ajax(url,{
+	   		   			bookId : bookId,
+	   		   			bookName : bookName,
+	   		   			reason : reason,
+	   		   			buyNum : amount
+	   		   		},function(data){
+	   		   			layer.close(index);
+	   		   			if(data){
+	   		   				layer.alert(data.message);
+	   		   			}
+	   		   		},true);
+	   			}
+	   		});
+	   });
+   	}
+    function addErrorCorrection(bookIdEncrypted,bookName){
+    	MGUtil.ajax('/front/index/ajaxToLogin',{},function(){
+ 		   var url = '/front/singleBookDetail/addErrorCorrection';
+ 	   		var dialogHTML = '<div class="promopt-dialog">' +
+ 	     		  '<div class="promopt-dialog-row">' +
+ 	     		  '<label>書名: 考证白香词谱·卷二 </label><br><br>' +
+ 	       	    '<label>糾錯詳情: </label> <textarea name="content" rows="3"  style="resize: none;" ></textarea>' +
+ 	       	  '</div>' +
+ 	       	'</div>';
+ 	       	
+ 	       	var dialogElement = null;
+ 	       	
+ 	   		layer.open({
+ 	   			type: 1,
+ 	   			title: ['糾錯', 'font-size:18px;background:#3c2615;color:#fff'],
+ 	   			content: dialogHTML,
+ 	   			area: ['440px'],
+ 	   			btn: [dialogTxt.ok, dialogTxt.calcel_btn],
+ 	   			success: function(element) {
+ 	   				dialogElement = $(element);
+ 	   			},
+ 	   			end: function() {
+ 	   				dialogElement = null;
+ 	   			},
+ 	   			yes: function(index) {
+ 	   				var content = dialogElement.find('[name=content]').val();
+ 	   				if (!content) {
+ 	   					layer.alert('糾錯詳情不能為空');
+ 	   					return;
+ 	   				}
+ 	   				
+ 	   				MGUtil.ajax(url,{
+ 	   					bookIdEncrypted : bookIdEncrypted,
+ 	   		   			content : content
+ 	   		   		},function(data){
+ 	   		   			layer.close(index);
+ 	   		   			if(data){
+ 	   		   				layer.alert(data.message);
+ 	   		   			}
+ 	   		   		},true);
+ 	   			}
+ 	   		});
+ 	   });
+    }
+    var bookId = '103212';
+    var bookIdEncrypted =  '77efc67b714d12561e75179ba2e577cca2cccf94435168b474829ba10dabbbae65ee19a0f2ffb17abc1296812dec04e3';
+</script>
+
+
+
+
+<style type="text/css">
+  .promopt-dialog {
+    padding: 20px 40px;
+
+  }
+  .promopt-dialog-row {
+    padding: 5px 0;
+    text-align: center;
+  }
+  .promopt-dialog-row label {
+  	vertical-align: top;
+  }
+  .promopt-dialog-row input,
+  .promopt-dialog-row textarea {
+    width: 250px;
+  }
+
+.retrieval-menu ul li {
+    float: left;
+    margin-left: 0px;
+    width: 135px;
+    height: 34px;
+}
+.retrieval-menu ul li a:hover, .retrieval-menu ul li.curr a{    
+    background: url(/resources/front/mg/images/r_menu1.png) no-repeat;
+   	background-size: 133px;
+    background-position-y: 4px;
+}
+.retrieval-menu ul li a {
+    float: left;
+    width: 100%;
+    height: 34px;
+    text-align: center;
+}
+#cententSearchbtn{
+	left:0
+}
+</style>
+
+
+
+<!--头部 B -->
+
+
+
+
+<style>
+	.ml-10 {
+		margin-left: 10px;
+	}
+	.ib {
+		display: inline-block;
+	}
+	
+</style>
+<div class="header">
+	<div class="wp">
+		<div class="fl top-logo">
+			<a href="/front/index/toindex.do">
+				<img src="/resources/front/mg/images/top_logo.png" class="dsb">
+			</a>
+			<span>
+			<img src="/resources/front/mg/images/logofont.png" class="dsbone" style="height:75px;"> 
+		</span></div>
+		
+			<span class="top-userinfo">
+			
+			<a href="/front/home/toPersonal" style="color: #fff;">
+				
+               		
+               			
+               		
+               		
+               	
+			</a>&nbsp;&nbsp;
+			
+			
+				
+					<a href="/front/index/tologin.do" class="fcff">登錄</a>
+				
+				
+			
+			<span class="ml-10">香港都会大学</span>
+			
+			
+		</span>
+		
+		
+		
+		
+			<a href="javascript:void()" type="xd" class="top-yy yy ml-10 ib">简体中文</a>
+		
+		
+		<a href="javascript:showUpdateLog();" class="top-yy ml-10 ib">更新日志</a>
+		
+		
+		
+		
+		<script type="text/javascript">
+			$(function(){
+				$('.header .yy').click(function(){
+					var type = $(this).attr('type');
+					var url = "/front/home/setLocal/"+type+".do";
+					MGUtil.ajax(url,{},function(){
+						location.reload();
+					});
+				});
+				if('true' == 'false'){
+					var temp_url = "/front/siteMessage/getNoReadMessageCnt";
+					MGUtil.ajax(temp_url,{},function(data){
+						if(data > 0 ){
+							$("#no_read_msg").text(data).show();
+						}
+					},true);
+					
+				}
+			});
+		</script>
+		<!-- 
+		<a href="/front/home/setLocal/{eng}.do" class="top-yy" style="right:10px;">English</a>
+		 -->
+		<div class="top-nav">
+			<ul>
+				<li class="active"><a href="/front/index/toindex.do">主頁</a></li>
+				<li><a href="/front/subjectNav/index.do">學科分類</a></li>
+				
+					
+					
+				
+				<li><a href="http://wpa.qq.com/msgrd?V=3&amp;uin=3381145589" target="_blank">在線諮詢</a></li>
+				<!--<li><a href="/front/errorReport/index">反馈</a></li> -->
+				<li>
+					<a href="/front/siteMessage/index">站內信</a>
+					<sup id="no_read_msg" style="color: #fff;background: red;padding:2px;border-radius:6px;display: none;">0</sup>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+<script type="text/javascript">
+function showUpdateLog() {
+	$('#myModal').modal({"show":true});
+}
+
+function setCookie(c_name, value, expireDays) {
+	var exdate = new Date();
+	exdate.setDate(exdate.getDate() + expireDays);
+	document.cookie = c_name +  "=" + escape(value) + ((expireDays == null) ? "" : ";expires=" + exdate.toGMTString()); 
+}
+
+function isCookieExist(c_name) {
+	if (document.cookie.length > 0) {
+		return (document.cookie.indexOf(c_name + "=")) != -1;
+	}
+	return false;
+}
+</script>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h3 class="modal-title" id="myModalLabel">更新公告</h3>
+      </div>
+      <div class="modal-body">
+        <p>尊敬的读者：</p>
+		<p style="text-indent:2em;">您好！感谢您一直以来对《瀚文民国书库》的支持！为了更好地为您提供服务，提高书库使用的便捷性，解决您使用中遇到的一些问题，我们在征求了部分读者意见后，于2018年7月1日对书库进行了功能更新，特此向您说明。
+		本次更新主要内容为：
+		</p>
+		<ul style="margin-top: 3px;">
+		<li style="text-indent:1em;">1. 全文检索功能：无需注册登录即可使用全文检索功能；</li>
+		<li style="text-indent:1em;">2. 下载功能：无需注册登录即可使用下载功能；</li>
+		<li style="text-indent:1em;">3. 下载数量限制：取消注册用户每次下载不超过5页，每个账号每天不超过200页的下载数量限制，改为每次下载不超过50页，每个用户单位（学校或机构）每天的下载总量不超过5000页;</li>
+		<li style="text-indent:1em;">4. 下载页码选择：输入下载页码时，取消起止页码的输入方式，改为按需求随意输入页码模式，如“2，4，15-21，34-36，72”。</li>
+		<li style="text-indent:1em;">5. 下载方式：增加“本机下载”和“发送邮件”选项，便于文献使用和文献传递的需求；</li>
+		<li style="text-indent:1em;">6. 下载文件格式：下载文件格式由原压缩文件格式改为PDF文件格式，每次选择的所有页面将自动生成一个PDF文件下载至指定位置。</li>
+		<li style="text-indent:1em;">7. 书目信息导出：增加“导出本页检索结果”按钮，可将当前页显示的检索结果批量导出。导出单本图书书目信息时，增加“本机下载”和“发送邮件”选项，便于书目信息引用和文献传递的需求；</li>
+		</ul>
+		<p style="text-indent:2em;">注：如果您需要使用“用户中心”中的各项功能，还请（注册）登录后使用书库，我们才能根据您的注册信息为您记录阅读中的点点滴滴。
+		如果您在使用中遇到问题，请与我们联系，我们将尽力为您解决。也欢迎您向我们提出宝贵的意见和建议，我们将在以后的更新中加以参考，从而不断提高书库的性能和品质。
+		</p>
+		<p style="text-indent:2em;">再次感谢！</p>
+		<div style="display: block; width: 100%; height: 50px;">
+			<div style="width: 100%; height: 23px">
+				<div style="display: block;float: right;">
+				《瀚文民国书库》
+			 	</div>
+			</div>
+			<div style="width: 100%; height: 23x">
+				<div style="display: block;float: right;">
+				 2018年7月1日
+			 	</div>
+			</div>
+			
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-lg btn-block" data-dismiss="modal" style="line-height: 1.33333; width: 100px; height:30px;">我知道了</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--头部 E -->
+<div class="base_bg">
+  <div class="base_logo">
+    <div class="k1000">
+      
+  
+
+<div class="retrieval-menu">
+    
+     <ul class="titleSelect">
+     
+         <li columnname="allColumn" class="curr"><a href="javascript:void(0)">書目檢索</a></li>
+      	 <li columnname="all"><a href="javascript:void(0)">全文檢索</a></li>
+
+         <li id="rwmtzl">
+         </li>
+     
+     
+<!--     <li columnName="allColumn"><a href="javascript:void(0)">所有字段</a></li>
+         <li columnName="title"><a href="javascript:void(0)">書名</a></li>
+         <li columnName="author"><a href="javascript:void(0)">作者</a></li>
+         <li columnName="keywords"><a href="javascript:void(0)">關鍵詞</a></li>
+         <li columnName="bookAbstract"><a href="javascript:void(0)">摘要</a></li>
+         <li columnName="catalog"><a href="javascript:void(0)">目錄</a></li>
+         <li columnName="all"><a href="javascript:void(0)">全文</a></li> -->
+     </ul>
+ </div>
+ <script>
+ $(function(){
+	 $(".titleSelect,#selectList").children("li").click(function() {
+		var me = $(this),
+			columnName = me.attr('columnName');
+		$("#searchForm input[name='searchColumn']").val(columnName);
+		$(".titleSelect li").removeClass('curr');
+		if(columnName == 'all'){//全文
+			/* $(".titleSelect li[columnName='all']").addClass('curr');
+			MGUtil.ajax('/front/index/checkLogin.do',{},function(data){
+				if(data.success == false){
+					layer.confirm('全文檢索需要登錄，是否立刻登錄？', {
+					    btn: [page_yes,page_no] //按钮
+					}, function(){
+						layer.closeAll();
+						MGUtil.ajax('/front/index/ajaxToLogin');
+					}, function(){
+						layer.closeAll();
+					    MGUtil.clickDom( $(".titleSelect").children().first().get(0));
+					});
+				}
+			}); */
+			
+			if ($("input[name='searchWord']").length > 0) {
+				$("input[name='searchWord']").attr("placeholder", '请输入一个或多个检索词（最多三个）进行检索，如"瀚文 书库"');
+			}
+		}else{
+			$(".titleSelect li[columnName='allColumn']").addClass('curr');
+			if ($("input[name='searchWord']").length > 0) {
+				$("input[name='searchWord']").attr("placeholder", '');
+			}
+		}
+	});
+ });
+
+ (function Show(){
+     var pathname = window.location.pathname
+     console.log(pathname)
+     var flag = pathname.search("/front/index/toindex.do")
+     if (flag != -1) {
+         $("#rwmtzl").html("<img class=\"typeSearch\" src=\"/resources/common/images/rbmtzl.png\" width=\"150px\" style=\"padding-left: 565px;cursor: pointer\">")
+     }
+ }())
+ </script>
+ 
+ 
+
+
+   	  <div class="clear"></div>
+      <div class="retrieval-search" style="width:82%; margin:0px auto; margin-top:15px;">
+	<div class="con">
+	    
+  
+
+<a href="javascript:void(0)" class="btn" id="cententSearchbtn" style="display: none;">在正文中檢索</a>
+<div id="titleSelect" style="display: block;">
+	<span class="nameSelect">所有字段</span><i></i>
+	<ul id="selectList" style="height: 0px;">
+	    <li columnname="allColumn">所有字段</li>
+	    <li columnname="title">書名</li>
+	    <li columnname="author">作者</li>
+	    <!-- 
+	    <li columnName="keywords">關鍵詞</li>
+	     -->
+	    <li columnname="bookAbstract">摘要</li>
+	    <li columnname="catalog">目錄</li>
+	     <li columnname="publisher">出版社</li>
+	</ul>
+</div>
+ 
+ 
+
+
+		
+
+  
+
+
+<form id="searchForm" action="/front/search/doSearch.do" method="post">
+	<input name="searchColumn" type="hidden" value="allColumn">
+	<input name="bookSubjectId" type="hidden">
+	<input name="searchWordMatchType" type="hidden" value="">
+	<input type="text" style="display:none">
+	<input name="searchWord" type="text" class="fl" value="" placeholder="">
+	<input name="tTagsFlag" type="hidden" value="1">
+	<a id="quickdelete">×</a>
+    <a href="javascript:void(0)" class="btn" id="searchbtn">檢 索</a>
+    <div id="titleSelectOne" style="width:25px;">
+		<i></i>
+		<ul id="selectListOne" style="width: 110px; top: 40px; left: -86px; overflow: hidden; height: 0px;">
+		 	<li>檢 索</li>
+		 	<li>模糊檢索</li>
+	 	</ul>
+	</div>
+ 
+</form>
+<script>
+$(function(){
+    var selectHeightOne =  $('#selectListOne').height()
+    $('#selectListOne').height(0)
+    
+    $('#titleSelectOne').hover(function() {
+        $('#selectListOne').stop().animate({'height': selectHeightOne}, 500)
+    }, function() {
+     $('#selectListOne').stop().animate({'height': '0'}, 500)
+   });
+
+   $('#selectListOne li').click(function() {
+		var this_nameOne = $(this).html()
+		$('#searchbtn').html(this_nameOne)
+   });
+   
+	$('#searchbtn').click(function(){
+		var searchWord = $("input[name='searchWord']").val();
+		searchWord = $.trim(searchWord);
+		if(!searchWord){
+			MGUtil.alert('检索词不能为空',{autoHide:true});
+		}else if(searchWord=='*'){
+			MGUtil.alert('检索词不能为"*"',{autoHide:true});
+		}else{
+			$('#searchForm').submit();
+		}
+		
+	});
+	$('#selectListOne>li:eq(0)').click(function(){//精确匹配
+		$("#searchForm input[name='searchWordMatchType']").val(1);
+	});
+	$('#selectListOne>li:eq(1)').click(function(){//分词检索
+		$("#searchForm input[name='searchWordMatchType']").val(2);
+	});
+	
+	var searchWordEle = $("#searchForm input[name='searchWord']"),
+		quickdeleteEle = $('#quickdelete');
+	searchWordEle.bind('input propertychange', function() { 
+		if($(this).val()){
+			quickdeleteEle.addClass('show');
+		}else{
+			quickdeleteEle.removeClass('show');
+		}
+	});
+	$('#quickdelete').click(function(){
+		searchWordEle.val('');
+		quickdeleteEle.removeClass('show');
+	});
+	
+	$("#searchForm input[name='searchWord']").keydown(function(e){
+		if(e.keyCode==13){
+		   MGUtil.clickDom($('#searchbtn').get(0));
+		}
+	});
+});
+</script>
+	</div>
+<a href="/front/search/toHighSearch.do" class="fr bold f16 l34">高級檢索</a>      </div>
+      <!---->
+      <div class="clear pb20"></div>
+      <div class="details">
+        <div class="smt">
+         
+         <!-- 
+        <div class="d_item">
+         <h4>標籤</h4>
+         <ul>
+         
+         	<li><a href="javascript:void(0)">文学</a></li>
+         
+         </ul>
+        </div>
+         -->
+         <div class="pic">
+          <img src="/common/bookCover/103212.do" width="185" height="258">
+          </div>
+          <div class="box">
+            <div class=" f20 bold">考证白香词谱·卷二</div>
+            <div class="clear"></div>
+            <dl>
+             <dt>書名：</dt>
+             <dd title="考证白香词谱·卷二">考证白香词谱·卷二</dd>
+            </dl>
+            <!--
+            <dl>
+             <dt>ISBN：</dt>
+             <dd>?</dd>
+            </dl>
+              -->
+            <dl style="margin-left:30px;">
+             <dt>作者：</dt>
+             <dd title="天虚我生编">天虚我生编</dd>
+            </dl>
+            <!-- 
+            <dl>
+             <dt>定價：</dt>
+             <dd>?</dd>
+            </dl>
+             -->
+            <dl>
+             <dt>出版社：</dt>
+             <dd title="中华图书馆">中华图书馆</dd>
+            </dl>
+            <dl style="margin-left:30px;">
+             <dt>出版日期：</dt>
+             <dd title="1918">1918</dd>
+            </dl>
+            <dl>
+             <dt>關鍵詞：</dt>
+             <dd title="中国诗歌、韵文,中国文学"> 中国诗歌、韵文,中国文学 </dd>
+            </dl>
+            <dl style="margin-left:30px;">
+             <dt>文獻類型：</dt>
+             <dd title="民国图书"> 民国图书 </dd>
+            </dl>
+            <dl style="width:500px;">
+             <dt>其他題名：</dt>
+             <dd style="width:400px;" title=""></dd>
+            </dl>
+            <dl style="width:500px;">
+             <dt>其他作者：</dt>
+             <dd style="width:400px;" title=""></dd>
+            </dl>
+            <dl style="width:500px;">
+             <dt>學科分類：</dt>
+             <dd style="width:400px;" title="文学-中国文学-中国诗歌、韵文">文学-中国文学-中国诗歌、韵文</dd>
+            </dl>
+            
+            	
+            		<a href="/front/reader/index/77efc67b714d12561e75179ba2e577cca2cccf94435168b474829ba10dabbbae65ee19a0f2ffb17abc1296812dec04e3.do" target="_blank" onclick="return MGUtil.checkReadRight('77efc67b714d12561e75179ba2e577cca2cccf94435168b474829ba10dabbbae65ee19a0f2ffb17abc1296812dec04e3');" class="stn">
+            			<img src="/resources/front/mg/images/d_1_f.png">
+            		</a>
+            	
+            	
+            
+            <a href="javascript:void(0)" onclick="openTag(103212,this,3)" class="stn" style="left:120px;"><img src="/resources/front/mg/images/d_2.png"></a>
+            <a href="javascript:void(0)" onclick="addRecommend(103212,'考证白香词谱·卷二')" class="stn" style="left:240px;"><span style="width:95px;height:35px;line-height:35px;font-weight: bold;">推薦採購紙質書</span></a>
+            <a href="javascript:void(0)" onclick="addErrorCorrection('77efc67b714d12561e75179ba2e577cca2cccf94435168b474829ba10dabbbae65ee19a0f2ffb17abc1296812dec04e3','考证白香词谱·卷二')" class="stn" style="left:360px;"><span style="width:95px;height:35px;line-height:35px;font-weight: bold;">糾錯</span></a>
+           <!--  <a href="javascript:void(0)" onclick="citation('77efc67b714d12561e75179ba2e577cca2cccf94435168b474829ba10dabbbae65ee19a0f2ffb17abc1296812dec04e3','考证白香词谱·卷二')" class="stn" style="left:405px;"><span style="width:95px;height:35px;line-height:35px;font-weight: bold;">文献引用</span></a>  -->
+          </div>
+          
+        </div>
+        <div class="clear"></div>
+      </div>
+      
+      <div class="details_con1">
+        <div class="smt">
+          <h3>書本詳情</h3>
+        </div>
+        <div class="smc">
+           <p>字數：未知</p>
+           <p>頁碼：66</p>
+           <p>版次：未知</p>
+           <p>裝幀：未知</p>
+           <p>開本：32开</p>
+           <p>出版地：未知</p>
+           <div class="clear"></div>
+           
+        </div>
+      </div>
+      <div class="base_tit">內容簡介</div>
+      <div class="p20">
+        
+      </div>
+      <div class="base_tit">作者簡介</div>
+      <div class="p20">
+      	
+      </div>
+      <div class="base_tit">目錄</div>
+      <div class="p20">
+         
+         	<li style="padding-left:00px;">临江仙 
+         		<span style="float:right; margin-right:50px">3 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">蝶恋花 
+         		<span style="float:right; margin-right:50px">5 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">一剪梅 
+         		<span style="float:right; margin-right:50px">6 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">河传 
+         		<span style="float:right; margin-right:50px">8 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">渔家傲 
+         		<span style="float:right; margin-right:50px">10 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">苏幕遮 
+         		<span style="float:right; margin-right:50px">11 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">锦缠道 
+         		<span style="float:right; margin-right:50px">12 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">青玉案 
+         		<span style="float:right; margin-right:50px">15 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">感皇恩 
+         		<span style="float:right; margin-right:50px">17 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">解珮令 
+         		<span style="float:right; margin-right:50px">18 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">天仙子 
+         		<span style="float:right; margin-right:50px">20 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">千秋岁 
+         		<span style="float:right; margin-right:50px">21 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">离亭燕 
+         		<span style="float:right; margin-right:50px">23 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">何满子 
+         		<span style="float:right; margin-right:50px">24 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">风入松 
+         		<span style="float:right; margin-right:50px">26 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">祝英台近 
+         		<span style="float:right; margin-right:50px">27 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">御街行 
+         		<span style="float:right; margin-right:50px">29 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">蓦山溪 
+         		<span style="float:right; margin-right:50px">31 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">洞仙歌 
+         		<span style="float:right; margin-right:50px">33 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">瀟相夜雨 
+         		<span style="float:right; margin-right:50px">36 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">满江红 
+         		<span style="float:right; margin-right:50px">38 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">玉漏迟 
+         		<span style="float:right; margin-right:50px">40 </span>
+         		<hr style="border:1px dashed #0000fff">
+         	</li>
+         	
+         
+         	<li style="padding-left:00px;">水调歌头 

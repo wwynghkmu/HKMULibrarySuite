@@ -381,6 +381,7 @@ public class FetchReportBySchoolAndDates {
 			sql += ") ";
 			sql += "and ORIGIN_DWH_DIM_ORDER_STATUS.ORDER_STATUS_ID not  in ('VC', 'LC')  order by Primary_Call_No_Desc asc nulls last, Title asc nulls last";
 
+			System.out.println("SQL: " + sql);
 			stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(sql);
 
@@ -545,11 +546,8 @@ public class FetchReportBySchoolAndDates {
 				String orderNo = rs.getString("ORDER_NUMBER");
 				String budgetNo = rs.getString("BUDGET_NUMBER");
 				String bibno = rs.getString("BIBNO");
-				
+
 				String stringKey = "";
-				
-				
-					
 
 				for (int i = 0; i <= 10 - bibno.length(); i++) {
 					bibno = "0" + bibno;
@@ -572,7 +570,6 @@ public class FetchReportBySchoolAndDates {
 					String z00_data = "";
 					try {
 
-
 						z00_data = rs2.getString("Z00_DATA");
 						z00_data = z00_data.replace("\\r\\n", "");
 						z00_data = z00_data.replaceAll("\\r|\\n", "");
@@ -586,7 +583,7 @@ public class FetchReportBySchoolAndDates {
 						title = title.replaceAll("\\d\\d\\d\\d\\d\\d\\d..L.*", "");
 						title = title.replaceAll("\\$\\$p", " ");
 						title = title.trim();
-						
+
 						if (author == null || author.equals("")) {
 							author = "";
 							String author_110 = "";
@@ -594,7 +591,6 @@ public class FetchReportBySchoolAndDates {
 							String author_111 = "";
 							String author_700 = "";
 							String author_711 = "";
-
 
 							if (z00_data.matches(".*110..L\\$\\$a.*")) {
 								author_110 = z00_data.replaceAll("^.*?110..L\\$\\$a", "");
@@ -733,10 +729,8 @@ public class FetchReportBySchoolAndDates {
 
 							publisher = publisher.trim();
 							publisher = publisher.replaceAll("\\d\\d\\d\\d$", "");
-							
+
 							publisher = publisher.replaceAll("\\d\\d\\d\\d\\d\\d\\d  L.*", "");
-							
-							
 
 							if (publisher.contains("260  L"))
 								publisher = publisher.replaceAll("^.*260  L", "");

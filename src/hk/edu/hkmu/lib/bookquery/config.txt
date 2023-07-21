@@ -1,5 +1,9 @@
 INST_CODE~OUHK
 PRIMO_BASE~primo.csids.edu.hk
+PRIMOVE_BASE~hkmu.primo.exlibrisgroup.com
+PRIMOVE_RECORD_STRING~/discovery/fulldisplay?context=L&vid=852HKMU_INST:hkmu&search_scope=MyInstitution&tab=LibraryCatalog&docid=
+ALMA_APIBASE~api-ap.hosted.exlibrisgroup.com
+PRIMOVE_API_BASE~/primo/v1/search?vid=852HKMU_INST:hkmu&tab=LibraryCatalog&scope=MyInstitution&apikey=l8xxeb2a38bf0cb840e59f4ecf7a8f1c01f0
 SOURCE_ID~csidstwcaleph
 LOCAL_SCOPE~csidstwc
 SOURCE_ID_TWC~csidstwcaleph
@@ -14,7 +18,7 @@ SOURCE_ID_HKSYU~csidssyu
 LOCAL_SCOPE_HKSYU~csidssyu
 INDX~1
 BULK_SIZE~20
-PRIMO_SEARCHFIELD_PUBLISHER~lsr02
+PRIMO_SEARCHFIELD_PUBLISHER~lsr01
 PRIMO_SEARCHFIELD_EDITION~general
 PRIMO_SEARCHFIELD_AUTHOR~creator
 ILS_AVA_BASE_TWC~ils.twc.edu.hk/X?op~circ-status&library~TWC01&sys_no~

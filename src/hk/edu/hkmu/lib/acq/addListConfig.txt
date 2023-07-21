@@ -1,4 +1,4 @@
-PRIMOFULLVIEWURLFORM~https://www.lib.ouhk.edu.hk/primo-explore/fulldisplay?context^L&vid^ouhk&search_scope^all&tab^default_tab&lang^en_US&docid^ouhkaleph~Primo full record URL form. (Equal sign is replaced with "^")
+PRIMOFULLVIEWURLFORM~https://hkmu.primo.exlibrisgroup.com/permalink/852HKMU_INST/11dt3bh/alma~Primo full record URL form. (Equal sign is replaced with "^")
 EMAILSENDADDR~LibraryNewArrival@ouhk.edu.hk~Sender email address.
 NEWARRIVALEXCELHEADER~New Title List -~Excel header of the ACQ new arrival list, line 1.
 NEWARRIVALEXCELHEADER2~New Arrivals -~Excel header of the ACQ new arrival list, line 2.

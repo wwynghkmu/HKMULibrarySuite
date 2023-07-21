@@ -44,6 +44,8 @@ public final class Config {
 			+ VALUES.get("LOCAL_SCOPE") + ")";
 
 	public static String PRIMO_X_BASE = "http://" + VALUES.get("PRIMO_BASE") + PRIMO_QUERY_BASE;
+	
+	public static String PRIMOVE_API_BASE = "https://" + VALUES.get("ALMA_APIBASE") + VALUES.get("PRIMOVE_API_BASE");
 
 	public static String QUERY_SETTING = VALUES.get("PRIMO_BASE") + "(Institution Code: " + VALUES.get("INST_CODE")
 			+ "; Source ID: " + VALUES.get("SOURCE_ID") + "; Search Scope: " + VALUES.get("LOCAL_SCOPE") + ").";
@@ -68,6 +70,9 @@ public final class Config {
 
 		QUERY_SETTING = VALUES.get("PRIMO_BASE") + "(Institution Code: " + VALUES.get("INST_CODE") + "; Source ID: "
 				+ VALUES.get("SOURCE_ID") + "; Search Scope: " + VALUES.get("LOCAL_SCOPE") + ").";
+		
+		
+		
 
 	} // end init()
 

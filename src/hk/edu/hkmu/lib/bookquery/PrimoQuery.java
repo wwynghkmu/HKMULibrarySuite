@@ -233,8 +233,10 @@ public abstract class PrimoQuery extends Query {
 						outstr = outstr.replaceAll("^.*\\[", "");
 						outstr = outstr.replaceAll("\\].*$", "");
 						outstr = "{\"items\": [" + outstr + "] }";
+						System.out.println("JSON: " + outstr);
 						JSONParser parser = new JSONParser();
 						JSONObject json = (JSONObject) parser.parse(outstr);
+
 						JSONArray jarry = (JSONArray) json.get("items");
 
 						volumes = new int[jarry.size()];
@@ -340,7 +342,7 @@ public abstract class PrimoQuery extends Query {
 							} // end for
 						} // end if
 
-						if (vol < 0 && volumes[0] > 0 && bk.isMultiVolume()) {
+						if (volumes != null && vol < 0 && volumes[0] > 0 && bk.isMultiVolume()) {
 							ext_itm_no = 0;
 						} else {
 							ext_itm_no = itemCount;

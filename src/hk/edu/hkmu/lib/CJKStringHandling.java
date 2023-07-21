@@ -30,6 +30,7 @@ public final class CJKStringHandling {
 		} // end if
 		for (int i = 0; i < str.length(); i++) {
 			char ch = str.charAt(i);
+			
 			boolean retbool = isCJKChar(ch);
 			if (retbool) {
 				return true;
@@ -254,29 +255,29 @@ public final class CJKStringHandling {
 		Iterator<Entry<String, String>> it = ChineseAI.entrySet().iterator();
 		while (it.hasNext()) {
 			try {
-			Map.Entry<String, String> pair = (Map.Entry<String, String>) it.next();
-			String key = pair.getKey() + "";
-			String value = pair.getValue() + "";
-			if (str.contains(key)) {
-				int replacePlace = -1;
-				String pos = "";
-				if (value.length() == 2)
-					pos = value.charAt(1) + "";
-				if (pos.matches("\\d")) {
-					replacePlace = Integer.parseInt(value.charAt(1) + "");
-					replacePlace -= 1;
-				} // end if
-				if (replacePlace < 0 && value.length() > 0) {
-					key = StringHandling.escapeRegExpReservedChars(key);
-					str = str.replaceAll(key, value);
-				} // end if
+				Map.Entry<String, String> pair = (Map.Entry<String, String>) it.next();
+				String key = pair.getKey() + "";
+				String value = pair.getValue() + "";
+				if (str.contains(key)) {
+					int replacePlace = -1;
+					String pos = "";
+					if (value.length() == 2)
+						pos = value.charAt(1) + "";
+					if (pos.matches("\\d")) {
+						replacePlace = Integer.parseInt(value.charAt(1) + "");
+						replacePlace -= 1;
+					} // end if
+					if (replacePlace < 0 && value.length() > 0) {
+						key = StringHandling.escapeRegExpReservedChars(key);
+						str = str.replaceAll(key, value);
+					} // end if
 
-				if (replacePlace >= 0 && str.length() < replacePlace ) {
-					str = str.replaceAll(key.charAt(replacePlace) + "", value.charAt(0) + "");
-				} // if
-			} // end if
-			} //end try
-			catch(Exception e) {
+					if (replacePlace >= 0 && str.length() < replacePlace) {
+						str = str.replaceAll(key.charAt(replacePlace) + "", value.charAt(0) + "");
+					} // if
+				} // end if
+			} // end try
+			catch (Exception e) {
 				e.printStackTrace();
 			}
 		} // end while

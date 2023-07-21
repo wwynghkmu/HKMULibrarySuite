@@ -4,8 +4,8 @@ import hk.edu.hkmu.lib.bookquery.*;
 public class TestPrimoSearchByISBN{
 	public static void main(String[] args){
 
-		String inst = "POLYU";
-		String isbn = "9787020075621";
+		String inst = "OUHK";
+		String isbn = " 9622095461";
 		//String isbn = "781058703X";
 		String vol = "1";
 

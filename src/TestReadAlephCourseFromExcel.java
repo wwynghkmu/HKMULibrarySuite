@@ -10,6 +10,7 @@ import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.ss.usermodel.*;
 import hk.edu.hkmu.lib.*;
 import hk.edu.hkmu.lib.sys.*;
+import hk.edu.hkmu.lib.sys.misctools.AlmaCreateCourseViaAPI;
 
 public class TestReadAlephCourseFromExcel {
 	public static void main(String[] args) {
@@ -102,7 +103,7 @@ public class TestReadAlephCourseFromExcel {
 				System.out.println(course_id + " " + course_name + " " + instructor + " " + school + " SD:>>>"
 						+ start_date + "<<<ED:" + end_date + " " + term + " ");
 				
-				AlmaCreateCourse ac = new AlmaCreateCourse ();
+				AlmaCreateCourseViaAPI ac = new AlmaCreateCourseViaAPI ();
 				ac.CreateCourse(course_id, course_name, instructor, school, start_date, end_date, term);
 
 				/*

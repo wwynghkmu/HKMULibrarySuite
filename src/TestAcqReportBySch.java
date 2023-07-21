@@ -12,9 +12,11 @@ public class TestAcqReportBySch {
 		 * FetchReportBySchoolAndDates acqRpt = new FetchReportBySchoolAndDates(schCode,
 		 * "20180821", "20180822", "D:\\"); acqRpt.fetchReport(); }
 		 */
+
 		PrintWriter out = new PrintWriter(System.out, true);
-		FetchReportBySchoolAndDates acqRpt = new FetchReportBySchoolAndDates("E&L", "20210801", "20210831", "D:\\", null);
-		
+		FetchReportBySchoolAndDates acqRpt = new FetchReportBySchoolAndDates("E&L", "20210801", "20210831", "D:\\",
+				null);
+
 		acqRpt.reportLastMonth();
 		String str = "";
 	}

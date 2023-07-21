@@ -1,4 +1,5 @@
 import hk.edu.hkmu.lib.sys.*;
+import hk.edu.hkmu.lib.sys.misctools.CheckSSLCertExpiry;
 
 public class TestCheckCert {
 
