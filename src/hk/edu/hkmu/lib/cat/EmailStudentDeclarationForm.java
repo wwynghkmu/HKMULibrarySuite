@@ -1,5 +1,6 @@
 package hk.edu.hkmu.lib.cat;
 
+import java.io.File;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.sql.*;
@@ -42,8 +43,15 @@ public class EmailStudentDeclarationForm {
 	public EmailStudentDeclarationForm() {
 
 		Config.init();
-		logwriter = new LogWriter(hk.edu.hkmu.lib.Config.SERVER_LOCAL_ROOT);
-		logwriter.setLogFile("eBkPlatfromChkEmailRPTLog.txt");
+		logwriter = new LogWriter(hk.edu.hkmu.lib.Config.SERVER_LOCAL_ROOT + "/cat/logs/");
+		/*
+		 * String workingdir = System.getProperty("user.dir"); File dir = new
+		 * File(workingdir + "\\logs"); try { logwriter = new
+		 * LogWriter(dir.getCanonicalPath()); } catch (Exception e) {
+		 * 
+		 * }
+		 */
+		logwriter.setLogFile("emailStudentSelfDeclarationForm.txt");
 		fetchReportFromDB();
 		initEmailSystem();
 		setTos(Config.VALUES.get("REPORTEMAIL"));
@@ -53,9 +61,16 @@ public class EmailStudentDeclarationForm {
 
 	public EmailStudentDeclarationForm(String acaYear, String id, String title) {
 		Config.init();
-		logwriter = new LogWriter(hk.edu.hkmu.lib.Config.SERVER_LOCAL_ROOT);
-		
-		logwriter.setLogFile("eBkPlatfromChkEmailRPTLog.txt");
+		logwriter = new LogWriter(hk.edu.hkmu.lib.Config.SERVER_LOCAL_ROOT + "/cat/logs/");
+		/*
+		 * String workingdir = System.getProperty("user.dir"); File dir = new
+		 * File(workingdir + "\\logs"); try { logwriter = new
+		 * LogWriter(dir.getCanonicalPath()); } catch (Exception e) {
+		 * 
+		 * }
+		 */
+
+		logwriter.setLogFile("emailStudentSelfDeclarationForm.txt");
 		fetchReportFromDB(acaYear, id, title);
 		initEmailSystem();
 		setTos(Config.VALUES.get("REPORTEMAIL"));
@@ -71,9 +86,10 @@ public class EmailStudentDeclarationForm {
 			Connection conn = null;
 			Statement stmt = null;
 			conn = DriverManager.getConnection(Config.DB_URL, Config.USER, Config.PASS);
+			title2 = title2.replaceAll("'", "''");
 			String sql = "select * from catStudentSelfDeclaration where (signed IS NULL OR signed = 0) and (sentInvEmail IS NULL or sentInvEmail = 0) and academicYear='"
-					+ acaYear2 + "' and studentID='" + id2 + "' and title='" + title2 + "'";
-			
+					+ acaYear2 + "' and studentID='" + id2 + "' and title LIKE '" + title2 + "%'";
+			System.out.println(sql);
 			stmt = conn.prepareStatement(sql, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 			ResultSet rs = stmt.executeQuery(sql);
 			rs.last();
@@ -96,6 +112,11 @@ public class EmailStudentDeclarationForm {
 				invitations[i][3] = title;
 				invitations[i][4] = school;
 				invitations[i][5] = email;
+				sql = "UPDATE catStudentSelfDeclaration SET emailtime=NOW(), sentInvEmail = true, digest = '"
+						+ "' where studentID ='" + invitations[i][2] + "' and academicyear = '" + invitations[i][0]
+						+ "' and title='" + invitations[i][3].replaceAll("'", "''") + "'";
+
+				System.out.println(sql);
 				i++;
 			}
 			rs.close();
@@ -143,6 +164,7 @@ public class EmailStudentDeclarationForm {
 				invitations[i][4] = school;
 				invitations[i][5] = email;
 				i++;
+
 			}
 			rs.close();
 			stmt.close();
@@ -167,10 +189,10 @@ public class EmailStudentDeclarationForm {
 			properties.setProperty("mail.smtp.host", "localhost");
 			sess = Session.getDefaultInstance(properties);
 			message = new MimeMessage(sess);
-			
-			message.setFrom(new InternetAddress(Config.VALUES.get("EMAILSENDADDR"), Config.VALUES.get("EMAILSENDERSDFNAME") ));
-			
-			
+
+			message.setFrom(
+					new InternetAddress(Config.VALUES.get("EMAILSENDADDR"), Config.VALUES.get("EMAILSENDERSDFNAME")));
+
 			if (toAddresses != null) {
 				message.addRecipient(Message.RecipientType.TO, new InternetAddress(toAddresses[0]));
 				for (int i = 1; i < toAddresses.length; i++) {
@@ -198,10 +220,10 @@ public class EmailStudentDeclarationForm {
 			hk.edu.hkmu.lib.cat.Config.init();
 			String sender = hk.edu.hkmu.lib.cat.Config.VALUES.get("emailSenderSdf");
 			String senderName = hk.edu.hkmu.lib.cat.Config.VALUES.get("emailSenderSdfName");
-			
+
 			if (sender != null)
 				message.setFrom(new InternetAddress(sender, senderName));
-			
+
 			MessageDigest md = MessageDigest.getInstance("SHA-256");
 			String digestMsg = "";
 			Class.forName(Config.JDBC_DRIVER);
@@ -256,14 +278,15 @@ public class EmailStudentDeclarationForm {
 				tableText += hk.edu.hkmu.lib.cat.Config.VALUES.get("emailSignatureSdf");
 
 				msgText = tableText;
+
 				message.setContent(msgText, "text/html; charset=UTF-8");
 				Transport.send(message);
-				String sql = "UPDATE catStudentSelfDeclaration SET emailtime=NOW(), sentInvEmail = true, digest = '" + hexString
-						+ "' where studentID ='" + invitations[i][2] + "' and academicyear = '" + invitations[i][0]
-						+ "' and title='" + invitations[i][3].replaceAll("'", "''") + "'";
-				
+				String sql = "UPDATE catStudentSelfDeclaration SET emailtime=NOW(), sentInvEmail = true, digest = '"
+						+ hexString + "' where studentID ='" + invitations[i][2] + "' and academicyear = '"
+						+ invitations[i][0] + "' and title='" + invitations[i][3].replaceAll("'", "''") + "'";
+
 				System.out.println(sql);
-				
+
 				stmt = conn.prepareStatement(sql);
 				try {
 

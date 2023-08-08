@@ -3,11 +3,11 @@ import java.io.File;
 
 import hk.edu.hkmu.lib.cat.*;
 
-public class TestStudentDeclareForm {
+public class TestDIStudentDeclareForm {
 
 	static public void main(String args[]){
 		File file = new File(
-				"d:/Online form (name list) TEST.xlsx");
+				"d:/2023BAKevin-22t108s.xlsx");
 		
 		String writePath = "D:/";
 		StudentSelfDeclarationImport cc;

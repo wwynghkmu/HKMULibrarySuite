@@ -5,14 +5,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
 import java.util.*;
-
 import hk.edu.hkmu.lib.StringHandling;
 import okhttp3.internal.platform.Platform;
-
 import java.sql.*;
 
 /**
- * Reading the configuration files in the package "hk.edu.ouhk.lib.acq".
+ * Reading the configuration files in the package "hk.edu.hkmu.lib.acq".
  * 
  * @author Wai-yan NG
  * @version 1.0
@@ -22,7 +20,6 @@ public final class Config extends hk.edu.hkmu.lib.Config {
 
 	public static Map<String, String> VALUES = new HashMap<String, String>();
 	public static Map<String, String> VALUESDES = new HashMap<String, String>();
-	public static Map<String, Object[]> BUDGET_CODES = new HashMap<String, Object[]>();
 	public static Map<String, String[]> PLATFORMS;
 	public static Map<String, ArrayList<String>> SEARCHITEMS;
 	public static ArrayList UNITS;
@@ -83,12 +80,15 @@ public final class Config extends hk.edu.hkmu.lib.Config {
 				} else if (module.toLowerCase().equals("root")) {
 					VALUES.put(name, value);
 					VALUESDES.put(name, des);
-				} else  if (module.toLowerCase().equals("newarrivals")){
-					UNITS.add(name);
+				} else if (module.toLowerCase().equals("newarrivals")) {
+					if (subName.equals("unitName"))
+						UNITS.add(name);
+					VALUES.put(name, value);
+					VALUESDES.put(name, des);
+				} else {
 					VALUES.put(name, value);
 					VALUESDES.put(name, des);
 				}
-				
 
 			}
 
@@ -126,15 +126,6 @@ public final class Config extends hk.edu.hkmu.lib.Config {
 				VALUES.put(para[0], para[1]);
 			} // end while
 
-			url = Config.class.getResource("budgetCodes.txt");
-			br = new BufferedReader(new FileReader(url.getPath()));
-			while ((line = br.readLine()) != null) {
-				String[] para = line.split("~");
-				String[] sch = para[0].split("@");
-				String[] codes = para[1].split(",");
-				Object[] values = { sch[1], codes, para[2] };
-				BUDGET_CODES.put(sch[0], values);
-			} // end while
 
 			url = Config.class.getResource("addListConfig.txt");
 			br = new BufferedReader(new FileReader(url.getPath()));

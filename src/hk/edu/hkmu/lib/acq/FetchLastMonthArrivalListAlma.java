@@ -48,6 +48,7 @@ public class FetchLastMonthArrivalListAlma {
 	private String school;
 	private String[] codes;
 	private String writePath;
+	private String filename;
 	private String outputHTML;
 	private Writer wr;
 	private ArrayList<String> reportFiles;
@@ -180,7 +181,7 @@ public class FetchLastMonthArrivalListAlma {
 
 	public String getSchool() {
 		String str = hk.edu.hkmu.lib.acq.Config.VALUES.get(schCode);
-		
+
 		if (str == null)
 			return "";
 		school = str;
@@ -197,6 +198,10 @@ public class FetchLastMonthArrivalListAlma {
 
 	public String getEndDate() {
 		return endDate;
+	}
+
+	public String getFileName() {
+		return filename;
 	}
 
 	/**
@@ -227,12 +232,8 @@ public class FetchLastMonthArrivalListAlma {
 			String endMonth = c.get(Calendar.MONTH) + "";
 			String startYear = c.get(Calendar.YEAR) + "";
 
-			
-
 			SXSSFWorkbook workbook;
 
-			System.out.println("StartYear: " + startYear);
-			System.out.println("lastMonth: " + lastMonth);
 			String filename = writePath + schCode + "-Monthly Report-"
 					+ StringHandling.getMonthByNum(Integer.parseInt(lastMonth) - 1) + " " + startYear + ".xlsx";
 
@@ -362,21 +363,11 @@ public class FetchLastMonthArrivalListAlma {
 			headerCellStyle.setWrapText(true);
 			cell.setCellStyle(headerCellStyle);
 
-			/*
-			 * Remove SID & budget # column in Excel report according to ACQ's requirement.
-			 * 20190126 cell = headerRow.createCell(7); cell.setCellValue("SID Date");
-			 * cell.setCellStyle(headerCellStyle);
-			 * 
-			 * cell = headerRow.createCell(8); cell.setCellValue("Budget #");
-			 * cell.setCellStyle(headerCellStyle);
-			 * 
-			 */
-
 			outputHTML = "";
 			outputHTML = now + "<br>";
-			outputHTML += "<h3><div align=center> New arrival list for <font color=blue>" + school
-					+ "</font> between <font color=blue>" + startDate + " and " + endDate + "</font></div></h3> <br>";
-			outputHTML += "<table id='reportTable' class='table table-hover sortable'> <thead> <tr> <td> No. </td> <td> Title </td> <td> Author / Editor </td>  <td> Publisher </td> <<td> Call No. </td> <td> Order Material Type </td> <td> SID Date </td> <td> Budget # </td> <td> Link to the item </td></tr> </thead>\n";
+			outputHTML += "<h3><div align=center> " + startMonth + " " + startYear
+					+ " Arrival List for <font color=blue>" + school + "</font> </div></h3> <br>";
+			outputHTML += "<table id='reportTable' class='table table-hover sortable'> <thead> <tr> <td> No. </td> <td> Title </td> <td> Author / Editor </td>  <td> Publisher </td> <td> Call No. </td> <td> Order Material Type </td> <td> Link to the item </td></tr> </thead>\n";
 			outputHTML += "<tbody>";
 
 			if (wr != null) {
@@ -391,8 +382,6 @@ public class FetchLastMonthArrivalListAlma {
 			String urlStr = almaAnalyticsAPIPath + "SYS/Arrived_Last_Month_" + schCode + "_P&limit=1000&col_names=true&"
 					+ prodAPIKey;
 			URL url = new URL(urlStr);
-
-			
 
 			HttpURLConnection http = (HttpURLConnection) url.openConnection();
 
@@ -471,8 +460,6 @@ public class FetchLastMonthArrivalListAlma {
 
 			url = new URL(urlStr);
 
-			
-
 			http = (HttpURLConnection) url.openConnection();
 
 			br = null;
@@ -488,8 +475,6 @@ public class FetchLastMonthArrivalListAlma {
 			while ((inputLine = br.readLine()) != null) {
 				content.append(inputLine);
 			}
-
-			
 
 			is = new InputSource(new StringReader(content.toString()));
 			doc = builder.parse(is);
@@ -549,8 +534,9 @@ public class FetchLastMonthArrivalListAlma {
 			if (resultSet.size() == 0) {
 				isEmpty = true;
 			}
-
+			String noReportLine = "";
 			if (isEmpty) {
+				noReportLine = "<tr> <td></td><td colspan=6> <b> There is no new item received for the captioned period. </b> </td> </tr>";
 				headerRow = sheet.createRow(4);
 				cell = headerRow.createCell(0);
 				cell.setCellValue("There is no new item received for the captioned period.");
@@ -635,9 +621,18 @@ public class FetchLastMonthArrivalListAlma {
 
 				tmp = null;
 
-				String reportLine = "<tr> <td>#</td><td>" + result.get(str)[0] + "</td><td>" + result.get(str)[1]
-						+ "</td><td>" + result.get(str)[2] + "</td> <td>" + result.get(str)[3] + "</td><td>"
-						+ result.get(str)[4];
+				int authorlength = result.get(str)[1].toString().length();
+				if (authorlength > 30)
+					authorlength = 30;
+
+				int titlelength = result.get(str)[0].toString().length();
+				if (titlelength > 40)
+					titlelength = 40;
+
+				String reportLine = "<tr> <td>#</td><td>" + result.get(str)[0].toString().substring(0, titlelength)
+						+ "</td><td>" + result.get(str)[1].toString().substring(0, authorlength) + "</td><td>"
+						+ result.get(str)[2] + "</td> <td>" + result.get(str)[3] + "</td><td>" + result.get(str)[4]
+						+ "</td><td><a href='" + URL + "' target=_blank> Click Here" + "</a> </td> </tr>";
 
 				URL = null;
 				if (wr != null) {
@@ -653,7 +648,8 @@ public class FetchLastMonthArrivalListAlma {
 
 			}
 
-			outputHTML = "</tbody></table>";
+			outputHTML = noReportLine + "</tbody></table>";			
+			
 			if (wr != null) {
 				wr.write(outputHTML);
 				wr.flush();
@@ -693,6 +689,7 @@ public class FetchLastMonthArrivalListAlma {
 						(byte[]) (schCode + "-Monthly Report-" + startMonth + " " + startYear + " EMPTY").getBytes());
 			}
 
+			this.filename = filename;
 			resultSet = null;
 			result = null;
 			sheet = null;

@@ -35,6 +35,7 @@ public class StudentSelfDeclarationImport {
 	protected ArrayList<String> StudentNameArrayList = null;
 	protected ArrayList<String> SchoolArrayList = null;
 	protected ArrayList<String> StudentEmailArrayList = null;
+	private LogWriter logwriter;
 
 	protected String summaryTxt;
 	public boolean success = false;
@@ -57,13 +58,15 @@ public class StudentSelfDeclarationImport {
 	public StudentSelfDeclarationImport(File file, String writePath) {
 		clear();
 		try {
+			logwriter = new LogWriter(hk.edu.hkmu.lib.Config.SERVER_LOCAL_ROOT + "/cat/logs/");
+			logwriter.setLogFile("importStudentSelfDeclaration.txt");
 			FileInputStream is = new FileInputStream(file);
 			readSource(is);
 			printStudentList();
 			success = importSrouceIntoDB();
 		} // end try
 		catch (Exception e) {
-			System.out.println("CopyCat:CopyCat:" + e);
+			System.out.println("Student Declearation Form:" + e);
 			e.printStackTrace();
 		} // end catch
 	} // end CopyCat
@@ -79,6 +82,8 @@ public class StudentSelfDeclarationImport {
 	public StudentSelfDeclarationImport(FileInputStream is, String writePath) {
 		clear();
 		try {
+			logwriter = new LogWriter(hk.edu.hkmu.lib.Config.SERVER_LOCAL_ROOT + "/cat/logs/");
+			logwriter.setLogFile("importStudentSelfDeclaration.txt");
 			readSource(is);
 			importSrouceIntoDB();
 		} // end try
@@ -137,7 +142,7 @@ public class StudentSelfDeclarationImport {
 								tempStr = cell.getStringCellValue();
 								break;
 							} // switch
-
+							
 							StudentIDArrayList.add(tempStr.trim());
 
 						} // end if
@@ -235,7 +240,7 @@ public class StudentSelfDeclarationImport {
 
 		for (int i = 0; i < StudentIDArrayList.size(); i++) {
 			String s = AcademicYearArrayList.get(i);
-			System.out.print(s + " ");
+			System.out.print(i + ". " + s + " ");
 
 			s = StudentNameArrayList.get(i);
 			System.out.print(s + " ");
@@ -299,6 +304,7 @@ public class StudentSelfDeclarationImport {
 			conn.close();
 		} catch (Exception e) {
 			e.printStackTrace();
+			logwriter.out(e.toString());
 			try {
 				conn.rollback();
 			} catch (Exception e2) {

@@ -15,10 +15,10 @@ import java.util.Map;
  * 
  * This class serves as a collection of constants containing system specific
  * settings. This class reads config.txt at the same directory of the package
- * "hk.edu.ouhk.lib"
+ * "hk.edu.hkmu.lib"
  * 
  * @author Wai-yan NG
- * @author wwyng@ouhk.edu.hk
+ * @author wwyng@hkmu.edu.hk
  * @version 1.0
  * @since Jan 29, 2019
  */
