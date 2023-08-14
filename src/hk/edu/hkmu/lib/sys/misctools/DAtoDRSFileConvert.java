@@ -21,7 +21,7 @@ public class DAtoDRSFileConvert {
 		
 		for(int i=1; i<records.size(); i++) {
 			String folder = records.get(i).get(0);
-			String filename = records.get(i).get(160);
+			String filename = records.get(i).get(240);
 			System.out.println("Folder: " + folder + " Filename: " + filename);
 			new File("d:\\DAtoDRS\\output\\" + folder).mkdirs();
 			File source = new File("d:\\DAtoDRS\\" + filename);

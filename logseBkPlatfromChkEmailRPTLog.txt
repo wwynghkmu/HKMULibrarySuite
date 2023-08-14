@@ -1,0 +1,5 @@
+2023-08-01 09:39:19: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Behaviour in the Advertising Market'' at line 1
+2023-08-01 09:39:20: Cannot read the array length because "this.invitations" is null
+2023-08-01 09:39:53: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Behaviour in the Advertising Market'' at line 1
+2023-08-01 09:39:54: Cannot read the array length because "this.invitations" is null
+2023-08-01 09:40:38: Couldn't connect to host, port: localhost, 25; timeout -1

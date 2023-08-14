@@ -14,7 +14,7 @@ public class TestAcqReportBySchAlma {
 		 * "20180821", "20180822", "D:\\"); acqRpt.fetchReport(); }
 		 */
 		PrintWriter out = new PrintWriter(System.out, true);
-		FetchLastMonthArrivalListAlma acqRpt = new FetchLastMonthArrivalListAlma("SAO", "D:\\", null);
+		FetchLastMonthArrivalListAlma acqRpt = new FetchLastMonthArrivalListAlma("EL", "D:\\", null);
 
 	}
 }

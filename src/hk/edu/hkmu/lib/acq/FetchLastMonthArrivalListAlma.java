@@ -302,6 +302,7 @@ public class FetchLastMonthArrivalListAlma {
 
 			CellStyle titleCellStyle = workbook.createCellStyle();
 			titleCellStyle.setFont(headerFont);
+			
 
 			CellStyle headerCellStyle = workbook.createCellStyle();
 
@@ -318,7 +319,7 @@ public class FetchLastMonthArrivalListAlma {
 			Row headerRow = sheet.createRow(0);
 			Cell cell = headerRow.createCell(0);
 
-			cell.setCellValue(Config.VALUES.get("NEWARRIVALEXCELHEADER") + " " + getSchool() + " (" + schCode + ")");
+			cell.setCellValue(Config.VALUES.get("NEWARRIVALEXCELHEADER") + " " + getSchool() );
 
 			cell.setCellStyle(titleCellStyle);
 
@@ -338,7 +339,7 @@ public class FetchLastMonthArrivalListAlma {
 			cell.setCellValue("Title");
 			cell.setCellStyle(headerCellStyle);
 
-			cell = headerRow.createCell(7);
+			cell = headerRow.createCell(6);
 			cell.setCellValue("Link to the Item");
 			cell.setCellStyle(headerCellStyle);
 
@@ -355,10 +356,6 @@ public class FetchLastMonthArrivalListAlma {
 			cell.setCellStyle(headerCellStyle);
 
 			cell = headerRow.createCell(5);
-			cell.setCellValue("Call No.");
-			cell.setCellStyle(headerCellStyle);
-
-			cell = headerRow.createCell(6);
 			cell.setCellValue("Material Type");
 			headerCellStyle.setWrapText(true);
 			cell.setCellStyle(headerCellStyle);
@@ -382,6 +379,7 @@ public class FetchLastMonthArrivalListAlma {
 			String urlStr = almaAnalyticsAPIPath + "SYS/Arrived_Last_Month_" + schCode + "_P&limit=1000&col_names=true&"
 					+ prodAPIKey;
 			URL url = new URL(urlStr);
+			System.out.println(urlStr);
 
 			HttpURLConnection http = (HttpURLConnection) url.openConnection();
 
@@ -417,32 +415,32 @@ public class FetchLastMonthArrivalListAlma {
 					}
 
 					String subject = "";
-					if (el.getElementsByTagName("Column5").item(0) != null) {
-						subject = el.getElementsByTagName("Column5").item(0).getTextContent();
+					if (el.getElementsByTagName("Column6").item(0) != null) {
+						subject = el.getElementsByTagName("Column6").item(0).getTextContent();
 					}
 
 					String title = "";
-					if (el.getElementsByTagName("Column6").item(0) != null) {
-						title = el.getElementsByTagName("Column6").item(0).getTextContent();
+					if (el.getElementsByTagName("Column7").item(0) != null) {
+						title = el.getElementsByTagName("Column7").item(0).getTextContent();
 					}
 
 					String callno = "";
-					if (el.getElementsByTagName("Column8").item(0) != null) {
-						callno = el.getElementsByTagName("Column8").item(0).getTextContent();
+					if (el.getElementsByTagName("Column9").item(0) != null) {
+						callno = el.getElementsByTagName("Column9").item(0).getTextContent();
 					}
 
 					String mmsid = "";
-					if (el.getElementsByTagName("Column3").item(0) != null) {
-						mmsid = el.getElementsByTagName("Column3").item(0).getTextContent();
+					if (el.getElementsByTagName("Column4").item(0) != null) {
+						mmsid = el.getElementsByTagName("Column4").item(0).getTextContent();
 					}
 					String publisher = "";
-					if (el.getElementsByTagName("Column4").item(0) != null) {
-						publisher = el.getElementsByTagName("Column4").item(0).getTextContent();
+					if (el.getElementsByTagName("Column5").item(0) != null) {
+						publisher = el.getElementsByTagName("Column5").item(0).getTextContent();
 					}
 
 					String rstype = "";
-					if (el.getElementsByTagName("Column9").item(0) != null) {
-						rstype = el.getElementsByTagName("Column9").item(0).getTextContent();
+					if (el.getElementsByTagName("Column10").item(0) != null) {
+						rstype = el.getElementsByTagName("Column10").item(0).getTextContent();
 					}
 
 					if (!resultSet.contains(mmsid)) {
@@ -573,7 +571,7 @@ public class FetchLastMonthArrivalListAlma {
 				row.getCell(0).setCellStyle(centerFontStyle);
 
 				row.createCell(1).setCellValue(tmp);
-				row.getCell(1).setCellStyle(centerFontStyle);
+				row.getCell(1).setCellStyle(defaultFontStyle);
 
 				tmp = result.get(str)[1].toString();
 				row.createCell(2).setCellValue(tmp);
@@ -588,24 +586,19 @@ public class FetchLastMonthArrivalListAlma {
 				row.getCell(4).setCellStyle(defaultFontStyle);
 
 				tmp = result.get(str)[4].toString();
-				row.createCell(6).setCellValue(tmp);
-				row.getCell(6).setCellStyle(defaultFontStyle);
-
-				tmp = result.get(str)[3].toString();
 				row.createCell(5).setCellValue(tmp);
 				row.getCell(5).setCellStyle(defaultFontStyle);
 
 				tmp = result.get(str)[5].toString();
+				
 
-				// If 856 $u is null, use the Primo permanent link
-				// if (URL == null) //set all to use perm link 20190904
 				URL = Config.VALUES.get("PRIMOFULLVIEWURLFORM").replace("^", "=") + tmp;
 				String URLstr = "<a href='" + URL + "' target=_blank> click here </a>";
 				Hyperlink href = workbook.getCreationHelper().createHyperlink(HyperlinkType.URL);
 				href.setAddress(URL);
-				row.createCell(7).setCellValue("Click Here");
-				row.getCell(7).setHyperlink(href);
-				row.getCell(7).setCellStyle(hrefStyle);
+				row.createCell(6).setCellValue("Click Here");
+				row.getCell(6).setHyperlink(href);
+				row.getCell(6).setCellStyle(hrefStyle);
 
 				/*
 				 * Remove multiple links because link now points to Primo's permanent link. if
