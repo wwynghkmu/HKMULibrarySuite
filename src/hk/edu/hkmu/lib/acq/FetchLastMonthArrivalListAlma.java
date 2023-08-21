@@ -302,7 +302,6 @@ public class FetchLastMonthArrivalListAlma {
 
 			CellStyle titleCellStyle = workbook.createCellStyle();
 			titleCellStyle.setFont(headerFont);
-			
 
 			CellStyle headerCellStyle = workbook.createCellStyle();
 
@@ -319,7 +318,7 @@ public class FetchLastMonthArrivalListAlma {
 			Row headerRow = sheet.createRow(0);
 			Cell cell = headerRow.createCell(0);
 
-			cell.setCellValue(Config.VALUES.get("NEWARRIVALEXCELHEADER") + " " + getSchool() );
+			cell.setCellValue(Config.VALUES.get("NEWARRIVALEXCELHEADER") + " " + getSchool());
 
 			cell.setCellStyle(titleCellStyle);
 
@@ -415,13 +414,13 @@ public class FetchLastMonthArrivalListAlma {
 					}
 
 					String subject = "";
-					if (el.getElementsByTagName("Column6").item(0) != null) {
-						subject = el.getElementsByTagName("Column6").item(0).getTextContent();
+					if (el.getElementsByTagName("Column7").item(0) != null) {
+						subject = el.getElementsByTagName("Column7").item(0).getTextContent();
 					}
 
 					String title = "";
-					if (el.getElementsByTagName("Column7").item(0) != null) {
-						title = el.getElementsByTagName("Column7").item(0).getTextContent();
+					if (el.getElementsByTagName("Column8").item(0) != null) {
+						title = el.getElementsByTagName("Column8").item(0).getTextContent();
 					}
 
 					String callno = "";
@@ -434,13 +433,16 @@ public class FetchLastMonthArrivalListAlma {
 						mmsid = el.getElementsByTagName("Column4").item(0).getTextContent();
 					}
 					String publisher = "";
-					if (el.getElementsByTagName("Column5").item(0) != null) {
-						publisher = el.getElementsByTagName("Column5").item(0).getTextContent();
+					if (el.getElementsByTagName("Column6").item(0) != null) {
+						publisher = el.getElementsByTagName("Column6").item(0).getTextContent();
+						if (el.getElementsByTagName("Column5").item(0) != null) {
+							publisher += ". " + el.getElementsByTagName("Column5").item(0).getTextContent();
+						}
 					}
 
 					String rstype = "";
-					if (el.getElementsByTagName("Column10").item(0) != null) {
-						rstype = el.getElementsByTagName("Column10").item(0).getTextContent();
+					if (el.getElementsByTagName("Column11").item(0) != null) {
+						rstype = el.getElementsByTagName("Column11").item(0).getTextContent();
 					}
 
 					if (!resultSet.contains(mmsid)) {
@@ -457,7 +459,7 @@ public class FetchLastMonthArrivalListAlma {
 					+ prodAPIKey;
 
 			url = new URL(urlStr);
-
+			System.out.println(urlStr);
 			http = (HttpURLConnection) url.openConnection();
 
 			br = null;
@@ -491,30 +493,33 @@ public class FetchLastMonthArrivalListAlma {
 					}
 
 					String title = "";
-					if (el.getElementsByTagName("Column7").item(0) != null) {
-						title = el.getElementsByTagName("Column7").item(0).getTextContent();
+					if (el.getElementsByTagName("Column9").item(0) != null) {
+						title = el.getElementsByTagName("Column9").item(0).getTextContent();
 					}
 
 					String callno = "N/A";
 
 					String mmsid = "";
-					if (el.getElementsByTagName("Column4").item(0) != null) {
-						mmsid = el.getElementsByTagName("Column4").item(0).getTextContent();
+					if (el.getElementsByTagName("Column5").item(0) != null) {
+						mmsid = el.getElementsByTagName("Column5").item(0).getTextContent();
 					}
 
 					String publisher = "";
-					if (el.getElementsByTagName("Column5").item(0) != null) {
-						publisher = el.getElementsByTagName("Column5").item(0).getTextContent();
+					if (el.getElementsByTagName("Column7").item(0) != null) {
+						publisher = el.getElementsByTagName("Column7").item(0).getTextContent();
+						if (el.getElementsByTagName("Column6").item(0) != null) {
+							publisher += ". " + el.getElementsByTagName("Column6").item(0).getTextContent();
+						}
 					}
 
 					String subject = "";
-					if (el.getElementsByTagName("Column6").item(0) != null) {
-						subject = el.getElementsByTagName("Column6").item(0).getTextContent();
+					if (el.getElementsByTagName("Column8").item(0) != null) {
+						subject = el.getElementsByTagName("Column8").item(0).getTextContent();
 					}
 
 					String rstype = "";
-					if (el.getElementsByTagName("Column3").item(0) != null) {
-						rstype = el.getElementsByTagName("Column3").item(0).getTextContent();
+					if (el.getElementsByTagName("Column4").item(0) != null) {
+						rstype = el.getElementsByTagName("Column4").item(0).getTextContent();
 					}
 
 					if (!resultSet.contains(mmsid)) {
@@ -590,7 +595,6 @@ public class FetchLastMonthArrivalListAlma {
 				row.getCell(5).setCellStyle(defaultFontStyle);
 
 				tmp = result.get(str)[5].toString();
-				
 
 				URL = Config.VALUES.get("PRIMOFULLVIEWURLFORM").replace("^", "=") + tmp;
 				String URLstr = "<a href='" + URL + "' target=_blank> click here </a>";
@@ -641,8 +645,8 @@ public class FetchLastMonthArrivalListAlma {
 
 			}
 
-			outputHTML = noReportLine + "</tbody></table>";			
-			
+			outputHTML = noReportLine + "</tbody></table>";
+
 			if (wr != null) {
 				wr.write(outputHTML);
 				wr.flush();

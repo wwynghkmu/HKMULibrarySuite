@@ -341,6 +341,12 @@ public class StringHandling {
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
 		return formatter.format(today);
 	} // end getToday()
+	
+	public static String getMonthYear() {
+		Date today = new Date();
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+		return formatter.format(today);
+	} // end getToday()
 
 	public static int getTodayDateOfWeek() {
 		Date today = new Date();

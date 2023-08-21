@@ -116,7 +116,9 @@ public class FetchAndConsolidateStaffLeave {
 					+ hk.edu.hkmu.lib.Config.VALUES.get("FILEPROTECTIONKEY") + "-" + year + "-"
 					+ Config.VALUES.get("REPORTFILE");
 
+			
 			File masterFile = new File(reportFile);
+			
 			if (masterFile.exists()) {
 				masterWB = new XSSFWorkbook(new FileInputStream(reportFile));
 				masterWorkbook = new SXSSFWorkbook(masterWB, 100, true, true);
@@ -265,7 +267,7 @@ public class FetchAndConsolidateStaffLeave {
 										case "PS":
 										case "CD":
 										case "OTHERS":
-										case "TS":
+										case "SYS & DI":
 											sessionFirstRowIndexes.add(rowIndex);
 											masterCell.setCellStyle(
 													ExcelCellStyle.defaultFontStyleLeftAlignLIBSessionStyle);
@@ -449,7 +451,7 @@ public class FetchAndConsolidateStaffLeave {
 					case "PS":
 					case "CD":
 					case "OTHERS":
-					case "TS":
+					case "SYS & DI":
 						cell.setCellStyle(ExcelCellStyle.defaultFontStyleLeftAlignLIBSessionStyle);
 						break;
 					default:
@@ -466,7 +468,7 @@ public class FetchAndConsolidateStaffLeave {
 					char exlCol = 'K';
 					if (cnt > 7 && cnt < lastStaffRowIndex - 2 && !cell.getStringCellValue().equals("")
 							&& !cell.getStringCellValue().toUpperCase().equals("PS")
-							&& !cell.getStringCellValue().toUpperCase().equals("TS")
+							&& !cell.getStringCellValue().toUpperCase().equals("SYS & DI")
 							&& !cell.getStringCellValue().toUpperCase().equals("OTHERS")
 							&& !cell.getStringCellValue().toUpperCase().equals("CD")) {
 
@@ -531,7 +533,15 @@ public class FetchAndConsolidateStaffLeave {
 			row = totalSheet.createRow(0);
 			cell = row.createCell(0);
 			cell.setCellValue("LEAVE RECORD FOR LIBRARY STAFF");
-
+			row = totalSheet.createRow(1);
+			cell = row.createCell(0);
+			cell = row.createCell(7);
+			row = totalSheet.createRow(2);
+			cell = row.createCell(0);
+			cell = row.createCell(7);
+			row = totalSheet.createRow(3);
+			cell = row.createCell(0);
+			cell = row.createCell(7);
 			row = totalSheet.createRow(4);
 			cell = row.createCell(0);
 			cell.setCellValue("Sep " + (year - 1) + " to " + "Aug " + year);
@@ -593,12 +603,14 @@ public class FetchAndConsolidateStaffLeave {
 			totalSheet.getRow(4).getCell(0).setCellStyle(ExcelCellStyle.titleFontStyleLeftAlign);
 
 			// Financial year arrangement
+			
 			int sheetTabIndex = StringHandling.getMonthNumByName(currentMonth);
+			
 			sheetTabIndex += 3;
 			if (sheetTabIndex > 12)
 				sheetTabIndex -= 12;
 			sheetTabIndex -= 1;
-
+			
 			masterWorkbook.setSelectedTab(sheetTabIndex + 1);
 			masterWorkbook.setActiveSheet(sheetTabIndex + 1);
 
@@ -632,6 +644,7 @@ public class FetchAndConsolidateStaffLeave {
 		// change the configuration. See this article :
 		// http://blog.crsw.com/2008/10/14/unauthorized-401-1-exception-calling-web-services-in-sharepoint/
 		HttpHost target = new HttpHost(Config.VALUES.get("SHAREPOINTHOST"), 443, "https");
+		
 		HttpClientContext context = HttpClientContext.create();
 		context.setCredentialsProvider(credsProvider);
 
@@ -677,9 +690,11 @@ public class FetchAndConsolidateStaffLeave {
 						+ StringHandling.getToday() + f.getName());
 				tempFile = targetFolder + "/" + hk.edu.hkmu.lib.Config.VALUES.get("FILEPROTECTIONKEY") + "-"
 						+ StringHandling.getToday() + f.getName();
-
+				
 				// writing the byte array into a file using Apache Commons IO
 				FileUtils.writeByteArrayToFile(ff, EntityUtils.toByteArray(entity));
+				consolidateExcelReport();
+
 			} else {
 				throw new Exception("Problem while receiving " + file + "  reason : " + reason + " httpcode : " + rc);
 			}

@@ -106,10 +106,13 @@ public class EmailReportBySubjectAlma {
 				String[] tmp = reportMonth.split("-");
 				reportMonth = tmp[2];
 			}
-
-			String subject = Config.VALUES.get("NEWARRIVALEMAILSUBJECT");
+			reportMonth = reportMonth.replaceAll(".xlsx", "");
+			String sch = hk.edu.hkmu.lib.acq.Config.VALUES.get(schCode);
+			String subject = reportMonth + " " + Config.VALUES.get("NEWARRIVALEMAILSUBJECT") + " for " + sch;
+			System.out.println(subject);
 			File emptyFile = new File(str + ".empty");
-
+			System.out.println("emp: " + emptyFile);
+			
 			messageBodyPart = new MimeBodyPart();
 			message.setSubject(subject);
 			if (!emptyFile.exists()) {
