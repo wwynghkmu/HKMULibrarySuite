@@ -6,9 +6,10 @@ public class AdmStaffLeaveConsolidation {
 	/**
 	 * @param args Arguments from the console. Not used at all
 	 * @throws Exception if there is anything wrong
-	 * Download and consoldiate the Staff Leave Excel file from OUHK SharePoint.
+	 * Download and consolidate the Staff Leave Excel file from HKMU SharePoint.
 	 */
 	public static void main(String[] args) throws Exception {
-		FetchAndConsolidateStaffLeave fl = new FetchAndConsolidateStaffLeave("wwyng", "98731486aBc");
+		//Replace "login" and "password" in FetchAndConsolidateStaffLeave("login", "password") with a valid SharePoint Account while compiling this Java Class. 
+		FetchAndConsolidateStaffLeave fl = new FetchAndConsolidateStaffLeave("login", "password");
 	}
 }
