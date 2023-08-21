@@ -32,7 +32,7 @@ public class AlephToAlmaCourseList {
 					String line;
 					while ((line = br.readLine()) != null) {
 						line = line.trim();
-						line = line.replaceAll("\s", "");
+						line = line.replaceAll(" ", "");
 						excludeList.add(line);
 						System.out.println(line);
 					}

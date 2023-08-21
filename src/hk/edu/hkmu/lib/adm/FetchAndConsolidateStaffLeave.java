@@ -265,7 +265,7 @@ public class FetchAndConsolidateStaffLeave {
 									if (colIndex == 0 && rowIndex <= sheet.getLastRowNum() - 5 && rowIndex > 1) {
 										switch (masterCell.getStringCellValue().toUpperCase()) {
 										case "PS":
-										case "CD":
+										case  "CDM & MBS":
 										case "OTHERS":
 										case "SYS & DI":
 											sessionFirstRowIndexes.add(rowIndex);
@@ -449,7 +449,7 @@ public class FetchAndConsolidateStaffLeave {
 					// Highlight the LIB Session wording
 					switch (name.toUpperCase().trim()) {
 					case "PS":
-					case "CD":
+					case "CDM & MBS":
 					case "OTHERS":
 					case "SYS & DI":
 						cell.setCellStyle(ExcelCellStyle.defaultFontStyleLeftAlignLIBSessionStyle);
@@ -470,7 +470,7 @@ public class FetchAndConsolidateStaffLeave {
 							&& !cell.getStringCellValue().toUpperCase().equals("PS")
 							&& !cell.getStringCellValue().toUpperCase().equals("SYS & DI")
 							&& !cell.getStringCellValue().toUpperCase().equals("OTHERS")
-							&& !cell.getStringCellValue().toUpperCase().equals("CD")) {
+							&& !cell.getStringCellValue().toUpperCase().equals("CDM & MBS")) {
 
 						for (int i = 1; i < 8; i++) {
 							cell.setCellStyle(ExcelCellStyle.defaultFontStyle);
