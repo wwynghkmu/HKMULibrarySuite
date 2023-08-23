@@ -10,6 +10,6 @@ public class AdmStaffLeaveConsolidation {
 	 */
 	public static void main(String[] args) throws Exception {
 		//Replace "login" and "password" in FetchAndConsolidateStaffLeave("login", "password") with a valid SharePoint Account while compiling this Java Class. 
-		FetchAndConsolidateStaffLeave fl = new FetchAndConsolidateStaffLeave("login", "password");
+		FetchAndConsolidateStaffLeave fl = new FetchAndConsolidateStaffLeave("login", "password2");
 	}
 }
