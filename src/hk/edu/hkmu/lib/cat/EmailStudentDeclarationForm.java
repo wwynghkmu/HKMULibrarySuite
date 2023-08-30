@@ -35,6 +35,7 @@ public class EmailStudentDeclarationForm {
 	private LogWriter logwriter;
 	private BodyPart messageBodyPart;
 	private Multipart multipart;
+	private boolean reminder = false;
 
 	/**
 	 * Initialize an object; in order to send an email report; report file must be
@@ -71,14 +72,34 @@ public class EmailStudentDeclarationForm {
 		 */
 
 		logwriter.setLogFile("emailStudentSelfDeclarationForm.txt");
-		fetchReportFromDB(acaYear, id, title);
+		fetchReportFromDB(acaYear, id, title, false);
 		initEmailSystem();
 		setTos(Config.VALUES.get("REPORTEMAIL"));
 		sendEmail();
 		logwriter.close();
 	}
 
-	public void fetchReportFromDB(String acaYear2, String id2, String title2) {
+	public EmailStudentDeclarationForm(String acaYear, String id, String title, boolean reminder) {
+		Config.init();
+		logwriter = new LogWriter(hk.edu.hkmu.lib.Config.SERVER_LOCAL_ROOT + "/cat/logs/");
+		/*
+		 * String workingdir = System.getProperty("user.dir"); File dir = new
+		 * File(workingdir + "\\logs"); try { logwriter = new
+		 * LogWriter(dir.getCanonicalPath()); } catch (Exception e) {
+		 * 
+		 * }
+		 */
+		this.reminder = reminder;
+		logwriter.setLogFile("emailStudentSelfDeclarationForm.txt");
+		fetchReportFromDB(acaYear, id, title, reminder);
+		initEmailSystem();
+		setTos(Config.VALUES.get("REPORTEMAIL"));
+		sendEmail();
+		this.reminder = reminder;
+		logwriter.close();
+	}
+
+	public void fetchReportFromDB(String acaYear2, String id2, String title2, boolean reminder) {
 
 		try {
 
@@ -89,11 +110,19 @@ public class EmailStudentDeclarationForm {
 			title2 = title2.replaceAll("'", "''");
 			String sql = "select * from catStudentSelfDeclaration where (signed IS NULL OR signed = 0) and (sentInvEmail IS NULL or sentInvEmail = 0) and academicYear='"
 					+ acaYear2 + "' and studentID='" + id2 + "' and title LIKE '" + title2 + "%'";
+
+			if (reminder) {
+				sql = "select * from catStudentSelfDeclaration where (signed IS NULL OR signed = 0) and academicYear='"
+						+ acaYear2 + "' and studentID='" + id2 + "' and title LIKE '" + title2 + "%'";
+
+			}
+
 			System.out.println(sql);
+
 			stmt = conn.prepareStatement(sql, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 			ResultSet rs = stmt.executeQuery(sql);
 			rs.last();
-			invitations = new String[rs.getRow()][6];
+			invitations = new String[rs.getRow()][7];
 			int i = 0;
 			rs.beforeFirst();
 
@@ -105,6 +134,7 @@ public class EmailStudentDeclarationForm {
 				String title = rs.getString("title");
 				String school = rs.getString("school");
 				String email = rs.getString("studentEmail");
+				int sentInvEmail = rs.getInt("sentInvEmail");
 
 				invitations[i][0] = acaYear;
 				invitations[i][1] = studentName;
@@ -112,11 +142,8 @@ public class EmailStudentDeclarationForm {
 				invitations[i][3] = title;
 				invitations[i][4] = school;
 				invitations[i][5] = email;
-				sql = "UPDATE catStudentSelfDeclaration SET emailtime=NOW(), sentInvEmail = true, digest = '"
-						+ "' where studentID ='" + invitations[i][2] + "' and academicyear = '" + invitations[i][0]
-						+ "' and title='" + invitations[i][3].replaceAll("'", "''") + "'";
+				invitations[i][6] = sentInvEmail + "";
 
-				System.out.println(sql);
 				i++;
 			}
 			rs.close();
@@ -144,7 +171,7 @@ public class EmailStudentDeclarationForm {
 			stmt = conn.prepareStatement(sql, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 			ResultSet rs = stmt.executeQuery(sql);
 			rs.last();
-			invitations = new String[rs.getRow()][6];
+			invitations = new String[rs.getRow()][7];
 			int i = 0;
 			rs.beforeFirst();
 
@@ -156,6 +183,8 @@ public class EmailStudentDeclarationForm {
 				String title = rs.getString("title");
 				String school = rs.getString("school");
 				String email = rs.getString("studentEmail");
+				int sentInvEmail = rs.getInt("sentInvEmail");
+				System.out.println("sentInvEmail: " + sentInvEmail);
 
 				invitations[i][0] = acaYear;
 				invitations[i][1] = studentName;
@@ -163,6 +192,7 @@ public class EmailStudentDeclarationForm {
 				invitations[i][3] = title;
 				invitations[i][4] = school;
 				invitations[i][5] = email;
+				invitations[i][6] = sentInvEmail + "";
 				i++;
 
 			}
@@ -253,6 +283,11 @@ public class EmailStudentDeclarationForm {
 
 				message.setSubject(hk.edu.hkmu.lib.cat.Config.VALUES.get("emailTitleSdf"));
 
+				if (reminder)
+					message.setSubject(hk.edu.hkmu.lib.cat.Config.VALUES.get("emailReminderTitleSdf"));
+
+				
+
 				String msgText = "";
 				String tableText = "";
 				tableText = hk.edu.hkmu.lib.cat.Config.VALUES.get("email1stParaSdf");
@@ -285,6 +320,13 @@ public class EmailStudentDeclarationForm {
 						+ hexString + "' where studentID ='" + invitations[i][2] + "' and academicyear = '"
 						+ invitations[i][0] + "' and title='" + invitations[i][3].replaceAll("'", "''") + "'";
 
+				if (reminder)
+					sql = "UPDATE catStudentSelfDeclaration SET emailtime=NOW(), sentInvEmail = "
+							+ (Integer.parseInt(invitations[i][6]) + 1) + ", digest = '" + hexString
+							+ "' where studentID ='" + invitations[i][2] + "' and academicyear = '" + invitations[i][0]
+							+ "' and title='" + invitations[i][3].replaceAll("'", "''") + "'";
+
+				System.out.println("Reminder: " + reminder);
 				System.out.println(sql);
 
 				stmt = conn.prepareStatement(sql);

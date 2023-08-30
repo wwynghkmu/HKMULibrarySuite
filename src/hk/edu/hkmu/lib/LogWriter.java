@@ -34,14 +34,17 @@ public class LogWriter {
 
 	public LogWriter(String path) {
 		init();
-		setLogPath(path);
+		System.out.println("INIT(): " + path);
+		if (path != null || path != "")
+			setLogPath(path);
 	}
 
 	private void init() {
 		try {
 			String workingdir = System.getProperty("user.dir");
+			System.out.println("Working DIR: " + workingdir);
 			File dir = new File(workingdir + "\\logs");
-			System.out.println(dir.getCanonicalPath());
+			System.out.println("working dir / path " + workingdir + "\\logs");
 			if (!dir.exists())
 				dir.mkdir();
 			LOG_PATH = workingdir + "\\logs\\";
@@ -53,9 +56,10 @@ public class LogWriter {
 	} // end updateConfig()
 
 	private void setLogPath(String path) {
+		System.out.println("Set log parth: " + path);
 		LOG_PATH = path;
 	}
-	
+
 	public String getLogPath() {
 		return LOG_PATH;
 	}
@@ -71,7 +75,9 @@ public class LogWriter {
 
 	public void setLogFile(String logfile) {
 		try {
+			System.out.println("log file: " + LOG_PATH + logfile);
 			logWriter = new BufferedWriter(new FileWriter(LOG_PATH + logfile, true));
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -86,10 +92,10 @@ public class LogWriter {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void out(String str, boolean noTimeStamp) {
 		try {
-			if(noTimeStamp) {
+			if (noTimeStamp) {
 				logWriter.write(StringHandling.getTodayDBFormat() + ": " + str + "\n");
 			} else {
 				logWriter.write(str + "\n");

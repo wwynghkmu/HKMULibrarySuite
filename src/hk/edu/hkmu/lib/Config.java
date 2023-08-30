@@ -31,16 +31,11 @@ public class Config {
 
 	public static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 	public static final String TSSERVICE_SERVER = "tsservices.lib.hkmu.edu.hk";
-	public static final String TSSERVICE_SERVER_LOGIN = "tomcat";
-	public static final String TSSERVICE_SERVER_PWD = "tom959cat";
-
-	// public static final String TSSERVICE_SERVER_LOGIN = "tomdev";
-	// public static final String TSSERVICE_SERVER_PWD = "tom959dev";
-	public static final String DB_URL = "jdbc:mysql://" + TSSERVICE_SERVER + ":3306/tsservices";
-	public static final String USER = "root";
-	public static final String PASS = "987&ac151p?";
-	// public static final String USER = "tsservice2";
-	// public static final String PASS = "123456aB";
+	public static final String TSSERVICE_SERVER_LOGIN = "";
+	public static final String TSSERVICE_SERVER_PWD = "";
+	public static final String DB_URL = "jdbc:mysql://" + TSSERVICE_SERVER + ":3306/tsservices2";
+	public static final String USER = "";
+	public static final String PASS = "?";
 	public static String SERVER_LOCAL_ROOT = "";
 
 	public static void init() {
