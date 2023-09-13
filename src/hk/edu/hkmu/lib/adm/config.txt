@@ -4,5 +4,5 @@ SHAREPOINTAPIFUNCTION~/sites/LIB/myLIB/_api/web/GetFileByServerRelativeUrl('FILE
 REPORTFOLDER~C:\temp~The report folder of the consolidated report.
 REPORTFILE~Master_Leave_Record.xlsx~Generated Staff Leave Master report file name.
 DOWNLOADFOLDER~c:\temp~The report folder for storing downloaded Staff Leave Excel files from the SharePoint.
-CALENDARYEAR~2022~The financial / calendar year the report belongs
+CALENDARYEAR~2023~The financial / calendar year the report belongs
 ALLOWUSERS~pkam,owent,wwyng~The persons who will be able to access the system.

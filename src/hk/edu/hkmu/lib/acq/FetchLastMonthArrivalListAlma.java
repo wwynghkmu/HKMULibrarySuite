@@ -363,7 +363,7 @@ public class FetchLastMonthArrivalListAlma {
 			outputHTML = now + "<br>";
 			outputHTML += "<h3><div align=center> " + startMonth + " " + startYear
 					+ " Arrival List for <font color=blue>" + school + "</font> </div></h3> <br>";
-			outputHTML += "<table id='reportTable' class='table table-hover sortable'> <thead> <tr> <td> No. </td> <td> Title </td> <td> Author / Editor </td>  <td> Publisher </td> <td> Call No. </td> <td> Order Material Type </td> <td> Link to the item </td></tr> </thead>\n";
+			outputHTML += "<table id='reportTable' class='table table-hover sortable'> <thead> <tr> <td> No. </td> <td> Title </td> <td> Author / Editor </td>  <td> Publisher </td> <td> Order Material Type </td> <td> Link to the item </td></tr> </thead>\n";
 			outputHTML += "<tbody>";
 
 			if (wr != null) {
@@ -628,7 +628,7 @@ public class FetchLastMonthArrivalListAlma {
 
 				String reportLine = "<tr> <td>#</td><td>" + result.get(str)[0].toString().substring(0, titlelength)
 						+ "</td><td>" + result.get(str)[1].toString().substring(0, authorlength) + "</td><td>"
-						+ result.get(str)[2] + "</td> <td>" + result.get(str)[3] + "</td><td>" + result.get(str)[4]
+						+ result.get(str)[2] + "</td> <td>" + result.get(str)[4]
 						+ "</td><td><a href='" + URL + "' target=_blank> Click Here" + "</a> </td> </tr>";
 
 				URL = null;

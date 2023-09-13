@@ -46,6 +46,7 @@ public final class Config extends hk.edu.hkmu.lib.Config {
 			br = new BufferedReader(new FileReader(url.getPath()));
 			while ((line = br.readLine()) != null) {
 				String[] para = line.split("~");
+				System.out.println("CAT Config: " + para[0] + para[1]);
 				VALUES.put(para[0], para[1]);
 			} // end while
 

@@ -1,1 +1,1 @@
-ALLOWUSERS~skkiang,wwyng,kyshum,mkmak,bhung,tyho,testw~Who will be able to access the system
+ALLOWUSERS~skkiang,wwyng,tyho,testw~Who will be able to access the system

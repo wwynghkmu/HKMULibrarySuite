@@ -116,14 +116,15 @@ public class FetchAndConsolidateStaffLeave {
 					+ hk.edu.hkmu.lib.Config.VALUES.get("FILEPROTECTIONKEY") + "-" + year + "-"
 					+ Config.VALUES.get("REPORTFILE");
 
-			
 			File masterFile = new File(reportFile);
-			
+
 			if (masterFile.exists()) {
 				masterWB = new XSSFWorkbook(new FileInputStream(reportFile));
 				masterWorkbook = new SXSSFWorkbook(masterWB, 100, true, true);
+
 			} else {
 				masterWorkbook = new SXSSFWorkbook(100);
+
 			}
 
 			ExcelCellStyle.init(masterWorkbook);
@@ -167,6 +168,7 @@ public class FetchAndConsolidateStaffLeave {
 					for (int rowIndex = 0; rowIndex <= sheet.getLastRowNum(); rowIndex++) {
 						Row row = sheet.getRow(rowIndex);
 						if (row != null) {
+							
 							Row masterRow = masterSheet.createRow(rowIndex);
 							masterRow.setZeroHeight(row.getZeroHeight());
 							masterRow.setHeight(row.getHeight());
@@ -265,7 +267,7 @@ public class FetchAndConsolidateStaffLeave {
 									if (colIndex == 0 && rowIndex <= sheet.getLastRowNum() - 5 && rowIndex > 1) {
 										switch (masterCell.getStringCellValue().toUpperCase()) {
 										case "PS":
-										case  "CDM & MBS":
+										case "CDM & MBS":
 										case "OTHERS":
 										case "SYS & DI":
 											sessionFirstRowIndexes.add(rowIndex);
@@ -312,7 +314,7 @@ public class FetchAndConsolidateStaffLeave {
 						}
 					}
 
-					// TODO Add holiday style
+					// Add holiday style
 					for (int i = 9; i < lastStaffRowIndex - 2; i++) {
 						for (int j = 0; j < 72; j++) {
 							if (holidayColIndex[j]) {
@@ -343,7 +345,7 @@ public class FetchAndConsolidateStaffLeave {
 
 					addSummaryCols(sheetCol, lastStaffRowIndex, sessionFirstRowIndexes);
 
-					// TODO Add session first row style
+					// Add session first row style
 					for (Integer i : sessionFirstRowIndexes) {
 						Row row = masterSheet.getRow(i.intValue());
 
@@ -395,7 +397,9 @@ public class FetchAndConsolidateStaffLeave {
 					}
 
 					masterSheet.addMergedRegion(new CellRangeAddress(0, 2, 0, 69));
-					masterSheet.getRow(0).getCell(0).setCellStyle(ExcelCellStyle.titleFontStyleCenterWithoutBorder);
+
+
+					//masterSheet.getRow(0).getCell(0).setCellStyle(ExcelCellStyle.titleFontStyleCenterWithoutBorder);
 					masterSheet.getRow(1).getCell(0).setCellStyle(ExcelCellStyle.titleFontStyleCenterWithoutBorder);
 					masterSheet.getRow(2).getCell(0).setCellStyle(ExcelCellStyle.titleFontStyleCenterWithoutBorder);
 					masterSheet.createFreezePane(0, 9, 0, 9);
@@ -603,14 +607,14 @@ public class FetchAndConsolidateStaffLeave {
 			totalSheet.getRow(4).getCell(0).setCellStyle(ExcelCellStyle.titleFontStyleLeftAlign);
 
 			// Financial year arrangement
-			
+
 			int sheetTabIndex = StringHandling.getMonthNumByName(currentMonth);
-			
+
 			sheetTabIndex += 3;
 			if (sheetTabIndex > 12)
 				sheetTabIndex -= 12;
 			sheetTabIndex -= 1;
-			
+
 			masterWorkbook.setSelectedTab(sheetTabIndex + 1);
 			masterWorkbook.setActiveSheet(sheetTabIndex + 1);
 
@@ -644,7 +648,7 @@ public class FetchAndConsolidateStaffLeave {
 		// change the configuration. See this article :
 		// http://blog.crsw.com/2008/10/14/unauthorized-401-1-exception-calling-web-services-in-sharepoint/
 		HttpHost target = new HttpHost(Config.VALUES.get("SHAREPOINTHOST"), 443, "https");
-		
+
 		HttpClientContext context = HttpClientContext.create();
 		context.setCredentialsProvider(credsProvider);
 
@@ -690,7 +694,7 @@ public class FetchAndConsolidateStaffLeave {
 						+ StringHandling.getToday() + f.getName());
 				tempFile = targetFolder + "/" + hk.edu.hkmu.lib.Config.VALUES.get("FILEPROTECTIONKEY") + "-"
 						+ StringHandling.getToday() + f.getName();
-				
+
 				// writing the byte array into a file using Apache Commons IO
 				FileUtils.writeByteArrayToFile(ff, EntityUtils.toByteArray(entity));
 				consolidateExcelReport();

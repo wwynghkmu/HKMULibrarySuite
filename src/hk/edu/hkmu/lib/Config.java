@@ -31,11 +31,11 @@ public class Config {
 
 	public static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 	public static final String TSSERVICE_SERVER = "tsservices.lib.hkmu.edu.hk";
-	public static final String TSSERVICE_SERVER_LOGIN = "";
-	public static final String TSSERVICE_SERVER_PWD = "";
-	public static final String DB_URL = "jdbc:mysql://" + TSSERVICE_SERVER + ":3306/tsservices2";
-	public static final String USER = "";
-	public static final String PASS = "?";
+	public static final String TSSERVICE_SERVER_LOGIN = "masked";
+	public static final String TSSERVICE_SERVER_PWD = "masked";
+	public static final String DB_URL = "jdbc:mysql://" + TSSERVICE_SERVER + ":3306/tsservices";
+	public static final String USER = "masked";
+	public static final String PASS = "masked";
 	public static String SERVER_LOCAL_ROOT = "";
 
 	public static void init() {
@@ -78,7 +78,6 @@ public class Config {
 			} // end while
 
 			SERVER_LOCAL_ROOT = VALUES.get("SERVERROOT");
-			
 
 		} // end try
 

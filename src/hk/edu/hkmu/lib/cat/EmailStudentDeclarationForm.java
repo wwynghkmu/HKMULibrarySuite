@@ -277,6 +277,8 @@ public class EmailStudentDeclarationForm {
 
 				String[] receipents = hk.edu.hkmu.lib.cat.Config.VALUES.get("invitationEmailCC").split(",");
 
+				String logMsg = "Recipient: " + recipient.trim() + " ;";
+
 				for (int j = 0; j < receipents.length; j++) {
 					message.addRecipient(Message.RecipientType.BCC, new InternetAddress(receipents[j].trim()));
 				}
@@ -286,8 +288,6 @@ public class EmailStudentDeclarationForm {
 				if (reminder)
 					message.setSubject(hk.edu.hkmu.lib.cat.Config.VALUES.get("emailReminderTitleSdf"));
 
-				
-
 				String msgText = "";
 				String tableText = "";
 				tableText = hk.edu.hkmu.lib.cat.Config.VALUES.get("email1stParaSdf");
@@ -296,6 +296,11 @@ public class EmailStudentDeclarationForm {
 				tableText += "<tr> <td> Student ID </td> <td> Student Name </td> <td>Student Work Title</td> <td> School </td> </tr> \n";
 				tableText += "<tr> <td>" + invitations[i][2] + "</td> <td> " + invitations[i][1] + "</td> <td>"
 						+ invitations[i][3] + "</td> <td> " + invitations[i][4] + "</td> </tr> \n";
+				
+				logMsg += "Work: " + invitations[i][2] + "-" + invitations[i][1] + "-" + invitations[i][3] + "-"
+						+ invitations[i][4] + " ;";
+				logwriter.out(logMsg);
+				
 				tableText += "</table>";
 				tableText += "<br>";
 				tableText += "<br>";
@@ -325,9 +330,6 @@ public class EmailStudentDeclarationForm {
 							+ (Integer.parseInt(invitations[i][6]) + 1) + ", digest = '" + hexString
 							+ "' where studentID ='" + invitations[i][2] + "' and academicyear = '" + invitations[i][0]
 							+ "' and title='" + invitations[i][3].replaceAll("'", "''") + "'";
-
-				System.out.println("Reminder: " + reminder);
-				System.out.println(sql);
 
 				stmt = conn.prepareStatement(sql);
 				try {
