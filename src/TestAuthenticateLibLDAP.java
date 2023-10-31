@@ -8,6 +8,12 @@ public class TestAuthenticateLibLDAP {
 
 		if (args.length == 0) {
 			System.out.println("useage: TestAuthenticateLibLDAP [login] [password]");
+			AuthenticateLibLDAP authen = new AuthenticateLibLDAP("wwyng", "98731486aBc");
+			System.out.println("Authenticated success: " + authen.isAuthenticated());
+			System.out.println("Surname: " + authen.getSurname());
+			System.out.println("Given Name: " + authen.getGivenName());
+			System.out.println("Login TIme: " + authen.getLogintime());
+			System.out.println("Login TIme: " + authen.getPatronType());
 
 		} else if (args.length == 2) {
 			AuthenticateLibLDAP authen = new AuthenticateLibLDAP(args[0], args[1]);

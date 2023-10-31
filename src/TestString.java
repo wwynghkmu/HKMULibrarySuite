@@ -32,6 +32,7 @@ public class TestString {
 		}
 
 		System.out.println("IS CJK: " + (CJKStringHandling.isCJKString("The Brothers Karamazov = 卡拉馬助夫兄弟們")));
+		System.out.println("Current year: " + StringHandling.getCurrentYear());
 
 	}
 

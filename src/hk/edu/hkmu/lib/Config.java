@@ -31,10 +31,10 @@ public class Config {
 
 	public static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 	public static final String TSSERVICE_SERVER = "tsservices.lib.hkmu.edu.hk";
-	public static final String TSSERVICE_SERVER_LOGIN = "masked";
+	public static final String TSSERVICE_SERVER_LOGIN = "tomcat";
 	public static final String TSSERVICE_SERVER_PWD = "masked";
 	public static final String DB_URL = "jdbc:mysql://" + TSSERVICE_SERVER + ":3306/tsservices";
-	public static final String USER = "masked";
+	public static final String USER = "root";
 	public static final String PASS = "masked";
 	public static String SERVER_LOCAL_ROOT = "";
 

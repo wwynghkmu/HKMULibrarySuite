@@ -115,6 +115,7 @@ public class AuthenticateLibLDAP {
 	}
 
 	public String getLdapUrl() {
+		System.out.println("Ldap URL: "  + Config.VALUES.get("LDAPURL"));
 		return Config.VALUES.get("LDAPURL");
 	}
 

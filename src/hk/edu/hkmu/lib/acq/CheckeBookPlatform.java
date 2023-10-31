@@ -204,24 +204,24 @@ public class CheckeBookPlatform extends JFrame {
 			platforms[count][5] = "FAILED";
 			platforms[count][5] = "";
 
-			if (platforms[count][1].contains("Human kinetics")) {
+			// if (platforms[count][1].contains("萬方視頻")) {
 
-				count++;
+			count++;
 
-				// Reader the keyword list
-				if (searchType.toLowerCase().equals("keyword")) {
-					String[] list = new String[Config.SEARCHITEMS.get(platformName).size()];
-					int count2 = 0;
-					for (String item : Config.SEARCHITEMS.get(platformName)) {
-						list[count2] = item;
+			// Reader the keyword list
+			if (searchType.toLowerCase().equals("keyword")) {
+				String[] list = new String[Config.SEARCHITEMS.get(platformName).size()];
+				int count2 = 0;
+				for (String item : Config.SEARCHITEMS.get(platformName)) {
+					list[count2] = item;
 
-						count2++;
-
-					}
-					searchList.put(platformName.toUpperCase(), list);
+					count2++;
 
 				}
+				searchList.put(platformName.toUpperCase(), list);
+
 			}
+			// }
 		}
 	}
 
@@ -289,12 +289,12 @@ public class CheckeBookPlatform extends JFrame {
 			for (int i = 0; i < platforms.length; i++) {
 				if (platforms[i][0] != null) {
 					out("\n\nTarget Platform Information:");
-					out("\tSearch Type: " + platforms[i][0]);
-					out("\tEbk Platform: " + platforms[i][1]);
+					out("Search Type: " + platforms[i][0]);
+					out("Ebk Platform: " + platforms[i][1]);
 					checkingPlatformJLabel.setText(platforms[i][1]);
-					out("\tSearching Keyword on Primo: " + platforms[i][2]);
-					out("\tPlatform Keyword on Primo's Accessing Link: " + platforms[i][3]);
-					out("\tCreator Keyword on Primo's Facet: " + platforms[i][4]);
+					out("Searching Keyword on Primo: " + platforms[i][2]);
+					out("Platform Keyword on Primo's Accessing Link: " + platforms[i][3]);
+					out("Creator Keyword on Primo's Facet: " + platforms[i][4]);
 					ArrayList<String> tabs = new ArrayList<String>(pdriver.driver.getWindowHandles());
 					for (int j = 1; j < tabs.size(); j++) {
 						pdriver.driver.switchTo().window(tabs.get(j));
@@ -309,8 +309,9 @@ public class CheckeBookPlatform extends JFrame {
 					// Performing Platform searching using Advanced Search.
 					if (platforms[i][0].equals("platform")) {
 						try {
-							pdriver.driver.get(hk.edu.hkmu.lib.Config.VALUES.get("PRIMOASEARCHURL")
-									+ URLEncoder.encode(platforms[i][2]));
+							pdriver.driver.get(hk.edu.hkmu.lib.Config.VALUES.get("PRIMOASEARCHURL") + URLEncoder
+									.encode(platforms[i][2], java.nio.charset.StandardCharsets.UTF_8.toString()));
+
 							out("Finding the SearchBar");
 							// pdriver.initAdvancedSearchKeywordComponent(platforms[i][2]);
 							if (!platforms[i][2].toLowerCase().contains("video")) {

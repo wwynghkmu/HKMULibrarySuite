@@ -1,15 +1,10 @@
 package hk.edu.hkmu.lib;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.sql.*;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
+import java.nio.charset.*;
+import java.util.*;
+import java.sql.*;
 
 /**
  * 
@@ -76,7 +71,8 @@ public class LogWriter {
 	public void setLogFile(String logfile) {
 		try {
 			System.out.println("log file: " + LOG_PATH + logfile);
-			logWriter = new BufferedWriter(new FileWriter(LOG_PATH + logfile, true));
+			logWriter = new BufferedWriter(
+					new OutputStreamWriter(new FileOutputStream(LOG_PATH + logfile), StandardCharsets.UTF_8));
 
 		} catch (Exception e) {
 			e.printStackTrace();
